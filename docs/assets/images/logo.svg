@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">雪山大地</title>
+  <desc id="desc">一座青绿色山峰和一轮太阳</desc>
+  <circle cx="45" cy="19" r="9" fill="#e8b86a"/>
+  <path d="M7 52 27 24l9 12 7-9 14 25Z" fill="#357266"/>
+  <path d="m20 34 7-10 5 7-4 2-3-3-2 5Z" fill="#f6f0e5"/>
+  <path d="M8 52h49" stroke="#244b45" stroke-width="3" stroke-linecap="round"/>
+</svg>

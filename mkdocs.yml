@@ -1,0 +1,104 @@
+site_name: 雪山大地
+site_description: 学习笔记为主，也记录沿途的生活。
+site_author: 雪山大地
+# 上线时填写，例如 https://你的用户名.github.io/notes/
+# site_url: https://你的用户名.github.io/notes/
+use_directory_urls: true
+
+theme:
+  name: material
+  language: zh
+  font: false
+  logo: assets/images/logo.svg
+  favicon: assets/images/logo.svg
+  palette:
+    - scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-night
+        name: 切换到深色模式
+    - scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: 切换到浅色模式
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - navigation.tracking
+    - navigation.footer
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+plugins:
+  - search:
+      lang:
+        - zh
+        - en
+  - blog:
+      blog_dir: life
+      blog_toc: false
+      post_date_format: yyyy年M月d日
+      post_url_format: "{date}/{slug}"
+      post_readtime: true
+      post_readtime_words_per_minute: 400
+      archive_name: 按年份归档
+      archive_date_format: yyyy年
+      categories_name: 按主题阅读
+      pagination_per_page: 6
+      authors: false
+      draft: false
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+      permalink_title: 此段落的链接
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+extra_css:
+  - assets/stylesheets/extra.css
+
+extra_javascript:
+  - assets/javascripts/mathjax-config.js
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+extra:
+  generator: false
+
+copyright: 雪山大地 · 记下所学，也记下沿途风景
+
+nav:
+  - 首页: index.md
+  - 学习笔记:
+      - notes/index.md
+      - 课程笔记: notes/courses/index.md
+      - 专题学习: notes/topics/index.md
+      - 工具与方法:
+          - notes/tools/index.md
+          - Markdown 写作入门: notes/tools/markdown.md
+  - 生活记录:
+      - life/index.md
+  - 关于: about.md
