@@ -83,6 +83,17 @@
 !!! tip "给未来的自己"
     先把内容写下来，再慢慢整理。一个持续生长的笔记网站，比一次性做得很漂亮更重要。
 
+## 和黎黎
+
+<div class="home-video" markdown>
+
+<video controls preload="metadata" playsinline width="100%">
+  <source src="assets/videos/he-lili.mp4" type="video/mp4">
+  你的浏览器不支持视频播放，请直接[下载视频](assets/videos/he-lili.mp4)。
+</video>
+
+</div>
+
 ## 网站地图
 
 | 栏目 | 用途 |
