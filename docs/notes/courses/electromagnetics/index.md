@@ -4,27 +4,19 @@
 
 ## 静电场
 
-静电场满足 $
-abla	imes\mathbf E=0$，可用电势 $\mathbf E=-
-ablaarphi$；高斯定律 $
-abla\cdot\mathbf D=ho$。介质交界面上切向电场连续，法向电位移跳变等于自由面电荷。电容由 $C=Q/U$ 或场能 $W_e=rac12\int\mathbf E\cdot\mathbf D\,dv$ 求得。
+静电场满足 $\nabla\times\mathbf E=0$，可用电势 $\mathbf E=-\nabla\varphi$；高斯定律 $\nabla\cdot\mathbf D=\rho$。介质交界面上切向电场连续，法向电位移跳变等于自由面电荷。电容可由 $C=Q/U$ 或场能 $W_e=\frac12\int\mathbf E\cdot\mathbf D\,dv$ 求得。
 
 ## 恒定电场与静磁场
 
-恒定电流满足 $
-abla\cdot\mathbf J=0$，导电介质中 $\mathbf J=\sigma\mathbf E$。静磁场满足 $
-abla\cdot\mathbf B=0$、$
-abla	imes\mathbf H=\mathbf J$；安培环路定律适合高对称结构。磁介质边界需分别处理 $\mathbf H$ 和 $\mathbf B$ 的切向/法向分量。
+恒定电流满足 $\nabla\cdot\mathbf J=0$，导电介质中 $\mathbf J=\sigma\mathbf E$。静磁场满足 $\nabla\cdot\mathbf B=0$、$\nabla\times\mathbf H=\mathbf J$；安培环路定律适合高对称结构。磁介质边界需分别处理 $\mathbf H$ 和 $\mathbf B$ 的切向、法向分量。
 
 ## 时变场与电磁感应
 
-法拉第定律 $
-abla	imes\mathbf E=-\partial\mathbf B/\partial t$，位移电流使安培定律推广为 $
-abla	imes\mathbf H=\mathbf J+\partial\mathbf D/\partial t$。判断感应电动势方向时使用楞次定律，符号取决于回路方向约定。
+法拉第定律 $\nabla\times\mathbf E=-\partial\mathbf B/\partial t$，位移电流使安培定律推广为 $\nabla\times\mathbf H=\mathbf J+\partial\mathbf D/\partial t$。判断感应电动势方向时使用楞次定律，符号取决于回路方向约定。
 
 ## 平面波与传输线
 
-均匀介质平面波中 $\mathbf E\perp\mathbf H\perp\mathbf k$，波阻抗 $\eta=\sqrt{\mu/arepsilon}$，传播常数同时包含衰减和相位。正入射边界由切向场连续确定反射、透射系数；传输线反射系数 $\Gamma=(Z_L-Z_0)/(Z_L+Z_0)$，匹配时无反射、最大功率传输。
+均匀介质平面波中 $\mathbf E\perp\mathbf H\perp\mathbf k$，波阻抗 $\eta=\sqrt{\mu/\varepsilon}$，传播常数同时包含衰减和相位。正入射边界由切向场连续确定反射、透射系数；传输线反射系数 $\Gamma=(Z_L-Z_0)/(Z_L+Z_0)$，匹配时无反射。
 
 ## 解题清单
 
