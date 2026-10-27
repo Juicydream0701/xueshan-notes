@@ -125,6 +125,16 @@ nav:
           - 07 工程电磁场与波:
               - notes/courses/electromagnetics/index.md
               - 场方程与传播: notes/courses/electromagnetics/study-guide.md
+      - 基础课与数学工具:
+          - notes/courses/foundations/index.md
+          - 四个学期的课程地图: notes/courses/semester-map.md
+          - C 程序设计基础及实验: notes/courses/foundations/c-programming/index.md
+          - 线性代数（甲）: notes/courses/foundations/linear-algebra/index.md
+          - 大学物理（甲）Ⅰ: notes/courses/foundations/college-physics/index.md
+          - 常微分方程: notes/courses/foundations/ordinary-differential-equations/index.md
+          - 人工智能基础（A）: notes/courses/foundations/ai-foundations/index.md
+          - 概率论与数理统计: notes/courses/foundations/probability-statistics/index.md
+          - 离散数学: notes/courses/foundations/discrete-mathematics/index.md
       - 专题学习: notes/topics/index.md
       - 爱班与成长经验:
           - notes/campus/index.md
