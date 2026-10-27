@@ -116,6 +116,7 @@ nav:
       - 工具与方法:
           - notes/tools/index.md
           - Markdown 写作入门: notes/tools/markdown.md
+  - 资料管理: managed/index.md
   - 生活记录:
       - life/index.md
   - 关于: about.md

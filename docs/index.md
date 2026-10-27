@@ -11,6 +11,7 @@
 <div class="hero-actions" markdown>
 
 [浏览学习笔记](notes/index.md){ .md-button .md-button--primary }
+[资料管理入口](managed/index.md){ .md-button }
 [看看生活记录](life/index.md){ .md-button }
 
 </div>
@@ -55,6 +56,16 @@
 本站使用 Markdown 编写，写完保存、提交，网站会自动更新。
 
 [查看写作入门 →](notes/tools/markdown.md)
+
+</div>
+
+<div class="home-card" markdown>
+
+### 笔记资料管理
+
+这里预留独立的在线资料空间，用于登录后台上传和修改补充笔记、PDF 与附件，不影响本地课程笔记。
+
+[进入资料管理 →](managed/index.md)
 
 </div>
 </div>

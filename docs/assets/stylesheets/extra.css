@@ -66,4 +66,7 @@ body { font-family: "Segoe UI", "Microsoft YaHei", sans-serif; }
 [data-md-color-scheme="slate"] .home-card, [data-md-color-scheme="slate"] .note-index-card { background: rgba(45,81,72,.28); }
 .md-typeset table:not([class]) { background: rgba(255,255,255,.3); border-radius: 10px; overflow: hidden; }
 .md-typeset .admonition, .md-typeset details { border-radius: 12px; }
+.managed-hero { margin: 1.2rem 0 2rem; padding: 1.4rem 1.6rem; border: 1px solid rgba(53,114,102,.22); border-left: 5px solid var(--pine); border-radius: 16px; background: rgba(255,255,255,.48); }
+.managed-hero h2 { margin-top: 0; }
+[data-md-color-scheme="slate"] .managed-hero { background: rgba(45,81,72,.28); }
 @media (max-width: 760px) { .home-hero { grid-template-columns: 1fr; } .hero-mark { min-height: 190px; } .home-grid, .note-index-grid { grid-template-columns: 1fr; } }
