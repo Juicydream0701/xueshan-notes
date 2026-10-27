@@ -79,7 +79,7 @@ markdown_extensions:
       custom_checkbox: true
 
 extra_css:
-  - assets/stylesheets/extra.css
+  - assets/stylesheets/green-theme.css
 
 extra_javascript:
   - assets/javascripts/mathjax-config.js

@@ -30,10 +30,14 @@
 }
 
 body { font-family: "Segoe UI", "Microsoft YaHei", sans-serif; }
-.md-header, .md-tabs { background: var(--pine-deep); }
+.md-header, .md-tabs,
+.md-header[data-md-color-scheme="default"],
+.md-header[data-md-color-scheme="slate"],
+.md-tabs[data-md-color-scheme="default"],
+.md-tabs[data-md-color-scheme="slate"] { background: #244b45 !important; background-color: #244b45 !important; }
 .md-header, .md-header__title, .md-header__title .md-ellipsis,
 .md-header__topic, .md-header__button, .md-header__button .md-icon,
-.md-header a, .md-header .md-icon, .md-tabs__link { color: #fff; }
+.md-header a, .md-header .md-icon, .md-tabs__link { color: #fff !important; }
 .md-search__input::placeholder { color: rgba(255,255,255,.82); }
 .md-search__icon { color: rgba(255,255,255,.92); }
 .md-header__title { font-weight: 700; letter-spacing: .04em; }
