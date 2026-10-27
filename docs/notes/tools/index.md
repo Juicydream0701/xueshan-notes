@@ -5,3 +5,5 @@
 ## 当前收录
 
 - [Markdown 写作入门](markdown.md)
+- [AI 实验实践指南](../campus/ai-lab-guide.md)
+- [实验报告审阅提示词与资料目录](../campus/resource-index.md)

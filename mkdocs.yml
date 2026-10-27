@@ -96,13 +96,24 @@ nav:
       - notes/index.md
       - 课程笔记:
           - notes/courses/index.md
-          - 01 电路原理: notes/courses/circuit-theory/index.md
-          - 02 模拟电子技术: notes/courses/analog-electronics/index.md
-          - 03 数字电子技术: notes/courses/digital-electronics/index.md
-          - 04 电网络: notes/courses/electrical-networks/index.md
-          - 05 信号分析与处理: notes/courses/signal-analysis/index.md
+          - 01 电路原理:
+              - notes/courses/circuit-theory/index.md
+              - 解题与复习路线: notes/courses/circuit-theory/study-guide.md
+          - 02 模拟电子技术:
+              - notes/courses/analog-electronics/index.md
+              - 静态点、小信号与反馈: notes/courses/analog-electronics/study-guide.md
+          - 03 数字电子技术:
+              - notes/courses/digital-electronics/index.md
+              - 逻辑设计与时序检查: notes/courses/digital-electronics/study-guide.md
+          - 04 电网络:
+              - notes/courses/electrical-networks/index.md
+              - 复频域与网络函数: notes/courses/electrical-networks/study-guide.md
+          - 05 信号分析与处理:
+              - notes/courses/signal-analysis/index.md
+              - 系统分析与变换选型: notes/courses/signal-analysis/study-guide.md
           - 06 微机原理与应用:
               - notes/courses/microcomputer/index.md
+              - 复习路线与综合题: notes/courses/microcomputer/study-guide.md
               - 8051 基础结构: notes/courses/microcomputer/architecture.md
               - 8051 指令系统: notes/courses/microcomputer/instruction-set.md
               - 汇编程序设计: notes/courses/microcomputer/assembly.md
@@ -111,8 +122,19 @@ nav:
               - 串行通信: notes/courses/microcomputer/serial.md
               - 接口扩展: notes/courses/microcomputer/interfaces.md
               - Cortex-M 与 STM32: notes/courses/microcomputer/cortex-m.md
-          - 07 工程电磁场与波: notes/courses/electromagnetics/index.md
+          - 07 工程电磁场与波:
+              - notes/courses/electromagnetics/index.md
+              - 场方程与传播: notes/courses/electromagnetics/study-guide.md
       - 专题学习: notes/topics/index.md
+      - 爱班与成长经验:
+          - notes/campus/index.md
+          - 课程与实验地图: notes/campus/experiences.md
+          - 转专业与数学建模: notes/campus/transfer-modeling.md
+          - 选课与课程经验: notes/campus/course-selection.md
+          - 学习方法与导师团: notes/campus/study-methods.md
+          - 数学建模备赛指南: notes/campus/modeling-guide.md
+          - AI 实验实践指南: notes/campus/ai-lab-guide.md
+          - 资料链接索引: notes/campus/resource-index.md
       - 工具与方法:
           - notes/tools/index.md
           - Markdown 写作入门: notes/tools/markdown.md
