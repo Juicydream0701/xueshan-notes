@@ -37,13 +37,25 @@ class LibraryAppTests(unittest.TestCase):
             return session["csrf"]
 
     def test_public_library_and_unicode_markdown(self):
-        (self.library_app.LIBRARY / "测试笔记.md").write_text("# 标题\n\n正文", encoding="utf-8")
+        note = self.library_app.LIBRARY / "测试笔记.md"
+        note.write_text("# 标题\n\n正文", encoding="utf-8")
         listing = self.client.get("/")
         self.assertEqual(listing.status_code, 200)
-        self.assertIn("测试笔记.md".encode(), listing.data)
+        self.assertIn("00 爱班资料".encode(), listing.data)
         page = self.client.get("/view/测试笔记.md")
         self.assertEqual(page.status_code, 200)
         self.assertIn("正文".encode(), page.data)
+
+    def test_markdown_edit_requires_login_and_saves(self):
+        note = self.library_app.LIBRARY / "可编辑.md"
+        note.write_text("旧内容", encoding="utf-8")
+        self.assertEqual(self.client.get("/edit/可编辑.md").status_code, 403)
+        csrf = self.login()
+        editor = self.client.get("/edit/可编辑.md")
+        self.assertEqual(editor.status_code, 200)
+        saved = self.client.post("/edit/可编辑.md", data={"csrf": csrf, "content": "# 新标题\n\n新内容"})
+        self.assertEqual(saved.status_code, 302)
+        self.assertIn("新内容", note.read_text(encoding="utf-8"))
 
     def test_login_required_and_invalid_credentials(self):
         denied = self.client.post("/folder", data={"name": "private"})
@@ -71,6 +83,8 @@ class LibraryAppTests(unittest.TestCase):
     def test_path_traversal_is_rejected(self):
         response = self.client.get("/view/%2e%2e%2foutside.txt")
         self.assertEqual(response.status_code, 404)
+        hidden = self.client.get("/view/.order.json")
+        self.assertEqual(hidden.status_code, 404)
 
 
 if __name__ == "__main__":

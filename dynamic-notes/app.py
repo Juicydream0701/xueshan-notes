@@ -2,6 +2,7 @@ import hmac
 import json
 import os
 import secrets
+import shutil
 from pathlib import Path, PurePosixPath
 
 import bleach
@@ -17,6 +18,17 @@ app.config["SESSION_COOKIE_SECURE"] = bool(os.environ.get("RENDER_EXTERNAL_URL")
 DATA_DIR = Path(os.environ.get("DATA_DIR", Path(__file__).parent / "data"))
 LIBRARY = DATA_DIR / "library"
 LIBRARY.mkdir(parents=True, exist_ok=True)
+SEED_LIBRARY = Path(__file__).parent / "seed" / "library"
+SEED_MARKER = DATA_DIR / ".seed-v1-done"
+if SEED_LIBRARY.exists() and not SEED_MARKER.exists():
+    for source in SEED_LIBRARY.rglob("*"):
+        target = LIBRARY / source.relative_to(SEED_LIBRARY)
+        if source.is_dir():
+            target.mkdir(parents=True, exist_ok=True)
+        elif not target.exists():
+            target.parent.mkdir(parents=True, exist_ok=True)
+            shutil.copy2(source, target)
+    SEED_MARKER.touch()
 ALLOWED = {"md", "markdown", "pdf", "png", "jpg", "jpeg", "gif", "webp", "txt", "docx", "pptx", "xlsx", "zip"}
 TAGS = {
     "p", "br", "hr", "h1", "h2", "h3", "h4", "blockquote", "ul", "ol", "li",
@@ -26,7 +38,7 @@ TAGS = {
 
 def safe_path(rel=""):
     clean = PurePosixPath(rel.replace("\\", "/"))
-    if clean.is_absolute() or any(part in ("..", ".") for part in clean.parts):
+    if clean.is_absolute() or any(part in ("..", ".") or part.startswith(".") for part in clean.parts):
         abort(404)
     result = (LIBRARY / Path(*clean.parts)).resolve()
     if result != LIBRARY.resolve() and LIBRARY.resolve() not in result.parents:
@@ -126,6 +138,21 @@ def upload():
             saved += 1
     flash(f"已上传 {saved} 个文件。", "success" if saved else "error")
     return redirect(url_for("index", folder=folder))
+
+
+@app.route("/edit/<path:rel>", methods=["GET", "POST"])
+def edit_file(rel):
+    if not logged_in():
+        abort(403)
+    path = safe_path(rel)
+    if not path.is_file() or path.suffix.lower() not in {".md", ".markdown"}:
+        abort(404)
+    if request.method == "POST":
+        check_csrf()
+        path.write_text(request.form.get("content", ""), encoding="utf-8")
+        flash("笔记已保存。", "success")
+        return redirect(url_for("view_file", rel=rel))
+    return render_template("edit.html", name=path.name, rel=rel, content=path.read_text(encoding="utf-8", errors="replace"))
 
 
 @app.get("/view/<path:rel>")

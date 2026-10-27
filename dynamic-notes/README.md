@@ -2,6 +2,8 @@
 
 这是与 Zensical/GitHub Pages 静态主站分开的动态 Flask 应用。管理员可登录、创建目录、多文件上传、拖动排序、删除文件；公开访客可浏览目录、在线打开 Markdown、PDF 与图片。
 
+`seed/library/` 是首次部署时导入的初始内容。导入完成后，服务在数据盘创建初始化标记；后续部署会保留线上修改与删除，不会重新覆盖初始内容。
+
 ## 部署到 Render
 
 在 Render 新建 Blueprint 并选择此仓库，根目录的 `render.yaml` 会创建独立 Web 服务。创建服务时，在 Render 的环境变量设置页面填写：
