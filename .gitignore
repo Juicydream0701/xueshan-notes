@@ -8,4 +8,8 @@ Thumbs.db
 .env
 .env.*
 private/
+dynamic-notes/.venv/
+dynamic-notes/data/
+dynamic-notes/preview-data/
+dynamic-notes/__pycache__/
 _preview/

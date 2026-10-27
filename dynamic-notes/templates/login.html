@@ -1,0 +1,5 @@
+{% extends "base.html" %}{% block title %}管理员登录 · 雪山资料库{% endblock %}
+{% block content %}
+<section class="login-shell"><div class="login-art"><div class="sun"></div><div class="peak peak-a"></div><div class="peak peak-b"></div><div class="slogan"><span>PRIVATE WORKSPACE</span><h2>让每一份<br>资料都有归处</h2><p>登录后管理笔记、课程文件与学习资料。</p></div></div>
+<div class="login-card"><div class="eyebrow">ADMIN ACCESS</div><h1>欢迎回来</h1><p class="muted">请使用管理员账号登录资料后台</p><form method="post" class="login-form"><label>账号<input name="username" autocomplete="username" required placeholder="输入管理员账号"></label><label>密码<input name="password" type="password" autocomplete="current-password" required placeholder="输入管理员密码"></label><button class="primary" type="submit">登录后台 <span>→</span></button></form><p class="secure-note">仅授权管理员可添加和管理资料</p></div></section>
+{% endblock %}
