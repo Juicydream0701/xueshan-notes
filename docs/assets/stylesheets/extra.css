@@ -31,7 +31,11 @@
 
 body { font-family: "Segoe UI", "Microsoft YaHei", sans-serif; }
 .md-header, .md-tabs { background: var(--pine-deep); }
+.md-header, .md-header__title, .md-header__title .md-ellipsis,
+.md-header__topic, .md-header__button, .md-header__button .md-icon,
+.md-tabs__link { color: #fff; }
 .md-header__title { font-weight: 700; letter-spacing: .04em; }
+.md-tabs__link:hover, .md-tabs__link--active { color: #fff; }
 .md-main__inner { margin-top: 1.2rem; }
 .md-content__inner { max-width: 980px; }
 .md-typeset h1, .md-typeset h2, .md-typeset h3 { color: var(--pine-deep); font-weight: 750; }

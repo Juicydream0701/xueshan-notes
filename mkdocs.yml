@@ -94,7 +94,24 @@ nav:
   - 首页: index.md
   - 学习笔记:
       - notes/index.md
-      - 课程笔记: notes/courses/index.md
+      - 课程笔记:
+          - notes/courses/index.md
+          - 01 电路原理: notes/courses/circuit-theory/index.md
+          - 02 模拟电子技术: notes/courses/analog-electronics/index.md
+          - 03 数字电子技术: notes/courses/digital-electronics/index.md
+          - 04 电网络: notes/courses/electrical-networks/index.md
+          - 05 信号分析与处理: notes/courses/signal-analysis/index.md
+          - 06 微机原理与应用:
+              - notes/courses/microcomputer/index.md
+              - 8051 基础结构: notes/courses/microcomputer/architecture.md
+              - 8051 指令系统: notes/courses/microcomputer/instruction-set.md
+              - 汇编程序设计: notes/courses/microcomputer/assembly.md
+              - 中断系统: notes/courses/microcomputer/interrupts.md
+              - 定时器与计数器: notes/courses/microcomputer/timers.md
+              - 串行通信: notes/courses/microcomputer/serial.md
+              - 接口扩展: notes/courses/microcomputer/interfaces.md
+              - Cortex-M 与 STM32: notes/courses/microcomputer/cortex-m.md
+          - 07 工程电磁场与波: notes/courses/electromagnetics/index.md
       - 专题学习: notes/topics/index.md
       - 工具与方法:
           - notes/tools/index.md
