@@ -2,20 +2,16 @@ services:
   - type: web
     name: xueshan-notes-library
     runtime: python
-    plan: starter
+    plan: free
     rootDir: dynamic-notes
     buildCommand: pip install -r requirements.txt
     startCommand: gunicorn app:app
     healthCheckPath: /health
-    disk:
-      name: notes-files
-      mountPath: /var/data
-      sizeGB: 1
     envVars:
       - key: PYTHON_VERSION
         value: 3.12.8
       - key: DATA_DIR
-        value: /var/data
+        value: /tmp/xueshan-notes-data
       - key: ADMIN_USERNAME
         value: xueshan
       - key: ADMIN_PASSWORD
