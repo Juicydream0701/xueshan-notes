@@ -114,6 +114,11 @@ body { font-family: "Segoe UI", "Microsoft YaHei", sans-serif; }
   border-color: rgba(155,198,177,.18);
 }
 [data-md-color-scheme="slate"] .home-stat strong { color: #d9e9df; }
+.home-assistant-spotlight { display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin: -1rem 0 2rem; padding: 1rem 1.2rem; border: 1px solid rgba(217,155,76,.35); border-radius: 16px; background: linear-gradient(120deg, rgba(217,155,76,.14), rgba(255,255,255,.4)); }
+.home-assistant-spotlight h2 { margin: 0; color: var(--pine-deep); font-size: 1.15rem; }
+.home-assistant-spotlight p { margin: .2rem 0 0; max-width: 42rem; color: var(--md-default-fg-color--light); font-size: .9rem; }
+[data-md-color-scheme="slate"] .home-assistant-spotlight { background: linear-gradient(120deg, rgba(217,155,76,.2), rgba(45,81,72,.35)); }
+[data-md-color-scheme="slate"] .home-assistant-spotlight h2 { color: #d9e9df; }
 .home-grid--featured { margin-top: 1rem; }
 .home-card--featured {
   min-height: 12rem;
@@ -179,6 +184,7 @@ body { font-family: "Segoe UI", "Microsoft YaHei", sans-serif; }
 }
 @media (max-width: 760px) {
   .home-stats { grid-template-columns: 1fr; margin: -1rem 0 2rem; }
+  .home-assistant-spotlight { align-items: flex-start; flex-direction: column; }
   .home-stat { padding: .8rem 1rem; }
   .home-columns { grid-template-columns: 1fr; margin-top: 1.5rem; }
   .home-panel { padding: 1.15rem 1.1rem; }
@@ -271,6 +277,11 @@ body.focus-mode .floating-tools__toggle { background: var(--sun); color: #27352f
 .floating-ai__welcome { color: var(--md-default-fg-color--light); background: rgba(53,114,102,.07); }
 .floating-ai__message--user { margin-left: 12%; color: #fff; background: var(--pine); }
 .floating-ai__message--assistant { margin-right: 6%; background: rgba(53,114,102,.1); }
+.floating-ai__message p { margin: .35rem 0; }
+.floating-ai__message h3, .floating-ai__message h4 { margin: .45rem 0 .25rem; color: var(--pine-deep); }
+[data-md-color-scheme="slate"] .floating-ai__message h3, [data-md-color-scheme="slate"] .floating-ai__message h4 { color: #d9e9df; }
+.floating-ai__message ul { margin: .35rem 0; padding-left: 1.25rem; }
+.floating-ai__message code { padding: .08rem .25rem; border-radius: 4px; background: rgba(53,114,102,.13); }
 .floating-ai__message hr { border: 0; border-top: 1px solid rgba(53,114,102,.2); }
 .floating-ai__message a { word-break: break-word; }
 .floating-ai__file-list { margin: .4rem 0 0; padding-left: 1.1rem; }

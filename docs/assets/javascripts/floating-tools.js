@@ -214,10 +214,6 @@
     root.querySelector("[data-scroll-top]").addEventListener("click", function () {
       window.scrollTo({ top: 0, behavior: "smooth" });
     });
-    root.querySelector("[data-ai-open]").addEventListener("click", function () {
-      openAssistant();
-    });
-
     document.addEventListener("keydown", function (event) {
       if (event.altKey && event.key.toLowerCase() === "f") {
         event.preventDefault();
@@ -539,10 +535,51 @@
     item.innerHTML = html || escapeHtml(content).replace(/\n/g, "<br>");
     messages.appendChild(item);
     messages.scrollTop = messages.scrollHeight;
+    if (role === "assistant") typesetAssistant(item);
   }
 
-  function assistantText(text) {
-    return escapeHtml(text).replace(/(https?:\/\/[^\s<]+)/g, '<a href="$1" target="_blank" rel="noopener">$1</a>').replace(/\n/g, "<br>");
+  function renderAssistantMarkdown(text) {
+    var math = [];
+    var source = String(text || "")
+      .replace(/\$\$[\s\S]*?\$\$/g, function (value) { math.push(value); return "\u0000MATH" + (math.length - 1) + "\u0000"; })
+      .replace(/\\\[[\s\S]*?\\\]/g, function (value) { math.push(value); return "\u0000MATH" + (math.length - 1) + "\u0000"; })
+      .replace(/\\\([\s\S]*?\\\)/g, function (value) { math.push(value); return "\u0000MATH" + (math.length - 1) + "\u0000"; })
+      .replace(/\$([^$\n]+)\$/g, function (value) { math.push(value); return "\u0000MATH" + (math.length - 1) + "\u0000"; });
+
+    function inline(value) {
+      return escapeHtml(value)
+        .replace(/`([^`]+)`/g, "<code>$1</code>")
+        .replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>")
+        .replace(/\*([^*]+)\*/g, "<em>$1</em>")
+        .replace(/(https?:\/\/[^\s<]+)/g, '<a href="$1" target="_blank" rel="noopener">$1</a>');
+    }
+
+    var html = "";
+    var inList = false;
+    source.split(/\r?\n/).forEach(function (line) {
+      var trimmed = line.trim();
+      if (/^[-*]\s+/.test(trimmed)) {
+        if (!inList) { html += "<ul>"; inList = true; }
+        html += "<li>" + inline(trimmed.replace(/^[-*]\s+/, "")) + "</li>";
+      } else {
+        if (inList) { html += "</ul>"; inList = false; }
+        if (!trimmed) return;
+        if (/^###\s+/.test(trimmed)) html += "<h4>" + inline(trimmed.replace(/^###\s+/, "")) + "</h4>";
+        else if (/^##\s+/.test(trimmed)) html += "<h3>" + inline(trimmed.replace(/^##\s+/, "")) + "</h3>";
+        else html += "<p>" + inline(line) + "</p>";
+      }
+    });
+    if (inList) html += "</ul>";
+    math.forEach(function (value, index) {
+      html = html.replace("\u0000MATH" + index + "\u0000", escapeHtml(value));
+    });
+    return html;
+  }
+
+  function typesetAssistant(element) {
+    if (window.MathJax && window.MathJax.typesetPromise) {
+      window.MathJax.typesetPromise([element]).catch(function () {});
+    }
   }
 
   async function askDeepSeek(config, query, context) {
@@ -680,7 +717,7 @@
         } else {
           status.textContent = "已找到资料，正在请求 DeepSeek…";
           var answer = await askDeepSeek(activeConfig, query, contextForAi(result));
-          appendAssistantMessage(messages, "assistant", answer, assistantText(answer) + "<hr>" + linksHtml);
+          appendAssistantMessage(messages, "assistant", answer, renderAssistantMarkdown(answer) + "<hr>" + linksHtml);
         }
         status.textContent = "完成";
       } catch (error) {
@@ -690,9 +727,21 @@
     });
   }
 
+  function bindAssistantTriggers() {
+    document.querySelectorAll("[data-ai-open]").forEach(function (button) {
+      if (button.getAttribute("data-ai-bound") === "true") return;
+      button.setAttribute("data-ai-bound", "true");
+      button.addEventListener("click", function (event) {
+        if (button.tagName === "A") event.preventDefault();
+        openAssistant();
+      });
+    });
+  }
+
   function boot() {
     createTools();
     createAssistant();
+    bindAssistantTriggers();
     enhancePdfReaders();
     enhancePdfLinks();
   }
