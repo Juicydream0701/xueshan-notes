@@ -46,6 +46,17 @@
 
 </div>
 
+<div class="home-assistant-spotlight" markdown>
+
+<div>
+<p class="home-card-label">新入口</p>
+<h2>AI 笔记助手</h2>
+<p>连接公开的 GitHub 笔记仓库，查找文件位置、网站链接，并围绕课程笔记进行问答。</p>
+</div>
+
+<button type="button" class="md-button md-button--primary" data-ai-open>打开 AI 助手</button>
+</div>
+
 ## 先从这里开始
 
 <div class="home-grid home-grid--featured" markdown>
