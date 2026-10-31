@@ -4,13 +4,14 @@
 
 | 编号 | 课程 | 内容 |
 | --- | --- | --- |
-| 01 | [电路原理](circuit-theory/index.md) | 元件与定律、网络定理、稳态、暂态、三相 |
-| 02 | [模拟电子技术](analog-electronics/index.md) | 半导体、放大、差分、反馈、振荡与电源 |
-| 03 | [数字电子技术](digital-electronics/index.md) | 逻辑化简、组合逻辑、时序、计数与转换 |
-| 04 | [电网络](electrical-networks/index.md) | 拉普拉斯、网络函数、矩阵、双口与传输线 |
-| 05 | [信号分析与处理](signal-analysis/index.md) | 系统、频谱、DFT/FFT、Z 变换、采样与滤波 |
-| 06 | [微机原理与应用](microcomputer/index.md) | 8051、汇编、中断、定时、接口与 Cortex-M |
-| 07 | [工程电磁场与波](electromagnetics/index.md) | 静电、恒定场、时变场、平面波与传输 |
+| 01 | [电路与电子技术Ⅰ：电路部分](circuit-theory/index.md) | 秋学期电路模型、网络定理、稳态、暂态、三相 |
+| 02 | [电路与电子技术Ⅰ：模拟部分](analog-electronics/index.md) | 冬学期器件、放大、差分、反馈、振荡与电源 |
+| 03 | [半导体物理](semiconductor-physics/index.md) | 能带、统计、输运、非平衡载流子、pn 结与接触 |
+| 04 | [数字电子技术](digital-electronics/index.md) | 逻辑化简、组合逻辑、时序、计数与转换 |
+| 05 | [电网络](electrical-networks/index.md) | 拉普拉斯、网络函数、矩阵、双口与传输线 |
+| 06 | [信号分析与处理](signal-analysis/index.md) | 系统、频谱、DFT/FFT、Z 变换、采样与滤波 |
+| 07 | [微机原理与应用](microcomputer/index.md) | 8051、汇编、中断、定时、接口与 Cortex-M |
+| 08 | [工程电磁场与波](electromagnetics/index.md) | 静电、恒定场、时变场、平面波与传输 |
 
 ## 基础课与数学工具
 
@@ -34,8 +35,9 @@
 
 | 课程 | 深入学习 |
 | --- | --- |
-| 电路原理 | [分析流程、暂态与考前复习](circuit-theory/study-guide.md) |
-| 模拟电子技术 | [静态工作点、小信号与反馈分析](analog-electronics/study-guide.md) |
+| 电路与电子技术Ⅰ：电路 | [分析流程、暂态与考前复习](circuit-theory/study-guide.md) |
+| 电路与电子技术Ⅰ：模拟 | [静态工作点、小信号与反馈分析](analog-electronics/study-guide.md) |
+| 半导体物理 | [八章主线与应试公式](semiconductor-physics/study-guide.md) |
 | 数字电子技术 | [组合逻辑、时序逻辑与设计步骤](digital-electronics/study-guide.md) |
 | 电网络 | [复频域、网络函数与二端口](electrical-networks/study-guide.md) |
 | 信号分析与处理 | [系统分析、变换选型与采样](signal-analysis/study-guide.md) |
