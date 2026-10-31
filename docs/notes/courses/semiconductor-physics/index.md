@@ -39,6 +39,8 @@ $$L=\sqrt{D\tau},\qquad V_{bi}=\frac{kT}{q}\ln\frac{N_AN_D}{n_i^2},\qquad I=I_S\
 
 ## 精选资料
 
+如果想在笔记和原始课件之间来回对照，可以打开[站内 PDF 阅读器](../../tools/pdf-reader.md)，直接选择章节并在当前页面阅读。
+
 - [第 1 章：晶体结构的各向异性](resources/semiconductor-chapter-1.pdf)
 - [第 2 章：电子状态、能带与有效质量](resources/semiconductor-chapter-2.pdf)
 - [第 3 章：杂质和缺陷能级](resources/semiconductor-chapter-3.pdf)
