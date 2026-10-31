@@ -12,6 +12,12 @@
       <option value="../../courses/semiconductor-physics/resources/semiconductor-chapter-7.pdf#view=FitH">半导体物理 · 第 7 章：pn 结</option>
       <option value="../../courses/semiconductor-physics/resources/semiconductor-chapter-8.pdf#view=FitH">半导体物理 · 第 8 章：金属和半导体接触</option>
       <option value="../../courses/circuit-theory/resources/circuit-autumn-summary.pdf#view=FitH">电路与电子技术Ⅰ · 电路总结</option>
+      <option value="../../courses/circuit-theory/resources/circuit-equation-solution.pdf#view=FitH">电路原理 · 电路方程解答</option>
+      <option value="../../courses/circuit-theory/resources/circuit-theorems-class.pdf#view=FitH">电路原理 · 电路定理课堂资料</option>
+      <option value="../../courses/circuit-theory/resources/circuit-transient-first-order.pdf#view=FitH">电路原理 · 一阶暂态</option>
+      <option value="../../courses/circuit-theory/resources/circuit-nonsinusoidal-steady-state.pdf#view=FitH">电路原理 · 非正弦稳态</option>
+      <option value="../../courses/circuit-theory/resources/circuit-three-phase-solutions.pdf#view=FitH">电路原理 · 三相补充解答</option>
+      <option value="../../courses/circuit-theory/resources/circuit-theorems-class.pdf#view=FitH">电路原理 · 电路定理</option>
       <option value="../../courses/circuit-theory/resources/analog-big-problem-review.pdf#view=FitH">电路与电子技术Ⅰ · 模电大题整理</option>
       <option value="../../courses/circuit-theory/resources/analog-concept-review.pdf#view=FitH">电路与电子技术Ⅰ · 模电概念整理</option>
       <option value="../../courses/circuit-theory/resources/analog-final-exam-i.pdf#view=FitH">电路与电子技术Ⅰ · 模电期末卷</option>
