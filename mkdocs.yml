@@ -83,6 +83,7 @@ extra_css:
 
 extra_javascript:
   - assets/javascripts/mathjax-config.js
+  - assets/javascripts/floating-tools.js
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 extra:
@@ -151,6 +152,7 @@ nav:
           - 资料链接索引: notes/campus/resource-index.md
       - 工具与方法:
           - notes/tools/index.md
+          - PDF 阅读器: notes/tools/pdf-reader.md
           - Markdown 写作入门: notes/tools/markdown.md
   - 资料管理: managed/index.md
   - 生活记录:
