@@ -130,13 +130,37 @@ nav:
           - 08 工程电磁场与波:
               - notes/courses/electromagnetics/index.md
               - 场方程与传播: notes/courses/electromagnetics/study-guide.md
+          - 09 电力电子技术Ⅰ:
+              - notes/courses/power-electronics/index.md
+              - 器件、整流、斩波与逆变专题: notes/courses/power-electronics/topics.md
+          - 10 控制理论（乙）:
+              - notes/courses/control-theory/index.md
+              - 建模、时域、频域与校正: notes/courses/control-theory/topics.md
+          - 11 计算机网络与通信:
+              - notes/courses/computer-networks/index.md
+              - 分层、寻址、可靠性与应用: notes/courses/computer-networks/topics.md
+          - 12 电子测量与智能仪器:
+              - notes/courses/measurement-instruments/index.md
+              - 测量链、采样与仪器实验: notes/courses/measurement-instruments/topics.md
+          - 13 宽带无线通信技术设计与实践:
+              - notes/courses/wireless-communications/index.md
       - 基础课与数学工具:
           - notes/courses/foundations/index.md
-          - 四个学期的课程地图: notes/courses/semester-map.md
+          - 五个学期的课程地图: notes/courses/semester-map.md
           - C 程序设计基础及实验: notes/courses/foundations/c-programming/index.md
           - 线性代数（甲）: notes/courses/foundations/linear-algebra/index.md
+          - 微积分（甲）I–II:
+              - notes/courses/foundations/calculus/index.md
+              - 极限、连续与一元函数: notes/courses/foundations/calculus/limits-continuity.md
+              - 导数、微分与中值定理: notes/courses/foundations/calculus/derivatives.md
+              - 一元积分与积分应用: notes/courses/foundations/calculus/integrals.md
+              - 多元函数、向量与空间几何: notes/courses/foundations/calculus/multivariable.md
+              - 重积分、曲线积分与曲面积分: notes/courses/foundations/calculus/vector-integrals.md
+              - 级数与积分变换: notes/courses/foundations/calculus/series.md
           - 大学物理（甲）Ⅰ: notes/courses/foundations/college-physics/index.md
+          - 大学物理（甲）Ⅱ: notes/courses/foundations/college-physics-2/index.md
           - 常微分方程: notes/courses/foundations/ordinary-differential-equations/index.md
+          - 复变函数与积分变换: notes/courses/foundations/complex-analysis/index.md
           - 人工智能基础（A）: notes/courses/foundations/ai-foundations/index.md
           - 概率论与数理统计: notes/courses/foundations/probability-statistics/index.md
           - 离散数学: notes/courses/foundations/discrete-mathematics/index.md
