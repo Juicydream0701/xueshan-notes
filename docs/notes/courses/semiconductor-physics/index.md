@@ -25,15 +25,33 @@
 
 在热平衡、非简并近似下，先用本征关系和质量作用定律连接载流子：
 
-$$n_0p_0=n_i^2,\qquad n_0=N_Ce^{-(E_C-E_F)/kT},\qquad p_0=N_Ve^{-(E_F-E_V)/kT}.$$
+
+
+$$
+n_0p_0=n_i^2,\qquad n_0=N_Ce^{-(E_C-E_F)/kT},\qquad p_0=N_Ve^{-(E_F-E_V)/kT}.
+$$
+
+
 
 再用输运关系连接电流：
 
-$$\sigma=q(n\mu_n+p\mu_p),\qquad J_{drift}=\sigma E,\qquad \frac{D_n}{\mu_n}=\frac{D_p}{\mu_p}=\frac{kT}{q}.$$
+
+
+$$
+\sigma=q(n\mu_n+p\mu_p),\qquad J_{drift}=\sigma E,\qquad \frac{D_n}{\mu_n}=\frac{D_p}{\mu_p}=\frac{kT}{q}.
+$$
+
+
 
 最后把局部材料参数推进到器件：
 
-$$L=\sqrt{D\tau},\qquad V_{bi}=\frac{kT}{q}\ln\frac{N_AN_D}{n_i^2},\qquad I=I_S\left(e^{qV/kT}-1\right).$$
+
+
+$$
+L=\sqrt{D\tau},\qquad V_{bi}=\frac{kT}{q}\ln\frac{N_AN_D}{n_i^2},\qquad I=I_S\left(e^{qV/kT}-1\right).
+$$
+
+
 
 每条公式都要先写假设：热平衡还是非平衡、非简并还是简并、小注入还是大注入、突变结还是缓变结。
 

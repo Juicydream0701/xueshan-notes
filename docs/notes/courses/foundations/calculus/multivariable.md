@@ -10,11 +10,23 @@
 
 偏导数是在固定其余变量时的瞬时变化率：
 
-$$f_x(x,y)=\lim_{h\to0}\frac{f(x+h,y)-f(x,y)}h,\qquad f_y(x,y)=\lim_{h\to0}\frac{f(x,y+h)-f(x,y)}h.$$
+
+
+$$
+f_x(x,y)=\lim_{h\to0}\frac{f(x+h,y)-f(x,y)}h,\qquad f_y(x,y)=\lim_{h\to0}\frac{f(x,y+h)-f(x,y)}h.
+$$
+
+
 
 偏导存在不一定保证函数连续，更不一定保证可微。工程题中通常通过连续偏导的充分条件判断可微，再用全微分近似误差：
 
-$$df=f_x\,dx+f_y\,dy.$$
+
+
+$$
+df=f_x\,dx+f_y\,dy.
+$$
+
+
 
 若测量误差分别为 $\Delta x,\Delta y$，一阶误差估计可写成 $|df|$，而相对误差要再除以 $|f|$。这比直接套“误差相加”更能体现各变量的灵敏度。
 
@@ -22,11 +34,23 @@ $$df=f_x\,dx+f_y\,dy.$$
 
 若 $z=f(x,y)$，$x=x(t),y=y(t)$，则
 
-$$\frac{dz}{dt}=f_x\frac{dx}{dt}+f_y\frac{dy}{dt}.$$
+
+
+$$
+\frac{dz}{dt}=f_x\frac{dx}{dt}+f_y\frac{dy}{dt}.
+$$
+
+
 
 若 $x=x(u,v),y=y(u,v)$，则对 $u$ 的偏导为 $z_u=f_xx_u+f_yy_u$。方向导数用单位向量 $\mathbf u$ 表示：
 
-$$D_{\mathbf u}f=\nabla f\cdot\mathbf u,\qquad \nabla f=(f_x,f_y).$$
+
+
+$$
+D_{\mathbf u}f=\nabla f\cdot\mathbf u,\qquad \nabla f=(f_x,f_y).
+$$
+
+
 
 梯度方向是函数增长最快的方向，最大方向导数的大小为 $|\nabla f|$。做题时先把给定方向向量单位化，漏掉这一步会导致结果按比例错误。
 
@@ -34,7 +58,13 @@ $$D_{\mathbf u}f=\nabla f\cdot\mathbf u,\qquad \nabla f=(f_x,f_y).$$
 
 无约束极值先求驻点 $f_x=f_y=0$，再用 Hessian 判别式
 
-$$D=f_{xx}f_{yy}-f_{xy}^2.$$
+
+
+$$
+D=f_{xx}f_{yy}-f_{xy}^2.
+$$
+
+
 
 当 $D>0$ 且 $f_{xx}>0$ 为极小，$D>0$ 且 $f_{xx}<0$ 为极大，$D<0$ 为鞍点，$D=0$ 时需要回到定义或换方法。闭区域最值还必须检查边界，不能只看内部驻点。
 
@@ -44,7 +74,13 @@ $$D=f_{xx}f_{yy}-f_{xy}^2.$$
 
 空间曲线 $\mathbf r(t)=(x(t),y(t),z(t))$ 的切向量为 $\mathbf r'(t)$，弧长
 
-$$s=\int_a^b|\mathbf r'(t)|\,dt.$$
+
+
+$$
+s=\int_a^b|\mathbf r'(t)|\,dt.
+$$
+
+
 
 曲面可写成参数式 $\mathbf r(u,v)$，法向量由 $\mathbf r_u\times\mathbf r_v$ 给出。曲面面积元素是 $|\mathbf r_u\times\mathbf r_v|\,du\,dv$。计算前先确认参数区域是否一一覆盖曲面，避免重复计数。
 

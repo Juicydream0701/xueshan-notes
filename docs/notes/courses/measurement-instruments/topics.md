@@ -6,7 +6,13 @@
 
 误差传递常用一阶近似：若 $y=f(x_1,\ldots,x_n)$，则
 
-$$u_y^2\approx\sum_i\left(\frac{\partial f}{\partial x_i}\right)^2u_i^2,$$
+
+
+$$
+u_y^2\approx\sum_i\left(\frac{\partial f}{\partial x_i}\right)^2u_i^2,
+$$
+
+
 
 独立变量可按方差合成，相关变量还要加入协方差项。写实验结论时应指出哪个分量主导不确定度，而不是只给一个百分比。
 

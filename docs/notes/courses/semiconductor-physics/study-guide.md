@@ -25,33 +25,81 @@
 
 ### 载流子统计
 
-$$n_0p_0=n_i^2$$
 
-$$n_0=N_Ce^{-(E_C-E_F)/kT},\qquad p_0=N_Ve^{-(E_F-E_V)/kT}$$
+
+$$
+n_0p_0=n_i^2
+$$
+
+
+
+
+
+$$
+n_0=N_Ce^{-(E_C-E_F)/kT},\qquad p_0=N_Ve^{-(E_F-E_V)/kT}
+$$
+
+
 
 非简并 n 型且 $N_D\gg n_i$ 时，常近似 $n_0\approx N_D$；p 型且 $N_A\gg n_i$ 时，常近似 $p_0\approx N_A$，少数载流子再由质量作用定律得到。若补偿、低温冻结或重掺杂明显，必须停止这个近似并回到电中性方程。
 
 ### 输运与扩散
 
-$$\sigma=q(n\mu_n+p\mu_p),\qquad \rho=1/\sigma$$
 
-$$J_{drift}=\sigma E,\qquad \frac{D_n}{\mu_n}=\frac{D_p}{\mu_p}=\frac{kT}{q}$$
 
-$$L_n=\sqrt{D_n\tau_n},\qquad L_p=\sqrt{D_p\tau_p}$$
+$$
+\sigma=q(n\mu_n+p\mu_p),\qquad \rho=1/\sigma
+$$
+
+
+
+
+
+$$
+J_{drift}=\sigma E,\qquad \frac{D_n}{\mu_n}=\frac{D_p}{\mu_p}=\frac{kT}{q}
+$$
+
+
+
+
+
+$$
+L_n=\sqrt{D_n\tau_n},\qquad L_p=\sqrt{D_p\tau_p}
+$$
+
+
 
 扩散电流的符号要结合电子/空穴定义检查；不要只看浓度梯度的方向就直接写传统电流方向。
 
 ### pn 结
 
-$$V_{bi}=\frac{kT}{q}\ln\frac{N_AN_D}{n_i^2}$$
 
-$$I=I_S\left(e^{qV/kT}-1\right)$$
+
+$$
+V_{bi}=\frac{kT}{q}\ln\frac{N_AN_D}{n_i^2}
+$$
+
+
+
+
+
+$$
+I=I_S\left(e^{qV/kT}-1\right)
+$$
+
+
 
 正偏时势垒降低、耗尽层变窄；反偏时势垒升高、耗尽层变宽。若题目问结电容或击穿，必须先判断是耗尽层电容、扩散电容、雪崩击穿还是齐纳击穿。
 
 ### 金属—半导体接触
 
-$$W_m=E_0-E_{Fm},\qquad W_s=E_0-E_{Fs},\qquad \chi=E_0-E_C$$
+
+
+$$
+W_m=E_0-E_{Fm},\qquad W_s=E_0-E_{Fs},\qquad \chi=E_0-E_C
+$$
+
+
 
 接触题的安全做法是“先画接触前能级，再让费米能级对齐，最后标能带弯曲和界面电荷”。不同教材对势垒高度和接触电势的正负定义可能不同，符号必须跟随题目能级图。
 

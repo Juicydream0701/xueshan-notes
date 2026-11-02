@@ -16,7 +16,13 @@
 
 对标量场 $f$ 沿曲线 $C$ 积分：
 
-$$\int_C f\,ds=\int_a^b f(\mathbf r(t))|\mathbf r'(t)|\,dt.$$
+
+
+$$
+\int_C f\,ds=\int_a^b f(\mathbf r(t))|\mathbf r'(t)|\,dt.
+$$
+
+
 
 它与方向无关，常用于质量、弧长加权和线密度。参数化时优先选最短的表达式；圆周可用三角参数，分段曲线要逐段相加。若题目给的是 $y=y(x)$，可直接使用 $ds=\sqrt{1+(y')^2}\,dx$。
 
@@ -24,13 +30,25 @@ $$\int_C f\,ds=\int_a^b f(\mathbf r(t))|\mathbf r'(t)|\,dt.$$
 
 向量场 $\mathbf F=(P,Q,R)$ 的线积分为
 
-$$\int_C\mathbf F\cdot d\mathbf r=\int_C P\,dx+Q\,dy+R\,dz.$$
+
+
+$$
+\int_C\mathbf F\cdot d\mathbf r=\int_C P\,dx+Q\,dy+R\,dz.
+$$
+
+
 
 它依赖方向。若存在势函数 $\phi$ 使 $\nabla\phi=\mathbf F$，则场保守，线积分等于 $\phi(B)-\phi(A)$。在单连通区域内，检验保守性的常用条件是旋度为零；但若定义域有孔洞，旋度为零不一定足够，必须额外检查闭合路径。
 
 平面闭曲线可用格林公式把线积分改写为二重积分：
 
-$$\oint_C P\,dx+Q\,dy=\iint_D\left(\frac{\partial Q}{\partial x}-\frac{\partial P}{\partial y}\right)dA.$$
+
+
+$$
+\oint_C P\,dx+Q\,dy=\iint_D\left(\frac{\partial Q}{\partial x}-\frac{\partial P}{\partial y}\right)dA.
+$$
+
+
 
 默认方向是逆时针正向，顺时针要加负号。
 
@@ -38,17 +56,35 @@ $$\oint_C P\,dx+Q\,dy=\iint_D\left(\frac{\partial Q}{\partial x}-\frac{\partial 
 
 第一类曲面积分用面积元素 $dS$，第二类曲面积分表示通量：
 
-$$\iint_S\mathbf F\cdot\mathbf n\,dS.$$
+
+
+$$
+\iint_S\mathbf F\cdot\mathbf n\,dS.
+$$
+
+
 
 闭曲面优先使用高斯公式
 
-$$\iint_{\partial V}\mathbf F\cdot\mathbf n\,dS=\iiint_V\nabla\cdot\mathbf F\,dV.$$
+
+
+$$
+\iint_{\partial V}\mathbf F\cdot\mathbf n\,dS=\iiint_V\nabla\cdot\mathbf F\,dV.
+$$
+
+
 
 开放曲面需要参数化并明确法向方向。若曲面由图形 $z=g(x,y)$ 给出，向上法向面积向量可写成 $(-g_x,-g_y,1)\,dx\,dy$。
 
 斯托克斯公式把曲面上的旋度通量变为边界曲线积分：
 
-$$\iint_S(\nabla\times\mathbf F)\cdot\mathbf n\,dS=\oint_{\partial S}\mathbf F\cdot d\mathbf r.$$
+
+
+$$
+\iint_S(\nabla\times\mathbf F)\cdot\mathbf n\,dS=\oint_{\partial S}\mathbf F\cdot d\mathbf r.
+$$
+
+
 
 应用时先确认边界方向与右手定则一致。
 

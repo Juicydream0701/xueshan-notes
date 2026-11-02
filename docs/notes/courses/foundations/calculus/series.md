@@ -16,9 +16,21 @@
 
 常用基本展开为
 
-$$e^x=\sum_{n=0}^{\infty}\frac{x^n}{n!},\quad \sin x=\sum_{n=0}^{\infty}(-1)^n\frac{x^{2n+1}}{(2n+1)!},$$
 
-$$\ln(1+x)=\sum_{n=1}^{\infty}(-1)^{n-1}\frac{x^n}{n},\quad \frac1{1-x}=\sum_{n=0}^{\infty}x^n.$$
+
+$$
+e^x=\sum_{n=0}^{\infty}\frac{x^n}{n!},\quad \sin x=\sum_{n=0}^{\infty}(-1)^n\frac{x^{2n+1}}{(2n+1)!},
+$$
+
+
+
+
+
+$$
+\ln(1+x)=\sum_{n=1}^{\infty}(-1)^{n-1}\frac{x^n}{n},\quad \frac1{1-x}=\sum_{n=0}^{\infty}x^n.
+$$
+
+
 
 复杂函数尽量通过代换、乘积、求导或积分从基本展开得到。题目若要求某阶近似，要保留到第一个可能影响误差的项；若要求极限，比较最低非零阶即可。
 
@@ -26,7 +38,13 @@ $$\ln(1+x)=\sum_{n=1}^{\infty}(-1)^{n-1}\frac{x^n}{n},\quad \frac1{1-x}=\sum_{n=
 
 周期函数可分解为正弦和余弦的叠加。区间 $[-L,L]$ 上的系数为
 
-$$a_n=\frac1L\int_{-L}^{L}f(x)\cos\frac{n\pi x}{L}\,dx,\quad b_n=\frac1L\int_{-L}^{L}f(x)\sin\frac{n\pi x}{L}\,dx.$$
+
+
+$$
+a_n=\frac1L\int_{-L}^{L}f(x)\cos\frac{n\pi x}{L}\,dx,\quad b_n=\frac1L\int_{-L}^{L}f(x)\sin\frac{n\pi x}{L}\,dx.
+$$
+
+
 
 偶函数只保留余弦项，奇函数只保留正弦项。分段光滑函数在连续点收敛到函数值，在跳跃点收敛到左右极限平均值。利用奇偶性和正交性可以显著减少计算量。
 
@@ -34,7 +52,13 @@ $$a_n=\frac1L\int_{-L}^{L}f(x)\cos\frac{n\pi x}{L}\,dx,\quad b_n=\frac1L\int_{-L
 
 拉普拉斯变换把时域微分方程变成复频域代数方程：
 
-$$\mathcal L\{f'(t)\}=sF(s)-f(0^+),\qquad \mathcal L\{f''(t)\}=s^2F(s)-sf(0^+)-f'(0^+).$$
+
+
+$$
+\mathcal L\{f'(t)\}=sF(s)-f(0^+),\qquad \mathcal L\{f''(t)\}=s^2F(s)-sf(0^+)-f'(0^+).
+$$
+
+
 
 应试时按“写初值—变换两边—整理 $F(s)$—部分分式—逆变换”执行。延迟函数和阶跃函数需要统一的单位阶跃记号，避免把开关时刻误当成函数中心。最终可用初值定理、终值定理或代回原方程检查。
 

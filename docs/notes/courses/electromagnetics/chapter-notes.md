@@ -13,7 +13,13 @@
 ## 专题三：时变场与感应
 
 法拉第定律和安培—麦克斯韦定律分别为
-$$\\nabla\\times\\mathbf E=-\\frac{\\partial\\mathbf B}{\\partial t},\\qquad \\nabla\\times\\mathbf H=\\mathbf J+\\frac{\\partial\\mathbf D}{\\partial t}.$$
+
+
+$$
+\\nabla\\times\\mathbf E=-\\frac{\\partial\\mathbf B}{\\partial t},\\qquad \\nabla\\times\\mathbf H=\\mathbf J+\\frac{\\partial\\mathbf D}{\\partial t}.
+$$
+
+
 感应电动势方向由楞次定律决定，但最后符号仍取决于回路方向约定。位移电流是时变场闭合关系的重要部分，不能在高频问题中省略。
 
 ## 专题四：平面波与界面
