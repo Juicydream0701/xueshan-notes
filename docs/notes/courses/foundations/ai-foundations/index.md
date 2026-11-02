@@ -28,3 +28,7 @@ AI 实验需要编程、概率统计和线性代数；工程问题中的传感�
 [人工智能基础（A）复习笔记](resources/ai-foundations-review-notes.pdf){ .md-button .md-button--primary }
 
 资料来自 2025 春夏课程文件夹，适合在完成实验后做期末框架回顾。
+
+## 深入专题
+
+[AI 基础专题笔记](topics.md)

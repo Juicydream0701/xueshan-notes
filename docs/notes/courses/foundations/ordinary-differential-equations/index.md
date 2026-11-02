@@ -30,3 +30,7 @@
 [常微分方程知识点整理](resources/ode-key-points.pdf){ .md-button .md-button--primary }
 
 资料来自 2025 春夏课程文件夹，适合快速回忆方法分类。
+
+## 深入专题
+
+[常微分方程专题笔记](topics.md)

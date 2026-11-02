@@ -28,3 +28,7 @@
 [大学物理（上）期末复习课件](resources/college-physics-final-review.pdf){ .md-button .md-button--primary }
 
 资料来自 2025 春夏课程文件夹，适合在完整学习后做一次总览。
+
+## 深入专题
+
+[大学物理专题笔记](topics.md)

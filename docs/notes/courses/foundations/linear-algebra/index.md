@@ -26,3 +26,7 @@
 [线性代数复习提纲](resources/linear-algebra-review.pdf){ .md-button .md-button--primary }
 
 资料来自 2024 秋冬课程文件夹，作为考前框架回顾使用。
+
+## 深入专题
+
+[线性代数专题笔记](topics.md)

@@ -147,8 +147,12 @@ nav:
       - 基础课与数学工具:
           - notes/courses/foundations/index.md
           - 五个学期的课程地图: notes/courses/semester-map.md
-          - C 程序设计基础及实验: notes/courses/foundations/c-programming/index.md
-          - 线性代数（甲）: notes/courses/foundations/linear-algebra/index.md
+          - C 程序设计基础及实验:
+              - notes/courses/foundations/c-programming/index.md
+              - 语法、指针、调试与文件: notes/courses/foundations/c-programming/topics.md
+          - 线性代数（甲）:
+              - notes/courses/foundations/linear-algebra/index.md
+              - 矩阵、线性映射与特征值: notes/courses/foundations/linear-algebra/topics.md
           - 微积分（甲）I–II:
               - notes/courses/foundations/calculus/index.md
               - 极限、连续与一元函数: notes/courses/foundations/calculus/limits-continuity.md
@@ -157,13 +161,32 @@ nav:
               - 多元函数、向量与空间几何: notes/courses/foundations/calculus/multivariable.md
               - 重积分、曲线积分与曲面积分: notes/courses/foundations/calculus/vector-integrals.md
               - 级数与积分变换: notes/courses/foundations/calculus/series.md
-          - 大学物理（甲）Ⅰ: notes/courses/foundations/college-physics/index.md
+          - 大学物理（甲）Ⅰ:
+              - notes/courses/foundations/college-physics/index.md
+              - 力学、振动、热学与静电: notes/courses/foundations/college-physics/topics.md
           - 大学物理（甲）Ⅱ: notes/courses/foundations/college-physics-2/index.md
-          - 常微分方程: notes/courses/foundations/ordinary-differential-equations/index.md
+          - 常微分方程:
+              - notes/courses/foundations/ordinary-differential-equations/index.md
+              - 一阶、二阶与系统方程: notes/courses/foundations/ordinary-differential-equations/topics.md
           - 复变函数与积分变换: notes/courses/foundations/complex-analysis/index.md
-          - 人工智能基础（A）: notes/courses/foundations/ai-foundations/index.md
-          - 概率论与数理统计: notes/courses/foundations/probability-statistics/index.md
-          - 离散数学: notes/courses/foundations/discrete-mathematics/index.md
+          - 人工智能基础（A）:
+              - notes/courses/foundations/ai-foundations/index.md
+              - 数据、模型与实验: notes/courses/foundations/ai-foundations/topics.md
+          - 概率论与数理统计:
+              - notes/courses/foundations/probability-statistics/index.md
+              - 随机变量、估计与检验: notes/courses/foundations/probability-statistics/topics.md
+          - 离散数学:
+              - notes/courses/foundations/discrete-mathematics/index.md
+              - 逻辑、图论与组合: notes/courses/foundations/discrete-mathematics/topics.md
+      - 通识与生活学习:
+          - notes/courses/general-education/index.md
+          - 大学英语与表达: notes/courses/general-education/college-english.md
+          - 心理健康与心理咨询: notes/courses/general-education/mental-health.md
+          - 中国近现代史纲要: notes/courses/general-education/modern-china-history.md
+          - 马克思主义基本原理: notes/courses/general-education/marxism.md
+          - 法学基础: notes/courses/general-education/law-basics.md
+          - 创业基础: notes/courses/general-education/entrepreneurship.md
+          - 科学创新方法论及实践: notes/courses/general-education/innovation-methods.md
       - 专题学习: notes/topics/index.md
       - 爱班与成长经验:
           - notes/campus/index.md

@@ -27,3 +27,7 @@
 [概率论与数理统计期末复习课](resources/probability-final-review.pdf){ .md-button .md-button--primary }
 
 资料来自 2025 秋冬课程文件夹，适合在完整学习后查漏补缺。
+
+## 深入专题
+
+[概率统计专题笔记](topics.md)

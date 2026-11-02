@@ -28,3 +28,7 @@
 [离散数学课程回顾与总结](resources/discrete-mathematics-summary.pdf){ .md-button .md-button--primary }
 
 资料来自 2026 春夏课程文件夹，适合用来建立整门课程的结构感。
+
+## 深入专题
+
+[离散数学专题笔记](topics.md)
