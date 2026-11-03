@@ -8,12 +8,12 @@
 
 ## 记下所学，也记下沿途风景。
 
-这里是一个以学习笔记为主的个人空间：把课程里的模型、公式和解题路径整理清楚，也给生活留一块慢慢回看的地方。
+把课程里的模型、公式和解题路径整理清楚，也给生活留一块慢慢回看的地方。
 
 <div class="hero-actions" markdown>
 
-[浏览学习笔记](notes/index.md){ .md-button .md-button--primary }
-[从课程地图开始](notes/courses/index.md){ .md-button }
+[浏览课程笔记](notes/courses/index.md){ .md-button .md-button--primary }
+[打开 PDF 资料中心](notes/tools/pdf-library.md){ .md-button }
 [看看生活记录](life/index.md){ .md-button }
 
 </div>
@@ -25,6 +25,59 @@
 <span class="mountain mountain-front"></span>
 <span class="ridge"></span>
 </div>
+</div>
+
+## 从这里开始
+
+<div class="home-grid home-grid--featured" markdown>
+
+<div class="home-card home-card--featured" markdown>
+
+<p class="home-card-label">课程入口</p>
+
+### 课程笔记
+
+专业课、基础课、实验工程和五个学期地图都从这里进入。
+
+[打开课程总览 →](notes/courses/index.md)
+
+</div>
+
+<div class="home-card home-card--featured" markdown>
+
+<p class="home-card-label">资料入口</p>
+
+### PDF 资料中心
+
+按复习任务查找精选讲义，再用站内阅读器边看边记。
+
+[打开资料中心 →](notes/tools/pdf-library.md)
+
+</div>
+
+<div class="home-card home-card--featured" markdown>
+
+<p class="home-card-label">生活入口</p>
+
+### 生活记录
+
+不追求每天更新，只记录那些让日子变得具体的时刻。
+
+[进入生活栏目 →](life/index.md)
+
+</div>
+
+</div>
+
+<div class="home-assistant-spotlight" markdown>
+
+<div>
+<p class="home-card-label">站内工具</p>
+<h2>AI 笔记助手</h2>
+<p>连接公开的 GitHub 笔记仓库，查找文件、链接和课程知识。</p>
+</div>
+
+<button type="button" class="md-button md-button--primary" data-ai-open>打开 AI 助手</button>
 </div>
 
 <div class="home-stats" markdown>
@@ -46,59 +99,6 @@
 
 </div>
 
-<div class="home-assistant-spotlight" markdown>
-
-<div>
-<p class="home-card-label">新入口</p>
-<h2>AI 笔记助手</h2>
-<p>连接公开的 GitHub 笔记仓库，查找文件位置、网站链接，并围绕课程笔记进行问答。</p>
-</div>
-
-<button type="button" class="md-button md-button--primary" data-ai-open>打开 AI 助手</button>
-</div>
-
-## 先从这里开始
-
-<div class="home-grid home-grid--featured" markdown>
-
-<div class="home-card home-card--featured" markdown>
-
-<p class="home-card-label">最适合第一次访问</p>
-
-### 学习笔记
-
-从课程目录进入专业课、基础课、专题和工具方法。每门课都保留一条可以真正执行的复习路线。
-
-[进入学习笔记 →](notes/index.md)
-
-</div>
-
-<div class="home-card home-card--featured" markdown>
-
-<p class="home-card-label">正在持续补充</p>
-
-### 课程地图
-
-查看五个学期的先修关系，或者直接进入[电路与电子技术Ⅰ](notes/courses/circuit-theory/index.md)和[半导体物理](notes/courses/semiconductor-physics/index.md)。
-
-[打开课程地图 →](notes/courses/semester-map.md)
-
-</div>
-
-<div class="home-card home-card--featured" markdown>
-
-<p class="home-card-label">需要资料时</p>
-
-### 在线资料管理
-
-动态资料库用于补充 PDF、附件和临时资料；静态主站保留整理后的长期笔记，两者各自负责不同的工作。
-
-[进入资料管理 →](managed/index.md)
-
-</div>
-
-</div>
-
 <div class="home-columns" markdown>
 
 <div class="home-panel" markdown>
@@ -106,47 +106,32 @@
 ## 一条适合回看的学习路径
 
 <div class="home-route" markdown>
-
 <span class="home-route-number">01</span>
-<div markdown>
-<strong>先补工具</strong>
-<p>微积分、线性代数、常微分方程、概率统计和 C 语言，解决“看得懂、算得出、写得动”。</p>
-</div>
+<div markdown><strong>先补工具</strong><p>微积分、线性代数、常微分方程、概率统计和 C 语言。</p></div>
 </div>
 
 <div class="home-route" markdown>
-
 <span class="home-route-number">02</span>
-<div markdown>
-<strong>再进专业</strong>
-<p>电路 → 模拟/数字 → 信号/微机 → 电网络与电磁场，按模型复杂度逐层推进。</p>
-</div>
+<div markdown><strong>再进专业</strong><p>电路 → 模拟/数字 → 信号/微机 → 电网络与电磁场。</p></div>
 </div>
 
 <div class="home-route" markdown>
-
 <span class="home-route-number">03</span>
-<div markdown>
-<strong>最后做综合</strong>
-<p>用实验、复习提纲和回忆卷检验公式前提，把“会看”变成“会做”。</p>
-</div>
+<div markdown><strong>最后做综合</strong><p>用实验、复习提纲和回忆卷检验公式前提。</p></div>
 </div>
 
-[查看完整课程地图 →](notes/courses/index.md)
+[查看完整课程地图 →](notes/courses/semester-map.md)
 
 </div>
 
 <div class="home-panel home-panel--accent" markdown>
 
-## 最近值得打开的页面
+## 最近值得打开
 
 - [半导体物理：八章主线笔记](notes/courses/semiconductor-physics/chapter-notes.md)
 - [电路与电子技术Ⅰ：模拟应试路线](notes/courses/analog-electronics/study-guide.md)
 - [微机原理：复习路线与综合题](notes/courses/microcomputer/study-guide.md)
 - [学习方法与导师团](notes/campus/study-methods.md)
-- [Markdown 写作入门](notes/tools/markdown.md)
-
-<p class="home-panel-note">先选一页读十分钟，再决定下一步整理什么。</p>
 
 </div>
 
@@ -154,42 +139,7 @@
 
 ## 这里还记录着什么？
 
-<div class="home-grid" markdown>
-
-<div class="home-card" markdown>
-
-### 爱班与成长
-
-课程经验、学期实验节奏、选课与通识课、数学建模备赛和 AI 实验实践，都整理在这条支线上。
-
-[浏览成长资料 →](notes/campus/index.md)
-
-</div>
-
-<div class="home-card" markdown>
-
-### 生活记录
-
-不追求每天更新，只记录那些让日子变得具体的时刻。适合从归档或主题开始慢慢浏览。
-
-[进入生活栏目 →](life/index.md)
-
-</div>
-
-<div class="home-card" markdown>
-
-### 写作方法
-
-本站使用 Markdown 编写，写完保存、提交，网站会自动更新。以后也会在这里记录自己的整理方法。
-
-[查看写作入门 →](notes/tools/markdown.md)
-
-</div>
-
-</div>
-
-!!! tip "给未来的自己"
-    先把内容写下来，再慢慢整理。一个持续生长的笔记网站，比一次性做得很漂亮更重要。
+爱班与成长经验、选课、数学建模、AI 实验实践和 Markdown 写作方法，集中放在[学习路径](notes/index.md)中。
 
 ## 和黎黎
 
@@ -202,12 +152,15 @@
 
 </div>
 
+!!! tip "给未来的自己"
+    先把内容写下来，再慢慢整理。一个持续生长的笔记网站，比一次性做得很漂亮更重要。
+
 ## 网站地图
 
 | 栏目 | 用途 |
 | --- | --- |
-| [学习笔记](notes/index.md) | 课程、专题、工具与方法 |
-| [爱班与成长经验](notes/campus/index.md) | 课程实验、转专业、数模、选课和学习方法 |
+| [课程笔记](notes/courses/index.md) | 专业课、基础课、实验与工程实践 |
+| [学习路径](notes/index.md) | 专题、成长经验和学习方法 |
+| [资料与工具](notes/tools/pdf-library.md) | PDF 资料、阅读器和 Markdown 写作 |
 | [生活记录](life/index.md) | 旅行、日常、阅读和随想 |
 | [资料管理](managed/index.md) | 在线资料与附件管理 |
-| [关于](about.md) | 这个网站的使用说明 |

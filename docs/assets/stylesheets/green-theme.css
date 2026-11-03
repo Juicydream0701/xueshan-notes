@@ -462,6 +462,16 @@ body.focus-mode .floating-tools__toggle { background: var(--sun); color: #27352f
 .md-nav--primary .md-nav__title { padding-bottom: .45rem; }
 .md-nav__item .md-nav__link { margin-top: .08rem; padding-top: .32rem; padding-bottom: .32rem; }
 .md-content__inner { padding-top: .5rem; }
+.md-typeset h1 { margin: .5rem 0 1.6rem; padding-bottom: .65rem; border-bottom: 1px solid rgba(53,114,102,.16); line-height: 1.25; }
+.md-typeset h2 { margin-top: 2.6rem; margin-bottom: 1rem; line-height: 1.35; }
+.md-typeset h3 { margin-top: 1.8rem; margin-bottom: .75rem; line-height: 1.4; }
+.md-typeset h4 { margin-top: 1.25rem; margin-bottom: .55rem; }
+.home-hero .hero-copy h1 { margin: 0 0 .35rem; padding: 0; border: 0; }
+.home-hero .hero-copy h2 { margin: 0 0 .8rem; }
+.home-hero + h2 { margin-top: 2.4rem; }
+.home-card h3 { margin-top: 0; margin-bottom: .6rem; }
+.home-panel h2 { margin-top: 0; }
+.home-video + .admonition { margin-top: 1.8rem; }
 .home-hero { margin-top: .5rem; margin-bottom: 1.7rem; padding: clamp(1.2rem, 3.5vw, 2.8rem); border-radius: 20px; }
 .home-stats { gap: .55rem; margin-bottom: 1.7rem; }
 .home-stat { padding: .7rem .85rem; border-radius: 11px; box-shadow: none; }
