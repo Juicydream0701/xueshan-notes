@@ -35,7 +35,7 @@
 </div>
 
 <div class="home-stat" markdown>
-<strong>四个学期</strong>
+<strong>五个学期</strong>
 <span>从数学编程到工程实践</span>
 </div>
 
@@ -79,7 +79,7 @@
 
 ### 课程地图
 
-查看四个学期的先修关系，或者直接进入[电路与电子技术Ⅰ](notes/courses/circuit-theory/index.md)和[半导体物理](notes/courses/semiconductor-physics/index.md)。
+查看五个学期的先修关系，或者直接进入[电路与电子技术Ⅰ](notes/courses/circuit-theory/index.md)和[半导体物理](notes/courses/semiconductor-physics/index.md)。
 
 [打开课程地图 →](notes/courses/semester-map.md)
 
@@ -110,7 +110,7 @@
 <span class="home-route-number">01</span>
 <div markdown>
 <strong>先补工具</strong>
-<p>线性代数、常微分方程、概率统计和 C 语言，解决“看得懂、算得出、写得动”。</p>
+<p>微积分、线性代数、常微分方程、概率统计和 C 语言，解决“看得懂、算得出、写得动”。</p>
 </div>
 </div>
 

@@ -25,7 +25,7 @@
     </div>
     <div class="pdf-reader__field pdf-reader__height-control">
       <label for="pdf-reader-height">阅读器高度</label>
-      <input id="pdf-reader-height" type="range" min="560" max="1300" step="20" value="820" data-pdf-height aria-label="调节 PDF 阅读器高度">
+      <input id="pdf-reader-height" type="range" min="560" max="1600" step="20" value="820" data-pdf-height aria-label="调节 PDF 阅读器高度">
       <output data-pdf-height-output for="pdf-reader-height">820 px</output>
       <button type="button" class="pdf-reader__height-reset" data-pdf-height-reset>恢复默认</button>
     </div>
@@ -40,7 +40,8 @@
   <div class="pdf-reader__viewport" data-pdf-viewport>
     <iframe class="pdf-reader__frame" data-pdf-frame title="站内 PDF 阅读器" loading="lazy"></iframe>
   </div>
-  <p class="pdf-reader__note">提示：拖动阅读器右下角可以改变高度，也可以使用上方滑块。选择“打开本地 PDF”只会在当前浏览器中读取文件，不会上传到网站。</p>
+  <p class="pdf-reader__fallback">如果当前浏览器不支持内嵌 PDF，请点击“新标签页打开”；“打开本地 PDF”只在当前浏览器中读取文件，不会上传到网站。</p>
+  <p class="pdf-reader__note">提示：拖动阅读器右下角可以改变高度，也可以使用上方滑块。阅读器高度和上次选择会保存在当前浏览器。</p>
   <p class="pdf-reader__file-name" data-pdf-file-name aria-live="polite"></p>
 </div>
 

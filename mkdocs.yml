@@ -94,65 +94,69 @@ copyright: 雪山大地 · 记下所学，也记下沿途风景
 nav:
   - 首页: index.md
   - 学习笔记:
-      - notes/index.md
-      - 课程笔记:
-          - notes/courses/index.md
-          - 01 电路与电子技术Ⅰ · 电路:
-              - notes/courses/circuit-theory/index.md
-              - 解题与复习路线: notes/courses/circuit-theory/study-guide.md
-          - 02 电路与电子技术Ⅰ · 模拟:
-              - notes/courses/analog-electronics/index.md
-              - 静态点、小信号与反馈: notes/courses/analog-electronics/study-guide.md
-          - 03 半导体物理:
-              - notes/courses/semiconductor-physics/index.md
-              - 八章主线笔记: notes/courses/semiconductor-physics/chapter-notes.md
-              - 应试复习与公式检查: notes/courses/semiconductor-physics/study-guide.md
-          - 04 数字电子技术:
-              - notes/courses/digital-electronics/index.md
-              - 逻辑设计与时序检查: notes/courses/digital-electronics/study-guide.md
-          - 05 电网络:
-              - notes/courses/electrical-networks/index.md
-              - 复频域与网络函数: notes/courses/electrical-networks/study-guide.md
-          - 06 信号分析与处理:
-              - notes/courses/signal-analysis/index.md
-              - 系统分析与变换选型: notes/courses/signal-analysis/study-guide.md
-          - 07 微机原理与应用:
-              - notes/courses/microcomputer/index.md
-              - 复习路线与综合题: notes/courses/microcomputer/study-guide.md
-              - 8051 基础结构: notes/courses/microcomputer/architecture.md
-              - 8051 指令系统: notes/courses/microcomputer/instruction-set.md
-              - 汇编程序设计: notes/courses/microcomputer/assembly.md
-              - 中断系统: notes/courses/microcomputer/interrupts.md
-              - 定时器与计数器: notes/courses/microcomputer/timers.md
-              - 串行通信: notes/courses/microcomputer/serial.md
-              - 接口扩展: notes/courses/microcomputer/interfaces.md
-              - Cortex-M 与 STM32: notes/courses/microcomputer/cortex-m.md
-          - 08 工程电磁场与波:
-              - notes/courses/electromagnetics/index.md
-              - 场方程与传播: notes/courses/electromagnetics/study-guide.md
-          - 09 电力电子技术Ⅰ:
-              - notes/courses/power-electronics/index.md
-              - 器件、整流、斩波与逆变专题: notes/courses/power-electronics/topics.md
-          - 10 控制理论（乙）:
-              - notes/courses/control-theory/index.md
-              - 建模、时域、频域与校正: notes/courses/control-theory/topics.md
-          - 11 计算机网络与通信:
-              - notes/courses/computer-networks/index.md
-              - 分层、寻址、可靠性与应用: notes/courses/computer-networks/topics.md
-          - 12 电子测量与智能仪器:
-              - notes/courses/measurement-instruments/index.md
-              - 测量链、采样与仪器实验: notes/courses/measurement-instruments/topics.md
-          - 13 宽带无线通信技术设计与实践:
-              - notes/courses/wireless-communications/index.md
-      - 基础课与数学工具:
-          - notes/courses/foundations/index.md
+      - 学习笔记总览: notes/index.md
+      - 课程总览: notes/courses/index.md
+      - 专业主线:
+          - 电路与电子:
+              - 电路与电子技术Ⅰ · 电路:
+                  - notes/courses/circuit-theory/index.md
+                  - 解题与复习路线: notes/courses/circuit-theory/study-guide.md
+              - 电路与电子技术Ⅰ · 模拟:
+                  - notes/courses/analog-electronics/index.md
+                  - 静态点、小信号与反馈: notes/courses/analog-electronics/study-guide.md
+              - 半导体物理:
+                  - notes/courses/semiconductor-physics/index.md
+                  - 八章主线笔记: notes/courses/semiconductor-physics/chapter-notes.md
+                  - 应试复习与公式检查: notes/courses/semiconductor-physics/study-guide.md
+              - 数字电子技术:
+                  - notes/courses/digital-electronics/index.md
+                  - 逻辑设计与时序检查: notes/courses/digital-electronics/study-guide.md
+          - 信号、系统与控制:
+              - 电网络:
+                  - notes/courses/electrical-networks/index.md
+                  - 复频域与网络函数: notes/courses/electrical-networks/study-guide.md
+              - 信号分析与处理:
+                  - notes/courses/signal-analysis/index.md
+                  - 系统分析与变换选型: notes/courses/signal-analysis/study-guide.md
+              - 控制理论（乙）:
+                  - notes/courses/control-theory/index.md
+                  - 建模、时域、频域与校正: notes/courses/control-theory/topics.md
+          - 计算机、通信与嵌入式:
+              - 微机原理与应用:
+                  - notes/courses/microcomputer/index.md
+                  - 复习路线与综合题: notes/courses/microcomputer/study-guide.md
+                  - 8051 基础结构: notes/courses/microcomputer/architecture.md
+                  - 8051 指令系统: notes/courses/microcomputer/instruction-set.md
+                  - 汇编程序设计: notes/courses/microcomputer/assembly.md
+                  - 中断系统: notes/courses/microcomputer/interrupts.md
+                  - 定时器与计数器: notes/courses/microcomputer/timers.md
+                  - 串行通信: notes/courses/microcomputer/serial.md
+                  - 接口扩展: notes/courses/microcomputer/interfaces.md
+                  - Cortex-M 与 STM32: notes/courses/microcomputer/cortex-m.md
+              - 计算机网络与通信:
+                  - notes/courses/computer-networks/index.md
+                  - 分层、寻址、可靠性与应用: notes/courses/computer-networks/topics.md
+              - 宽带无线通信技术设计与实践: notes/courses/wireless-communications/index.md
+          - 电磁、功率与测量:
+              - 工程电磁场与波:
+                  - notes/courses/electromagnetics/index.md
+                  - 场方程与传播: notes/courses/electromagnetics/study-guide.md
+              - 电力电子技术Ⅰ:
+                  - notes/courses/power-electronics/index.md
+                  - 器件、整流、斩波与逆变专题: notes/courses/power-electronics/topics.md
+              - 电子测量与智能仪器:
+                  - notes/courses/measurement-instruments/index.md
+                  - 测量链、采样与仪器实验: notes/courses/measurement-instruments/topics.md
+          - 实验与工程实践:
+              - 电路与电子技术实验 II:
+                  - notes/courses/circuit-electronics-experiments/index.md
+              - 工程图学:
+                  - notes/courses/engineering-graphics/index.md
+              - 工程训练:
+                  - notes/courses/engineering-training/index.md
+      - 数学基础:
+          - 基础课总览: notes/courses/foundations/index.md
           - 五个学期的课程地图: notes/courses/semester-map.md
-          - C 程序设计基础及实验:
-              - notes/courses/foundations/c-programming/index.md
-              - 语法、指针、调试与文件: notes/courses/foundations/c-programming/topics.md
-          - 线性代数（甲）:
-              - notes/courses/foundations/linear-algebra/index.md
-              - 矩阵、线性映射与特征值: notes/courses/foundations/linear-algebra/topics.md
           - 微积分（甲）I–II:
               - notes/courses/foundations/calculus/index.md
               - 极限、连续与一元函数: notes/courses/foundations/calculus/limits-continuity.md
@@ -161,23 +165,31 @@ nav:
               - 多元函数、向量与空间几何: notes/courses/foundations/calculus/multivariable.md
               - 重积分、曲线积分与曲面积分: notes/courses/foundations/calculus/vector-integrals.md
               - 级数与积分变换: notes/courses/foundations/calculus/series.md
-          - 大学物理（甲）Ⅰ:
-              - notes/courses/foundations/college-physics/index.md
-              - 力学、振动、热学与静电: notes/courses/foundations/college-physics/topics.md
-          - 大学物理（甲）Ⅱ: notes/courses/foundations/college-physics-2/index.md
+          - 线性代数（甲）:
+              - notes/courses/foundations/linear-algebra/index.md
+              - 矩阵、线性映射与特征值: notes/courses/foundations/linear-algebra/topics.md
           - 常微分方程:
               - notes/courses/foundations/ordinary-differential-equations/index.md
               - 一阶、二阶与系统方程: notes/courses/foundations/ordinary-differential-equations/topics.md
           - 复变函数与积分变换: notes/courses/foundations/complex-analysis/index.md
-          - 人工智能基础（A）:
-              - notes/courses/foundations/ai-foundations/index.md
-              - 数据、模型与实验: notes/courses/foundations/ai-foundations/topics.md
           - 概率论与数理统计:
               - notes/courses/foundations/probability-statistics/index.md
               - 随机变量、估计与检验: notes/courses/foundations/probability-statistics/topics.md
           - 离散数学:
               - notes/courses/foundations/discrete-mathematics/index.md
               - 逻辑、图论与组合: notes/courses/foundations/discrete-mathematics/topics.md
+      - 物理与科学基础:
+          - 大学物理（甲）Ⅰ:
+              - notes/courses/foundations/college-physics/index.md
+              - 力学、振动、热学与静电: notes/courses/foundations/college-physics/topics.md
+          - 大学物理（甲）Ⅱ: notes/courses/foundations/college-physics-2/index.md
+      - 编程与人工智能:
+          - C 程序设计基础及实验:
+              - notes/courses/foundations/c-programming/index.md
+              - 语法、指针、调试与文件: notes/courses/foundations/c-programming/topics.md
+          - 人工智能基础（A）:
+              - notes/courses/foundations/ai-foundations/index.md
+              - 数据、模型与实验: notes/courses/foundations/ai-foundations/topics.md
       - 通识与生活学习:
           - notes/courses/general-education/index.md
           - 大学英语与表达: notes/courses/general-education/college-english.md
@@ -197,8 +209,9 @@ nav:
           - 数学建模备赛指南: notes/campus/modeling-guide.md
           - AI 实验实践指南: notes/campus/ai-lab-guide.md
           - 资料链接索引: notes/campus/resource-index.md
-      - 工具与方法:
-          - notes/tools/index.md
+      - 工具与资料:
+          - 工具与方法总览: notes/tools/index.md
+          - PDF 资料中心: notes/tools/pdf-library.md
           - PDF 阅读器: notes/tools/pdf-reader.md
           - Markdown 写作入门: notes/tools/markdown.md
   - 资料管理: managed/index.md

@@ -48,7 +48,7 @@
 
 ## 基础课与数学工具
 
-从四个学期的课程资料中精选数学、物理、编程、概率和 AI 复习路径。
+从五个学期的课程资料中精选数学、物理、编程、概率和 AI 复习路径。
 
 [浏览基础课与数学工具 →](courses/foundations/index.md)
 
@@ -61,7 +61,7 @@
 | --- | --- |
 | 复习专业课或查课程资料 | [课程笔记](courses/index.md) |
 | 补数学、物理、编程或 AI 基础 | [基础课与数学工具](courses/foundations/index.md) |
-| 按自己的学期顺序回看课程 | [四个学期的课程地图](courses/semester-map.md) |
+| 按自己的学期顺序回看课程 | [五个学期的课程地图](courses/semester-map.md) |
 | 了解爱班各学期课程、实验节奏和课程经验 | [课程与实验地图](campus/experiences.md) |
 | 准备数模、转专业面试或项目表达 | [转专业与数学建模](campus/transfer-modeling.md) · [数模备赛指南](campus/modeling-guide.md) |
 | 规划选课、通识课和基础课 | [选课与课程经验](campus/course-selection.md) |

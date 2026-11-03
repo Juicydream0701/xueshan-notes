@@ -245,7 +245,7 @@
       var objectUrl = null;
 
       function clampHeight(value) {
-        return Math.min(1300, Math.max(560, Number(value) || 820));
+        return Math.min(1600, Math.max(560, Number(value) || 820));
       }
 
       function setHeight(value, persist) {
@@ -260,7 +260,9 @@
         if (!value) return;
         frame.src = value;
         if (open) open.href = value;
-        if (download) download.href = value;
+        // 阅读定位通常带有 #view=FitH；下载时去掉片段，避免部分浏览器
+        // 将“下载”误当成带定位参数的导航。
+        if (download) download.href = value.replace(/#.*$/, "");
         if (persistSelection && select) {
           writeStorage(pdfSelectionKey + ":" + readerKey, select.value);
         }
@@ -303,7 +305,7 @@
           new ResizeObserver(function (entries) {
             var height = Math.round(entries[0].contentRect.height);
             if (height < 400) return;
-            if (heightInput) heightInput.value = String(Math.min(1300, Math.max(560, height)));
+            if (heightInput) heightInput.value = String(Math.min(1600, Math.max(560, height)));
             if (heightOutput) heightOutput.value = height + " px";
             writeStorage(pdfHeightKey, height);
           }).observe(viewport);
@@ -578,6 +580,9 @@
 
   function typesetAssistant(element) {
     if (window.MathJax && window.MathJax.typesetPromise) {
+      // MathJax 的 processHtmlClass 也覆盖 floating-ai__message；清理旧的
+      // 处理标记后再排版，保证重复打开助手或重新提交问题时公式仍会更新。
+      if (window.MathJax.typesetClear) window.MathJax.typesetClear([element]);
       window.MathJax.typesetPromise([element]).catch(function () {});
     }
   }

@@ -407,8 +407,9 @@ body.focus-mode .floating-tools__toggle { background: var(--sun); color: #27352f
 .pdf-reader__local-file input { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0; cursor: pointer; }
 .pdf-reader__actions { display: flex; gap: .4rem; }
 .pdf-reader__actions a { white-space: nowrap; }
-.pdf-reader__viewport { height: var(--pdf-reader-height, 82vh); min-height: 560px; max-height: 1300px; overflow: hidden; resize: vertical; border: 1px solid rgba(53,114,102,.2); border-radius: 13px; background: #24322e; }
+.pdf-reader__viewport { height: var(--pdf-reader-height, 82vh); min-height: 560px; max-height: 1600px; overflow: hidden; resize: vertical; border: 1px solid rgba(53,114,102,.2); border-radius: 13px; background: #24322e; }
 .pdf-reader__frame { display: block; width: 100%; height: 100%; border: 0; border-radius: 11px; background: #24322e; }
+.pdf-reader__fallback { margin: .65rem 0 0; padding: .55rem .7rem; border-left: 3px solid var(--sun); border-radius: 8px; color: var(--md-default-fg-color--light); background: rgba(217,155,76,.1); font-size: .78rem; line-height: 1.55; }
 .pdf-reader__note { margin: .65rem 0 0; color: var(--md-default-fg-color--light); font-size: .78rem; }
 .pdf-reader__file-name { margin: .25rem 0 0; color: var(--pine); font-size: .8rem; }
 
