@@ -472,6 +472,7 @@ body.focus-mode .floating-tools__toggle { background: var(--sun); color: #27352f
 .home-card h3 { margin-top: 0; margin-bottom: .6rem; }
 .home-panel h2 { margin-top: 0; }
 .home-video + .admonition { margin-top: 1.8rem; }
+.md-tabs__link { position: relative; top: -3px; padding-top: .42rem; padding-bottom: .82rem; line-height: 1.2; }
 .home-hero { grid-template-columns: minmax(0, 1.18fr) minmax(190px, .82fr); }
 .home-hero .hero-copy h1 { white-space: nowrap; font-size: clamp(2.6rem, 4.5vw, 4rem); line-height: 1.12; margin-bottom: 1.05rem; }
 .home-hero .hero-copy h2 { margin-bottom: 1.15rem; line-height: 1.45; }
