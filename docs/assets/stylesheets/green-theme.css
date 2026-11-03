@@ -472,12 +472,8 @@ body.focus-mode .floating-tools__toggle { background: var(--sun); color: #27352f
 .home-card h3 { margin-top: 0; margin-bottom: .6rem; }
 .home-panel h2 { margin-top: 0; }
 .home-video + .admonition { margin-top: 1.8rem; }
-/* 首页使用完整内容宽度，避免右侧目录挤压英雄区导致标题断行。 */
-body:has(.home-hero) .md-sidebar--secondary { display: none !important; }
-body:has(.home-hero) .md-main__inner { max-width: 1220px; }
-body:has(.home-hero) .md-content__inner { max-width: 1160px; margin-left: auto; margin-right: auto; }
-.home-hero { grid-template-columns: minmax(0, 1.15fr) minmax(250px, .85fr); }
-.home-hero .hero-copy h1 { white-space: nowrap; font-size: clamp(3rem, 5vw, 4.5rem); line-height: 1.12; margin-bottom: 1.05rem; }
+.home-hero { grid-template-columns: minmax(0, 1.18fr) minmax(190px, .82fr); }
+.home-hero .hero-copy h1 { white-space: nowrap; font-size: clamp(2.6rem, 4.5vw, 4rem); line-height: 1.12; margin-bottom: 1.05rem; }
 .home-hero .hero-copy h2 { margin-bottom: 1.15rem; line-height: 1.45; }
 .home-hero .hero-copy > p:not(.home-kicker) { margin-top: 0; margin-bottom: 0; line-height: 1.85; }
 .home-hero .hero-actions { margin-top: 2rem; gap: .8rem; }
