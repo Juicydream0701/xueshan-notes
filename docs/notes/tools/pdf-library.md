@@ -52,3 +52,13 @@
 3. 把仍然不清楚的公式写回课程页面的“易错点”或自己的 Markdown 草稿；行内公式使用 `\\( ... \\)`，行间公式使用 `\\[ ... \\]`，本站会由 MathJax 编译显示。
 
 公开站点只保留适合长期复习的精选资料，不上传成绩、名单、个人作业和实验报告。课程页面仍然是最完整的入口，本页用于按任务快速定位。
+
+## 电路原理精选课件
+
+专题页按“模型 → 方程 → 定理 → 频域 → 暂态 → 三相”重新编排了课程资料。需要原始讲义时，可直接打开：
+
+- [元件、信号、KCL 与 KVL](../courses/circuit-theory/resources/source-lectures/01-元件信号-KCL-KVL.pdf)
+- [等效法与电路方程](../courses/circuit-theory/resources/source-lectures/02-等效法-2024.pdf) · [电路方程（2024）](../courses/circuit-theory/resources/source-lectures/03-电路方程-2024.pdf)
+- [电路定理（2024）](../courses/circuit-theory/resources/source-lectures/04-电路定理-2024.pdf) · [非正弦稳态（2024）](../courses/circuit-theory/resources/source-lectures/05-非正弦稳态-2024.pdf)
+- [一阶暂态：阶跃与冲激](../courses/circuit-theory/resources/source-lectures/06-一阶暂态-阶跃冲激.pdf) · [三相补充解答](../courses/circuit-theory/resources/source-lectures/08-三相补充解答.pdf)
+- [非正弦竞答题](../courses/circuit-theory/resources/source-lectures/09-非正弦竞答题.pdf) · [过渡过程竞答题](../courses/circuit-theory/resources/source-lectures/10-过渡过程竞答题.pdf)

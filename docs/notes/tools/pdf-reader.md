@@ -17,7 +17,15 @@
       <option value="../../courses/circuit-theory/resources/circuit-theorems-class.pdf#view=FitH">电路原理 · 电路定理课堂资料</option>
       <option value="../../courses/circuit-theory/resources/circuit-transient-first-order.pdf#view=FitH">电路原理 · 一阶暂态</option>
       <option value="../../courses/circuit-theory/resources/circuit-nonsinusoidal-steady-state.pdf#view=FitH">电路原理 · 非正弦稳态</option>
-      <option value="../../courses/circuit-theory/resources/circuit-three-phase-solutions.pdf#view=FitH">电路原理 · 三相补充解答</option>
+      <option value="../../courses/circuit-theory/resources/circuit-three-phase-solutions.pdf#view=FitH">电路原理 · 三相补充解答</option>      <option value="../../courses/circuit-theory/resources/source-lectures/01-元件信号-KCL-KVL.pdf#view=FitH">电路原理 · 元件、KCL 与 KVL</option>
+      <option value="../../courses/circuit-theory/resources/source-lectures/02-等效法-2024.pdf#view=FitH">电路原理 · 等效法（2024）</option>
+      <option value="../../courses/circuit-theory/resources/source-lectures/03-电路方程-2024.pdf#view=FitH">电路原理 · 电路方程（2024）</option>
+      <option value="../../courses/circuit-theory/resources/source-lectures/04-电路定理-2024.pdf#view=FitH">电路原理 · 电路定理（2024）</option>
+      <option value="../../courses/circuit-theory/resources/source-lectures/05-非正弦稳态-2024.pdf#view=FitH">电路原理 · 非正弦稳态（2024）</option>
+      <option value="../../courses/circuit-theory/resources/source-lectures/06-一阶暂态-阶跃冲激.pdf#view=FitH">电路原理 · 一阶暂态课件</option>
+      <option value="../../courses/circuit-theory/resources/source-lectures/08-三相补充解答.pdf#view=FitH">电路原理 · 三相补充解答（课件）</option>
+      <option value="../../courses/circuit-theory/resources/source-lectures/09-非正弦竞答题.pdf#view=FitH">电路原理 · 非正弦竞答题</option>
+      <option value="../../courses/circuit-theory/resources/source-lectures/10-过渡过程竞答题.pdf#view=FitH">电路原理 · 过渡过程竞答题</option>
       <option value="../../courses/circuit-theory/resources/analog-big-problem-review.pdf#view=FitH">电路与电子技术Ⅰ · 模电大题整理</option>
       <option value="../../courses/circuit-theory/resources/analog-concept-review.pdf#view=FitH">电路与电子技术Ⅰ · 模电概念整理</option>
       <option value="../../courses/circuit-theory/resources/analog-final-exam-i.pdf#view=FitH">电路与电子技术Ⅰ · 模电期末卷</option>

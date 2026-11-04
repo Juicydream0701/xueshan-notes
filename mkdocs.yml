@@ -101,6 +101,13 @@ nav:
               - 电路与电子技术Ⅰ · 电路:
                   - notes/courses/circuit-theory/index.md
                   - 解题与复习路线: notes/courses/circuit-theory/study-guide.md
+                  - 01 模型、符号与 KCL/KVL: notes/courses/circuit-theory/topics/01-models-laws.md
+                  - 02 节点法、网孔法与矩阵方程: notes/courses/circuit-theory/topics/02-equations.md
+                  - 03 网络定理与端口等效: notes/courses/circuit-theory/topics/03-theorems.md
+                  - 04 正弦稳态、谐振与功率: notes/courses/circuit-theory/topics/04-ac.md
+                  - 05 一阶、二阶暂态与拉普拉斯: notes/courses/circuit-theory/topics/05-transients.md
+                  - 06 非正弦、互感与三相: notes/courses/circuit-theory/topics/06-three-phase.md
+                  - 07 综合题与提高题: notes/courses/circuit-theory/topics/07-problems.md
               - 电路与电子技术Ⅰ · 模拟:
                   - notes/courses/analog-electronics/index.md
                   - 静态点、小信号与反馈: notes/courses/analog-electronics/study-guide.md

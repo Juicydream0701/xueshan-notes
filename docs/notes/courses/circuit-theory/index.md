@@ -109,3 +109,29 @@ RC 的 $\tau=R_{eq}C$，RL 的 $\tau=L/R_{eq}$。可靠流程是：先求开关�
 - [一阶暂态课堂资料](resources/circuit-transient-first-order.pdf)：对照初值、终值和时间常数的完整解题过程。
 - [非正弦稳态课堂资料](resources/circuit-nonsinusoidal-steady-state.pdf)：练习直流分量与各次谐波的分解。
 - [三相补充解答](resources/circuit-three-phase-solutions.pdf)：复习星形、三角形和三相功率的换算。
+
+## 电路原理补充主线（新版）
+
+为了让课程资料更容易查找，新增专题按“模型 → 方程 → 定理 → 频域 → 暂态 → 三相 → 题目”排列。原有章节、公式和 PDF 入口全部保留；下面的页面是对原笔记的展开，不替换原内容。
+
+| 专题 | 适合解决的问题 |
+| --- | --- |
+| [01 模型、符号与 KCL/KVL](topics/01-models-laws.md) | 看懂题图、统一参考方向、写出基本约束 |
+| [02 节点法、网孔法与矩阵方程](topics/02-equations.md) | 支路多、含超节点/超网孔或受控源的网络 |
+| [03 网络定理与端口等效](topics/03-theorems.md) | 戴维南/诺顿、叠加、最大功率和竞赛降维 |
+| [04 正弦稳态、谐振与功率](topics/04-ac.md) | 相量、阻抗、谐振、功率因数和非正弦入口 |
+| [05 一阶、二阶暂态与拉普拉斯](topics/05-transients.md) | 开关、储能、阶跃、冲激和阻尼判断 |
+| [06 非正弦、互感与三相](topics/06-three-phase.md) | 谐波、互感、对称/不平衡三相 |
+| [07 综合题与提高题](topics/07-problems.md) | 按题型自测，训练方法选择与结果检查 |
+
+### 公开讲义与在线课程
+
+这些入口用于补充概念和换一种讲法；课程作业、例题和考试要求仍以本页原有资料及任课教师安排为准。
+
+- [MIT OpenCourseWare 6.002 Circuits and Electronics](https://ocw.mit.edu/courses/6-002-circuits-and-electronics-spring-2007/)
+- [All About Circuits：Direct Current](https://www.allaboutcircuits.com/textbook/direct-current/)
+- [All About Circuits：Alternating Current](https://www.allaboutcircuits.com/textbook/alternating-current/)
+- [OpenStax University Physics Volume 2](https://openstax.org/details/books/university-physics-volume-2)
+- [NPTEL 公开课程检索](https://nptel.ac.in/courses)
+
+访问外部资料时请遵守原作者许可；网站内复制的精选课件仅用于个人学习和课程复习。

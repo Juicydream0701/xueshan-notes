@@ -87,3 +87,12 @@ $$
 ## 资料
 
 [电路部分总结与例题](resources/circuit-autumn-summary.pdf) · [电路原理复习总结（2023）](resources/circuit-review-2023.pdf)
+
+## 新增专题导航
+
+- [01 模型、符号与 KCL/KVL](topics/01-models-laws.md) · [02 节点法、网孔法与矩阵方程](topics/02-equations.md)
+- [03 网络定理与端口等效](topics/03-theorems.md) · [04 正弦稳态、谐振与功率](topics/04-ac.md)
+- [05 一阶、二阶暂态与拉普拉斯](topics/05-transients.md) · [06 非正弦、互感与三相](topics/06-three-phase.md)
+- [07 综合题与提高题](topics/07-problems.md)
+
+建议把“课程课件”当作原始材料，把专题页当作第一遍理解和考前检索，把综合题页当作限时训练。每次只补一个薄弱环节，避免资料越收越多却没有形成自己的解题模板。
