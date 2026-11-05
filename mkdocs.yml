@@ -96,6 +96,7 @@ nav:
   - 学习笔记:
       - 学习笔记总览: notes/index.md
       - 课程总览: notes/courses/index.md
+      - 课程导航与复习路径: notes/courses/course-map.md
       - 专业主线:
           - 电路与电子:
               - 电路与电子技术Ⅰ · 电路:
@@ -134,16 +135,20 @@ nav:
                   - 应试复习与公式检查: notes/courses/semiconductor-physics/study-guide.md
               - 数字电子技术:
                   - notes/courses/digital-electronics/index.md
+                  - 逻辑、时序与器件分析: notes/courses/digital-electronics/exam-guide.md
                   - 逻辑设计与时序检查: notes/courses/digital-electronics/study-guide.md
           - 信号、系统与控制:
               - 电网络:
                   - notes/courses/electrical-networks/index.md
+                  - 统一建模与频域计算: notes/courses/electrical-networks/exam-guide.md
                   - 复频域与网络函数: notes/courses/electrical-networks/study-guide.md
               - 信号分析与处理:
                   - notes/courses/signal-analysis/index.md
+                  - 专题复习与计算方法: notes/courses/signal-analysis/exam-guide.md
                   - 系统分析与变换选型: notes/courses/signal-analysis/study-guide.md
               - 控制理论（乙）:
                   - notes/courses/control-theory/index.md
+                  - 建模、稳定性与校正: notes/courses/control-theory/exam-guide.md
                   - 建模、时域、频域与校正: notes/courses/control-theory/topics.md
           - 计算机、通信与嵌入式:
               - 微机原理与应用:
@@ -159,6 +164,7 @@ nav:
                   - Cortex-M 与 STM32: notes/courses/microcomputer/cortex-m.md
               - 计算机网络与通信:
                   - notes/courses/computer-networks/index.md
+                  - 分层、协议与性能计算: notes/courses/computer-networks/exam-guide.md
                   - 分层、寻址、可靠性与应用: notes/courses/computer-networks/topics.md
               - 宽带无线通信技术设计与实践: notes/courses/wireless-communications/index.md
           - 电磁、功率与测量:
@@ -167,6 +173,7 @@ nav:
                   - 场方程与传播: notes/courses/electromagnetics/study-guide.md
               - 电力电子技术Ⅰ:
                   - notes/courses/power-electronics/index.md
+                  - 变换器与波形分析: notes/courses/power-electronics/exam-guide.md
                   - 器件、整流、斩波与逆变专题: notes/courses/power-electronics/topics.md
               - 电子测量与智能仪器:
                   - notes/courses/measurement-instruments/index.md
@@ -191,21 +198,25 @@ nav:
               - 级数与积分变换: notes/courses/foundations/calculus/series.md
           - 线性代数（甲）:
               - notes/courses/foundations/linear-algebra/index.md
+              - 从计算题到证明题: notes/courses/foundations/linear-algebra/exam-guide.md
               - 矩阵、线性映射与特征值: notes/courses/foundations/linear-algebra/topics.md
           - 常微分方程:
               - notes/courses/foundations/ordinary-differential-equations/index.md
               - 一阶、二阶与系统方程: notes/courses/foundations/ordinary-differential-equations/topics.md
-          - 复变函数与积分变换: notes/courses/foundations/complex-analysis/index.md
+          - 复变函数与积分变换:
+              - notes/courses/foundations/complex-analysis/index.md
+              - 专题复习与解题路线: notes/courses/foundations/complex-analysis/exam-guide.md
           - 概率论与数理统计:
               - notes/courses/foundations/probability-statistics/index.md
               - 随机变量、估计与检验: notes/courses/foundations/probability-statistics/topics.md
           - 离散数学:
               - notes/courses/foundations/discrete-mathematics/index.md
+              - 专题复习与证明模板: notes/courses/foundations/discrete-mathematics/exam-guide.md
               - 逻辑、图论与组合: notes/courses/foundations/discrete-mathematics/topics.md
       - 物理与科学基础:
           - 大学物理（甲）Ⅰ:
               - notes/courses/foundations/college-physics/index.md
-              - 力学、振动、热学与静电: notes/courses/foundations/college-physics/topics.md
+              - 逐章解题路线: notes/courses/foundations/college-physics/topics.md
           - 大学物理（甲）Ⅱ: notes/courses/foundations/college-physics-2/index.md
       - 编程与人工智能:
           - C 程序设计基础及实验:
@@ -229,6 +240,7 @@ nav:
           - 课程与实验地图: notes/campus/experiences.md
           - 转专业与数学建模: notes/campus/transfer-modeling.md
           - 选课与课程经验: notes/campus/course-selection.md
+          - 数学建模专题库: notes/campus/math-modeling/index.md
           - 学习方法与导师团: notes/campus/study-methods.md
           - 数学建模备赛指南: notes/campus/modeling-guide.md
           - AI 实验实践指南: notes/campus/ai-lab-guide.md

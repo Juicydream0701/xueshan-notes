@@ -48,6 +48,16 @@
 
 <div class="note-index-card" markdown>
 
+## 数学建模专题库
+
+把建模流程、数据与论文、预测分类、优化评价、算法选择和比赛执行拆成六个可单独复习的专题，并提供经过筛选的通用 PDF。
+
+[进入数学建模专题库](math-modeling/index.md)
+
+</div>
+
+<div class="note-index-card" markdown>
+
 ## 学习方法与资料索引
 
 整理独立思考、复习习惯、导师团以及原帖、网盘、PDF 和工具入口。
