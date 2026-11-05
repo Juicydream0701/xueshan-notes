@@ -2,10 +2,12 @@
   "use strict";
 
   var modeKey = "xueshan:frontend-mode";
+  var modes = ["modern", "v2", "legacy"];
 
-  function getMode() {
+  function readMode() {
     try {
-      return window.localStorage.getItem(modeKey) === "legacy" ? "legacy" : "modern";
+      var value = window.localStorage.getItem(modeKey);
+      return modes.indexOf(value) >= 0 ? value : "modern";
     } catch (error) {
       return "modern";
     }
@@ -15,21 +17,46 @@
     try {
       window.localStorage.setItem(modeKey, mode);
     } catch (error) {
-      // 浏览器禁用存储时仍允许本次页面切换。
+      // 禁用本地存储时仍然允许本次页面切换。
     }
   }
 
-  function setMode(mode) {
+  function nextMode(mode) {
+    return modes[(modes.indexOf(mode) + 1) % modes.length];
+  }
+
+  function modeLabel(mode) {
+    if (mode === "v2") return "第二版";
+    if (mode === "legacy") return "旧版";
+    return "新版";
+  }
+
+  function modeButtonLabel(mode) {
+    if (mode === "v2") return "第二版 · 切到旧版";
+    if (mode === "legacy") return "旧版 · 切到新版";
+    return "新版 · 切到第二版";
+  }
+
+  function setMode(mode, persist) {
     var legacy = mode === "legacy";
+    var v2 = mode === "v2";
     document.body.classList.toggle("legacy-frontend", legacy);
+    document.body.classList.toggle("frontend-v2", v2);
+
     var button = document.querySelector("[data-frontend-switcher]");
     if (button) {
-      button.textContent = legacy ? "使用新版" : "切回旧版";
-      button.setAttribute("aria-label", legacy ? "切换到新版前端" : "切换到旧版前端");
-      button.setAttribute("title", legacy ? "当前为旧版界面，点击切换到新版" : "当前为新版界面，点击切回旧版");
-      button.setAttribute("aria-pressed", String(legacy));
+      button.textContent = modeButtonLabel(mode);
+      button.setAttribute("aria-label", "当前为" + modeLabel(mode) + "，点击切换到下一套界面");
+      button.setAttribute("title", "当前为" + modeLabel(mode) + "；下一次切换：" + modeLabel(nextMode(mode)));
+      button.setAttribute("aria-pressed", String(mode !== "modern"));
+      button.setAttribute("data-frontend-mode", mode);
     }
-    saveMode(legacy ? "legacy" : "modern");
+
+    var progress = document.querySelector(".frontend-reading-progress");
+    if (progress) {
+      progress.style.display = legacy ? "none" : "block";
+    }
+    if (persist !== false) saveMode(mode);
     updateProgress();
   }
 
@@ -40,10 +67,13 @@
     button.className = "frontend-switcher";
     button.setAttribute("data-frontend-switcher", "");
     button.addEventListener("click", function () {
-      setMode(document.body.classList.contains("legacy-frontend") ? "modern" : "legacy");
+      var current = document.body.classList.contains("legacy-frontend")
+        ? "legacy"
+        : (document.body.classList.contains("frontend-v2") ? "v2" : "modern");
+      setMode(nextMode(current));
     });
     document.body.appendChild(button);
-    setMode(getMode());
+    setMode(readMode(), false);
   }
 
   function createProgress() {
