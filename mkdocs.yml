@@ -83,6 +83,7 @@ extra_css:
 extra_javascript:
   - assets/javascripts/mathjax-config.js
   - assets/javascripts/floating-tools.js
+  - assets/javascripts/semiconductor-review.js
   - assets/vendor/mathjax/es5/tex-mml-chtml.js
 
 extra:
@@ -114,7 +115,20 @@ nav:
                   - 静态点、小信号与反馈: notes/courses/analog-electronics/study-guide.md
               - 半导体物理:
                   - notes/courses/semiconductor-physics/index.md
-                  - 八章主线笔记: notes/courses/semiconductor-physics/chapter-notes.md
+                  - 复习安排与进度: notes/courses/semiconductor-physics/review-mode.md
+                  - 讲义目录与概要: notes/courses/semiconductor-physics/chapter-notes.md
+                  - 01 晶体结构与晶向晶面: notes/courses/semiconductor-physics/topics/01-crystal.md
+                  - 02 能带、有效质量与空穴: notes/courses/semiconductor-physics/topics/02-bands.md
+                  - 03 杂质、补偿与缺陷: notes/courses/semiconductor-physics/topics/03-impurities.md
+                  - 04 载流子统计与费米能级: notes/courses/semiconductor-physics/topics/04-statistics.md
+                  - 05 漂移、扩散与散射: notes/courses/semiconductor-physics/topics/05-transport.md
+                  - 06 非平衡载流子: notes/courses/semiconductor-physics/topics/06-nonequilibrium.md
+                  - 07 pn 结: notes/courses/semiconductor-physics/topics/07-pn-junction.md
+                  - 08 金属—半导体接触: notes/courses/semiconductor-physics/topics/08-contacts.md
+                  - 分章练习与解答: notes/courses/semiconductor-physics/practice.md
+                  - 综合模拟卷 A: notes/courses/semiconductor-physics/mock-exam.md
+                  - 模拟卷评分与解答: notes/courses/semiconductor-physics/mock-solutions.md
+                  - 原笔记与校勘: notes/courses/semiconductor-physics/resources-guide.md
                   - 应试复习与公式检查: notes/courses/semiconductor-physics/study-guide.md
               - 数字电子技术:
                   - notes/courses/digital-electronics/index.md

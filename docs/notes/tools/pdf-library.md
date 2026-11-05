@@ -4,11 +4,11 @@
 
 ## 先按复习任务选择
 
-| 现在要做什么 | 先打开 | 配套笔记 |
+| 查阅目的 | 先打开 | 配套笔记 |
 | --- | --- | --- |
 | 从零复习电路模型、暂态和三相 | [电路总结与例题](../courses/circuit-theory/resources/circuit-autumn-summary.pdf) | [电路主线](../courses/circuit-theory/index.md) · [解题路线](../courses/circuit-theory/study-guide.md) |
 | 整理模拟电路的概念题和大题 | [模电概念整理](../courses/circuit-theory/resources/analog-concept-review.pdf) · [模电大题整理](../courses/circuit-theory/resources/analog-big-problem-review.pdf) | [模拟电子](../courses/analog-electronics/index.md) |
-| 按章节回看半导体物理 | [完整学习讲义](../courses/semiconductor-physics/resources/semiconductor-full-review.pdf) | [八章主线](../courses/semiconductor-physics/chapter-notes.md) |
+| 按章节复习半导体物理 | [参考笔记（102 页）](../courses/semiconductor-physics/resources/semiconductor-exam-notes.pdf) · [既有复习讲义](../courses/semiconductor-physics/resources/semiconductor-full-review.pdf) | [八章讲义](../courses/semiconductor-physics/chapter-notes.md) · [复习训练](../courses/semiconductor-physics/review-mode.md) |
 | 复习微积分和向量积分 | [积分方法总结](../courses/foundations/calculus/resources/calculus-integral-methods.pdf) · [向量积分总结](../courses/foundations/calculus/resources/calculus2-vector-integrals.pdf) | [微积分专题](../courses/foundations/calculus/index.md) |
 | 梳理信号变换和滤波 | [变换汇总](../courses/signal-analysis/resources/signal-transform-summary.pdf) · [滤波器专题](../courses/signal-analysis/resources/signal-filters.pdf) | [信号分析](../courses/signal-analysis/index.md) |
 | 准备微机原理综合题 | [2026 复习提要](../courses/microcomputer/resources/2026-review-notes.pdf) · [题库](../courses/microcomputer/resources/question-bank.pdf) | [微机主线](../courses/microcomputer/index.md) |

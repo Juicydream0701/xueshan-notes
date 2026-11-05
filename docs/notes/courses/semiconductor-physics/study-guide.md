@@ -1,6 +1,6 @@
 # 半导体物理：应试复习与公式检查
 
-半导体物理的计算题通常不是“代公式就结束”，而是先判断材料、统计和边界条件，再决定使用哪一种近似。下面的清单适合考前压缩复习，也适合每次做题前写在草稿纸顶部。
+本页用于考前速查。计算前应判断材料、统计与边界条件，再选择近似模型。详细解释见[分章讲义](chapter-notes.md)，训练可使用[分章练习](practice.md)与[综合模拟卷](mock-exam.md)。
 
 ## 一、先判断四个条件
 
@@ -121,4 +121,4 @@ $$
 
 ## 资料入口
 
-[完整学习讲义与历年卷详解](resources/semiconductor-full-review.pdf) · [2025–2026 学年回忆卷](resources/semiconductor-recall-2025-2026.pdf) · [八章课件总览](index.md)
+[完整学习讲义与历年卷详解](resources/semiconductor-full-review.pdf) · [2025–2026 学年回忆卷](resources/semiconductor-recall-2025-2026.pdf) · [八章课件总览](index.md) · [本次参考 PDF 与校勘](resources-guide.md) · [复习进度](review-mode.md)

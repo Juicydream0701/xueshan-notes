@@ -66,7 +66,7 @@
           '</div>' +
         '</section>' +
         '<div class="floating-tools__quick-actions">' +
-          '<button class="floating-tool__action" type="button" data-ai-open><span>AI 笔记助手</span><small>查文件、找链接、问知识</small></button>' +
+          '<button class="floating-tool__action" type="button" data-ai-open><span>AI 笔记助手</span><small>资料检索与课程问答</small></button>' +
           '<button class="floating-tool__action" type="button" data-focus-mode aria-pressed="false"><span>专注模式</span><small>隐藏干扰，状态会保留</small></button>' +
           '<button class="floating-tool__action" type="button" data-scroll-top><span>回到顶部</span><small>快速回到页面开头</small></button>' +
         '</div>' +
@@ -644,7 +644,7 @@
     assistant.innerHTML =
       '<div class="floating-ai__backdrop" data-ai-close></div>' +
       '<div class="floating-ai__dialog">' +
-        '<div class="floating-ai__header"><div><span class="floating-ai__eyebrow">LOCAL REPOSITORY ASSISTANT</span><h2 id="floating-ai-title">雪山大地 · AI 笔记助手</h2></div><button type="button" class="floating-ai__close" data-ai-close aria-label="关闭 AI 助手">×</button></div>' +
+        '<div class="floating-ai__header"><div><span class="floating-ai__eyebrow">站内资料检索</span><h2 id="floating-ai-title">雪山大地 · AI 笔记助手</h2></div><button type="button" class="floating-ai__close" data-ai-close aria-label="关闭 AI 助手">×</button></div>' +
         '<p class="floating-ai__privacy">默认使用 DeepSeek。API Key 只保存在当前浏览器，并直接发送给你配置的模型接口，不会写入 GitHub。</p>' +
         '<details class="floating-ai__config" open><summary>配置连接</summary>' +
           '<div class="floating-ai__form-grid">' +

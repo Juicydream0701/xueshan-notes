@@ -8,7 +8,7 @@
 
 ## 记下所学，也记下沿途风景。
 
-把课程里的模型、公式和解题路径整理清楚，也给生活留一块慢慢回看的地方。
+课程讲义、解题方法与参考资料；日常、阅读及生活记录。
 
 <div class="hero-actions" markdown>
 
@@ -27,7 +27,7 @@
 </div>
 </div>
 
-## 从这里开始
+## 内容导航
 
 <div class="home-grid home-grid--featured" markdown>
 
@@ -37,9 +37,9 @@
 
 ### 课程笔记
 
-专业课、基础课、实验工程和五个学期地图都从这里进入。
+专业课程、数理基础、实验与工程实践。
 
-[打开课程总览 →](notes/courses/index.md)
+[打开课程总览](notes/courses/index.md)
 
 </div>
 
@@ -49,9 +49,9 @@
 
 ### PDF 资料中心
 
-按复习任务查找精选讲义，再用站内阅读器边看边记。
+按课程及知识点检索讲义，支持站内阅读与本地 PDF 打开。
 
-[打开资料中心 →](notes/tools/pdf-library.md)
+[打开资料中心](notes/tools/pdf-library.md)
 
 </div>
 
@@ -61,9 +61,9 @@
 
 ### 生活记录
 
-不追求每天更新，只记录那些让日子变得具体的时刻。
+日常、旅行、阅读与随笔。
 
-[进入生活栏目 →](life/index.md)
+[进入生活栏目](life/index.md)
 
 </div>
 
@@ -83,7 +83,7 @@
 <div class="home-stats" markdown>
 
 <div class="home-stat" markdown>
-<strong>课程主线</strong>
+<strong>专业课程</strong>
 <span>电路、模拟、半导体与专业课</span>
 </div>
 
@@ -103,32 +103,32 @@
 
 <div class="home-panel" markdown>
 
-## 一条适合回看的学习路径
+## 课程学习顺序
 
 <div class="home-route" markdown>
 <span class="home-route-number">01</span>
-<div markdown><strong>先补工具</strong><p>微积分、线性代数、常微分方程、概率统计和 C 语言。</p></div>
+<div markdown><strong>基础课程</strong><p>微积分、线性代数、常微分方程、概率统计和 C 语言。</p></div>
 </div>
 
 <div class="home-route" markdown>
 <span class="home-route-number">02</span>
-<div markdown><strong>再进专业</strong><p>电路 → 模拟/数字 → 信号/微机 → 电网络与电磁场。</p></div>
+<div markdown><strong>专业课程</strong><p>电路 → 模拟/数字 → 信号/微机 → 电网络与电磁场。</p></div>
 </div>
 
 <div class="home-route" markdown>
 <span class="home-route-number">03</span>
-<div markdown><strong>最后做综合</strong><p>用实验、复习提纲和回忆卷检验公式前提。</p></div>
+<div markdown><strong>综合练习</strong><p>用实验、复习提纲和回忆卷检验公式前提。</p></div>
 </div>
 
-[查看完整课程地图 →](notes/courses/semester-map.md)
+[查看完整课程地图](notes/courses/semester-map.md)
 
 </div>
 
 <div class="home-panel home-panel--accent" markdown>
 
-## 最近值得打开
+## 专题选读
 
-- [半导体物理：八章主线笔记](notes/courses/semiconductor-physics/chapter-notes.md)
+- [半导体物理：分章讲义与复习训练](notes/courses/semiconductor-physics/review-mode.md)
 - [电路与电子技术Ⅰ：模拟应试路线](notes/courses/analog-electronics/study-guide.md)
 - [微机原理：复习路线与综合题](notes/courses/microcomputer/study-guide.md)
 - [学习方法与导师团](notes/campus/study-methods.md)
@@ -137,7 +137,7 @@
 
 </div>
 
-## 这里还记录着什么？
+## 学习专题
 
 爱班与成长经验、选课、数学建模、AI 实验实践和 Markdown 写作方法，集中放在[学习路径](notes/index.md)中。
 
@@ -147,13 +147,13 @@
 
 <video controls preload="metadata" playsinline width="100%">
   <source src="assets/videos/he-lili.mp4" type="video/mp4">
-  你的浏览器不支持视频播放，请直接[下载视频](assets/videos/he-lili.mp4)。
+  当前浏览器不支持视频播放，可[下载视频](assets/videos/he-lili.mp4)。
 </video>
 
 </div>
 
-!!! tip "给未来的自己"
-    先把内容写下来，再慢慢整理。一个持续生长的笔记网站，比一次性做得很漂亮更重要。
+!!! note "内容维护"
+    课程笔记持续补充推导、例题与参考资料；生活文章按日期归档。
 
 ## 网站地图
 

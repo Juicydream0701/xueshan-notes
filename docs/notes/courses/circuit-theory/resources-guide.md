@@ -32,7 +32,7 @@
 - [过渡过程竞答题](resources/source-lectures/10-过渡过程竞答题.pdf)：重点练初值、终值及时间常数。
 - [原教材勘误](resources/source-lectures/textbook-errata.pdf)：与对应版本教材对照使用，不是所有版本的通用勘误。
 
-原PDF保留原貌；网页指出的明确错字或符号问题以可复算的方程说明。例如三相补充解答第7页的加法排版问题，详见[三相章文末说明](topics/06-three-phase.md)。本轮重新绘制的电路图为讲解自编例题，元件编号和参数以各题题设为准。
+原PDF保留原貌；网页指出的明确错字或符号问题以可复算的方程说明。例如三相补充解答第7页的加法排版问题，详见[三相章文末说明](topics/06-three-phase.md)。网页电路图用于课程配套例题，元件编号和参数以各题题设为准。
 
 ## 外部公开资料怎么配合用
 
@@ -42,7 +42,7 @@
 | [All About Circuits：直流](https://www.allaboutcircuits.com/textbook/direct-current/) · [交流](https://www.allaboutcircuits.com/textbook/alternating-current/) | 查基本定律、网络定理、相量和谐振的另一种讲法 |
 | [OpenStax University Physics Vol.2](https://openstax.org/details/books/university-physics-volume-2) | 电容、电感、能量、交流的物理基础 |
 
-All About Circuits 在本次自动链接检查中返回403，保留原始入口；如果你的浏览器也无法打开，可先用 MIT OCW、OpenStax 或上方站内课件。
+All About Circuits 可能限制部分网络环境的访问；可使用 MIT OCW、OpenStax 或站内课件作为替代资料。
 
 课程大纲、符号和题型覆盖因学校而异。这里的二端口、灵敏度和部分网络定理拓展可用于更高难度训练；报考院校的实际考试范围仍需对照其正式大纲，不能以本站目录代替。
 

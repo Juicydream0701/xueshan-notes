@@ -530,6 +530,32 @@ body.focus-mode .floating-tools__toggle { background: var(--sun); color: #27352f
 }
 
 /* 讲义中的电路图保留完整端口和图注，按正文宽度缩放。 */
+.sem-review-panel {
+  margin: 1.5rem 0 2rem;
+  padding: 1.1rem 1.2rem;
+  border: 1px solid rgba(53,114,102,.23);
+  border-radius: 12px;
+  background: rgba(53,114,102,.045);
+}
+.sem-review-panel__head { display: flex; justify-content: space-between; align-items: center; gap: 1rem; }
+.sem-review-panel progress { width: 100%; height: .65rem; margin: 1rem 0; accent-color: var(--pine); }
+.sem-review-checks { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .6rem 1rem; }
+.sem-review-checks label { display: flex; align-items: center; gap: .6rem; cursor: pointer; }
+.sem-review-checks input { width: 1rem; height: 1rem; flex: 0 0 auto; accent-color: var(--pine); }
+.sem-review-actions { display: flex; flex-wrap: wrap; gap: .6rem; margin-top: 1rem; }
+.sem-review-panel .md-button { font-size: .8rem; padding: .45rem .8rem; }
+.sem-review-panel .md-button:disabled { opacity: .55; cursor: default; }
+.sem-exam-clock { font-size: 1.7rem; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.sem-review-panel p:last-child { margin-bottom: 0; font-size: .8rem; color: var(--md-default-fg-color--light); }
+.md-typeset img[src*="/semiconductor-physics/images/"] { display: block; width: 100%; height: auto; margin: 1.5rem auto .5rem; border-radius: 8px; background: #fff; }
+@media (max-width: 600px) {
+  .sem-review-panel { padding: .85rem; }
+  .sem-review-checks { grid-template-columns: 1fr; }
+}
+@media print {
+  .sem-review-panel, .floating-tools, .floating-ai { display: none !important; }
+}
+
 .md-typeset img[src*="/figures/"] {
   display: block;
   width: 100%;

@@ -12,7 +12,7 @@
 
 ## 资料入口
 
-- [零基础完整讲义](resources/control-review.pdf)：按历年题型回看主线；
+- [课程复习讲义](resources/control-review.pdf)：按历年题型回看主线；
 - [速成大纲](resources/control-outline.pdf)：考前建立章节顺序；
 - [二阶系统瞬态响应](resources/control-second-order.pdf)：配合时域专题；
 - [超前校正](resources/control-lead-compensation.pdf)：配合频域设计。
