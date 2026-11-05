@@ -1,6 +1,6 @@
 # 半导体物理
 
-[开始逐章复习](review-mode.md) · [分章讲义](chapter-notes.md) · [章节练习](practice.md) · [综合模拟卷](mock-exam.md)
+[开始逐章复习](review-mode.md) · [分章讲义](chapter-notes.md) · [章节练习](practice.md) · [历年卷](past-exams.md) · [综合模拟卷](mock-exam.md)
 
 课程按晶体结构、能带、杂质、载流子统计、输运、非平衡载流子、pn 结与金属接触八章组织。详细讲义参照所提供的 102 页《半导体物理》PDF，补充推导、数值例题、适用条件及原页码索引。
 
@@ -78,6 +78,7 @@ $$
 - [第 7 章：pn 结](resources/semiconductor-chapter-7.pdf)
 - [第 8 章：金属和半导体接触](resources/semiconductor-chapter-8.pdf)
 - [本次参考笔记（102 页）](resources/semiconductor-exam-notes.pdf)
+- [25–26 学年回忆卷](resources/exams/semiconductor-recall-2025-2026.pdf) · [2024 秋电信回忆卷](resources/exams/semiconductor-recall-2024-autumn.pdf)
 - [既有复习讲义与历年卷详解](resources/semiconductor-full-review.pdf)
 - [2025–2026 学年回忆卷](resources/semiconductor-recall-2025-2026.pdf)
 

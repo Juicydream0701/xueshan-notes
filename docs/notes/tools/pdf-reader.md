@@ -8,6 +8,8 @@
       <label for="course-pdf-select">选择资料</label>
       <select id="course-pdf-select" data-pdf-select>
       <option value="../../courses/semiconductor-physics/resources/semiconductor-exam-notes.pdf#page=1">半导体物理 · 参考笔记（102 页）</option>
+      <option value="../../courses/semiconductor-physics/resources/exams/semiconductor-recall-2025-2026.pdf#page=1">半导体物理 · 25–26 学年回忆卷</option>
+      <option value="../../courses/semiconductor-physics/resources/exams/semiconductor-recall-2024-autumn.pdf#page=1">半导体物理 · 2024 秋电信回忆卷</option>
       <option value="../../courses/semiconductor-physics/resources/semiconductor-chapter-3.pdf#view=FitH">半导体物理 · 第 3 章：杂质与缺陷</option>
       <option value="../../courses/semiconductor-physics/resources/semiconductor-chapter-5.pdf#view=FitH">半导体物理 · 第 5 章：输运与散射</option>
       <option value="../../courses/semiconductor-physics/resources/semiconductor-chapter-6.pdf#view=FitH">半导体物理 · 第 6 章：非平衡载流子</option>
