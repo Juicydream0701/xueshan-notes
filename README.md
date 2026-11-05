@@ -12,6 +12,16 @@ python -m venv .venv
 
 浏览器打开 `http://127.0.0.1:8000/` 即可预览。
 
+电路原理的整本讲义从已构建的八章页面汇总生成。检查整本版或发布前，使用：
+
+```powershell
+.\.venv\Scripts\python.exe -m zensical build --clean
+python scripts/build_circuit_handout.py
+.\.venv\Scripts\python.exe -m http.server 8767 --directory site
+```
+
+此时打开 `http://127.0.0.1:8767/`。整本讲义支持展开解答、打印或通过浏览器另存为 PDF；GitHub Actions 已包含相同的汇总步骤。校对范围与验证结果见 `review/2026-11-05-site-review.md`。
+
 ## 内容怎么放
 
 - 学习笔记放在 `docs/notes/`，新增页面后在 `mkdocs.yml` 的 `nav` 中加入目录。

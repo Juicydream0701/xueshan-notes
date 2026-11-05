@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 340" role="img" aria-labelledby="title"><style>text{font:18px 'Microsoft YaHei',sans-serif;fill:#264e45}.wire{fill:none;stroke:#264e45;stroke-width:2.8;stroke-linecap:round;stroke-linejoin:round}.label{font-size:15px}.accent{stroke:#b17c43;fill:none;stroke-width:2.5}.dot{fill:#264e45}</style><rect width="100%" height="100%" rx="12" fill="#fffdf7"/><title id="title">耦合线圈接负载，点端在上，两端口电流流入点端，次级负载电流与I2方向相反</title>
+<path class="wire" d="M70 85H270V115 M270 215V260H70 M430 115V85H660V143 M660 203V260H430V215"/>
+<path class="wire" d="M270 115c-27 0-27 25 0 25c-27 0-27 25 0 25c-27 0-27 25 0 25c-27 0-27 25 0 25 M430 115c27 0 27 25 0 25c27 0 27 25 0 25c27 0 27 25 0 25c27 0 27 25 0 25"/>
+<rect class="wire" x="648" y="143" width="24" height="60"/>
+<circle class="dot" cx="250" cy="112" r="5"/><circle class="dot" cx="450" cy="112" r="5"/>
+<path class="accent" d="M120 65H190l-10-6m10 6-10 6 M580 65H510l10-6m-10 6 10 6"/>
+<text x="134" y="48">I₁ →</text><text x="509" y="48">← I₂</text><text x="195" y="171">L₁</text><text x="466" y="171">L₂</text><text x="685" y="177">Zₗ</text>
+<text x="320" y="169">M</text><text x="82" y="150">+</text><text x="82" y="213">−</text><text x="78" y="181">U₁</text>
+<text x="543" y="150">+</text><text x="543" y="215">−</text><text x="539" y="182">U₂</text>
+<text x="140" y="309" class="label">U₂ = −Zₗ I₂；次级负载电流取流出点端时等于 −I₂。</text></svg>

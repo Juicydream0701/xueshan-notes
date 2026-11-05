@@ -1,0 +1,289 @@
+{
+  "checks_passed": 71,
+  "checks": [
+    {
+      "check": "01 ex1 series current / node voltage",
+      "max_error": 0.0
+    },
+    {
+      "check": "01 ex3 dependent source",
+      "max_error": 0.0
+    },
+    {
+      "check": "01 ex5 balanced bridge",
+      "max_error": 1.7763568394002505e-15
+    },
+    {
+      "check": "01 exercise B delta equivalence",
+      "max_error": 4.440892098500626e-16
+    },
+    {
+      "check": "01 ex6 loading with 10k meter",
+      "max_error": 0.0
+    },
+    {
+      "check": "01 ex6 loading with 10M meter",
+      "max_error": 0.0
+    },
+    {
+      "check": "01 ex7 pulse energy increment",
+      "max_error": 6.776263578034403e-21
+    },
+    {
+      "check": "02 ex1 node voltages",
+      "max_error": 0.0
+    },
+    {
+      "check": "02 ex2 supernode",
+      "max_error": 4.440892098500626e-16
+    },
+    {
+      "check": "02 ex3 physical circuit currents",
+      "max_error": 4.440892098500626e-16
+    },
+    {
+      "check": "02 ex4 supermesh",
+      "max_error": 1.7763568394002505e-15
+    },
+    {
+      "check": "02 ex5 VCCS node voltages",
+      "max_error": 8.881784197001252e-16
+    },
+    {
+      "check": "02 exercise A",
+      "max_error": 8.881784197001252e-16
+    },
+    {
+      "check": "02 exercise B supernode",
+      "max_error": 0.0
+    },
+    {
+      "check": "02 exercise C supermesh",
+      "max_error": 3.552713678800501e-15
+    },
+    {
+      "check": "02 ex6 CCCS expressed through physical control branch",
+      "max_error": 0.0
+    },
+    {
+      "check": "03 ex1 superposition final node / power",
+      "max_error": 3.552713678800501e-15
+    },
+    {
+      "check": "03 ex2 loaded port / efficiency",
+      "max_error": 0.0
+    },
+    {
+      "check": "03 ex3 dependent-source loaded voltage",
+      "max_error": 0.0
+    },
+    {
+      "check": "03 ex4 pure resistor",
+      "max_error": 1.7763568394002505e-15
+    },
+    {
+      "check": "03 exercise A pure resistor",
+      "max_error": 1.7763568394002505e-15
+    },
+    {
+      "check": "04 maxpower pure resistor",
+      "max_error": 8.881784197001252e-16
+    },
+    {
+      "check": "07 q4 pure resistor",
+      "max_error": 0.0
+    },
+    {
+      "check": "03 reciprocity state 1",
+      "max_error": 1.1102230246251565e-16
+    },
+    {
+      "check": "03 reciprocity state 2",
+      "max_error": 4.440892098500626e-16
+    },
+    {
+      "check": "04 ex1 phasor",
+      "max_error": 7.105427357601002e-15
+    },
+    {
+      "check": "04 ex2 AC nodes / source current",
+      "max_error": 2.220446049250313e-16
+    },
+    {
+      "check": "04 ex3 compensation capacitor uF",
+      "max_error": 0.00226889844681466
+    },
+    {
+      "check": "04 ex4 exact half power frequencies",
+      "max_error": 3.9335645851679146e-11
+    },
+    {
+      "check": "04 ex4 half-power identity",
+      "max_error": 1.4432899320127035e-15
+    },
+    {
+      "check": "04 ex4 half-power identity",
+      "max_error": 2.1094237467877974e-15
+    },
+    {
+      "check": "04 ex5 parallel current",
+      "max_error": 0.0
+    },
+    {
+      "check": "04 exercise1 phasor",
+      "max_error": 1.6011864169946886e-15
+    },
+    {
+      "check": "05 ex1 integrated original RC topology",
+      "max_error": 0.0
+    },
+    {
+      "check": "05 ex1 integrated original RC topology",
+      "max_error": 1.7763568394002505e-14
+    },
+    {
+      "check": "05 ex2 integrated RL",
+      "max_error": 4.996003610813204e-16
+    },
+    {
+      "check": "05 ex2 integrated RL",
+      "max_error": 4.336808689942018e-19
+    },
+    {
+      "check": "05 ex4 sinusoidal switching",
+      "max_error": 1.4432899320127035e-15
+    },
+    {
+      "check": "05 ex4 sinusoidal switching",
+      "max_error": 2.1582735598713043e-13
+    },
+    {
+      "check": "05 ex5 underdamped current",
+      "max_error": 4.440892098500626e-16
+    },
+    {
+      "check": "05 ex5 RLC all damping regimes independent ODE integration",
+      "max_error": 3.9968028886505635e-15
+    },
+    {
+      "check": "05 ex5 underdamped current",
+      "max_error": 3.4416913763379853e-15
+    },
+    {
+      "check": "05 ex5 RLC all damping regimes independent ODE integration",
+      "max_error": 1.2434497875801753e-14
+    },
+    {
+      "check": "05 ex5 RLC all damping regimes independent ODE integration",
+      "max_error": 3.552713678800501e-15
+    },
+    {
+      "check": "05 ex5 RLC all damping regimes independent ODE integration",
+      "max_error": 2.3092638912203256e-14
+    },
+    {
+      "check": "05 ex5 RLC all damping regimes independent ODE integration",
+      "max_error": 6.217248937900877e-15
+    },
+    {
+      "check": "05 ex5 RLC all damping regimes independent ODE integration",
+      "max_error": 2.3092638912203256e-14
+    },
+    {
+      "check": "05 ex5 peak overshoot",
+      "max_error": 0.0
+    },
+    {
+      "check": "06 ex1 direct waveform RMS/power",
+      "max_error": 1.4210854715202004e-14
+    },
+    {
+      "check": "06 RLC harmonics direct average power",
+      "max_error": 0.0
+    },
+    {
+      "check": "06 ex4 floating neutral",
+      "max_error": 1.432144669219779e-14
+    },
+    {
+      "check": "06 ex4 load currents",
+      "max_error": 8.881784197001252e-16
+    },
+    {
+      "check": "06 ex4 total power",
+      "max_error": 4.547473508864641e-13
+    },
+    {
+      "check": "06 two wattmeter actual wiring complex products",
+      "max_error": 1.5752910326854155e-12
+    },
+    {
+      "check": "06 two wattmeter actual wiring complex products",
+      "max_error": 1.3642420526593924e-12
+    },
+    {
+      "check": "06 two wattmeter actual wiring complex products",
+      "max_error": 9.094947017729282e-13
+    },
+    {
+      "check": "06 two wattmeter actual wiring complex products",
+      "max_error": 1.3642420526593924e-12
+    },
+    {
+      "check": "07 q1 corrected node and voltage source current",
+      "max_error": 2.220446049250313e-16
+    },
+    {
+      "check": "07 q2 Thevenin voltage",
+      "max_error": 0.0
+    },
+    {
+      "check": "07 q3 supermesh",
+      "max_error": 1.6653345369377348e-16
+    },
+    {
+      "check": "07 q5 RC crossing time milliseconds",
+      "max_error": 1.644906433284632e-12
+    },
+    {
+      "check": "07 q7 time-domain mean square",
+      "max_error": 8.881784197001252e-16
+    },
+    {
+      "check": "07 q8 floating neutral and power",
+      "max_error": 7.105427357601002e-15
+    },
+    {
+      "check": "07 q9 precise relative change",
+      "max_error": 1.1796119636642288e-16
+    },
+    {
+      "check": "08 ex2 coil currents and load voltage",
+      "max_error": 0.0
+    },
+    {
+      "check": "08 ex2 input / output power",
+      "max_error": 1.1102230246251565e-16
+    },
+    {
+      "check": "08 ex3 transformer input/output powers",
+      "max_error": 5.684341886080802e-14
+    },
+    {
+      "check": "08 ex4 independent inverse y",
+      "max_error": 5.551115123125783e-17
+    },
+    {
+      "check": "08 ex4 loaded input impedance",
+      "max_error": 0.0
+    },
+    {
+      "check": "08 exercise3 cascade transfer",
+      "max_error": 0.0
+    },
+    {
+      "check": "08 exercise3 loaded input impedance",
+      "max_error": 0.0
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "docs/notes/courses/analog-electronics/study-guide.md": [
+    "修正小信号输入电阻公式多余反斜杠。",
+    "修正晶体管电流公式转义。",
+    "纠正把理想运放虚短虚断误归为仅动态分析的概念错误。"
+  ],
+  "docs/notes/courses/foundations/c-programming/topics.md": [
+    "修正 C 字符串结束符的展示。",
+    "补清 sizeof 的对象/指针边界。"
+  ],
+  "docs/notes/courses/foundations/calculus/integrals.md": [
+    "纠正绕 x 轴壳层法的半径和积分变量。",
+    "补积分中值定理连续性条件。"
+  ],
+  "docs/notes/courses/foundations/calculus/multivariable.md": [
+    "补方向导数等于梯度点积的可微条件。",
+    "补拉格朗日乘子约束正则条件。",
+    "补隐式曲面切平面的非零梯度条件。"
+  ],
+  "docs/notes/courses/foundations/calculus/limits-continuity.md": [
+    "明确双侧极限等价条件及端点例外。",
+    "区分介值定理与零点定理特例。"
+  ],
+  "docs/notes/courses/foundations/calculus/series.md": [
+    "补基本幂级数的收敛范围。",
+    "区分单边拉普拉斯变换 0+ 与 0- 的约定。"
+  ],
+  "docs/notes/courses/foundations/complex-analysis/index.md": [
+    "纠正可去奇点与极点的洛朗主部分类。"
+  ],
+  "docs/notes/courses/foundations/probability-statistics/index.md": [
+    "纠正独立性与互斥之间的错误强弱关系。",
+    "澄清方差展开总成立、独立仅使协方差项消失。",
+    "补小样本 t 统计量的正态独立假设。"
+  ],
+  "docs/notes/courses/foundations/probability-statistics/topics.md": [
+    "统一概率专题中独立/互斥的定义。"
+  ],
+  "docs/notes/courses/foundations/ordinary-differential-equations/topics.md": [
+    "补分离变量可能遗漏的平衡解。"
+  ],
+  "docs/notes/courses/foundations/ordinary-differential-equations/index.md": [
+    "补暂态衰减和无阻尼共振的条件。"
+  ],
+  "docs/notes/courses/foundations/college-physics/topics.md": [
+    "限定刚体转动力矩公式的固定轴场景。",
+    "明确热力学第一定律符号。",
+    "纠正将高斯定律适用性限于高对称场景的说法。"
+  ],
+  "docs/notes/courses/microcomputer/instruction-set.md": [
+    "纠正 8051 MOV 可支持直接地址间传送。"
+  ],
+  "docs/notes/courses/microcomputer/timers.md": [
+    "明确定时器门控高电平，不混淆低有效中断。"
+  ],
+  "docs/notes/courses/microcomputer/serial.md": [
+    "区分 PCON 字节地址和 SMOD 位。",
+    "补串口多机通信 SM2 过滤机制。"
+  ],
+  "docs/notes/courses/digital-electronics/index.md": [
+    "纠正静态冒险不要求两个输入同时变化。",
+    "给时钟偏斜定义一致的建立时间公式。",
+    "明确 setup/hold 使用最大/最小延迟及 skew 符号约定。"
+  ],
+  "docs/notes/courses/control-theory/topics.md": [
+    "区分标准二阶超调量的精确公式与高阶近似。",
+    "纠正传递函数不一定无量纲。",
+    "补 Nyquist 必须结合开环右半平面极点计数。"
+  ],
+  "docs/notes/courses/electromagnetics/chapter-notes.md": [
+    "修正全页向量微分/麦克斯韦方程/波阻抗/反射系数中的双反斜杠。",
+    "限定横向平面波的介质条件。"
+  ],
+  "docs/notes/courses/electromagnetics/index.md": [
+    "补横电磁波和无耗波阻抗的介质条件。"
+  ],
+  "docs/notes/courses/electromagnetics/study-guide.md": [
+    "补平面波正交关系适用条件。",
+    "补简化泊松方程的均匀介质条件。",
+    "避免把复数反射系数简化为正负号。"
+  ],
+  "docs/notes/courses/signal-analysis/chapter-notes.md": [
+    "补周期信号定义与常量无基波周期的例外。"
+  ],
+  "docs/notes/courses/signal-analysis/index.md": [
+    "补 Z 域系统函数零初始条件。"
+  ],
+  "docs/notes/courses/electrical-networks/chapter-notes.md": [
+    "限定理想并联无功补偿保持有功功率的前提。"
+  ],
+  "docs/notes/courses/engineering-graphics/index.md": [
+    "补标准件和轴纵向剖切不剖的图样规定。"
+  ],
+  "docs/notes/courses/engineering-training/index.md": [
+    "消除 3D 打印悬垂角度方向的歧义。"
+  ],
+  "docs/notes/courses/wireless-communications/index.md": [
+    "明确路径损耗的 dB 单位、频率距离数值单位和远场条件。",
+    "避免把绝对功率 dBm 与相对损耗 dB 混写。"
+  ],
+  "docs/notes/courses/measurement-instruments/topics.md": [
+    "限定奈奎斯特两倍最高频率条件的基带采样场景。",
+    "区分不可恢复混叠与有意带通采样。",
+    "纠正有限观察窗与 DFT 频率取样的概念混合。"
+  ],
+  "docs/notes/tools/pdf-library.md": [
+    "给出与 Markdown arithmatex 确定兼容的公式写作方法。",
+    "纠正普通链接必定新标签页的错误承诺。",
+    "避免单份等效法课件被误标为两种资料。"
+  ],
+  "docs/notes/tools/pdf-reader.md": [
+    "修正阅读器选项源码挤在同一行，选项内容不变。"
+  ],
+  "docs/notes/courses/circuit-electronics-experiments/index.md": [
+    "将频率响应适用范围改为线性时不变网络，并限定幅度比的分贝参考。",
+    "补比较器阈值公式的电阻拓扑和零参考条件，避免只背分压系数。"
+  ],
+  "docs/notes/courses/semiconductor-physics/chapter-notes.md": [
+    "限定有效质量曲率公式的一维/主轴方向，区分一般各向异性张量。",
+    "补质量作用定律的非简并与热平衡前提。",
+    "区分小注入与少数载流子的相对变化，避免把所有注入都描述为原位成对产生。",
+    "纠正把过剩电子空穴相等仅由注入水平决定的判断。"
+  ],
+  "docs/notes/courses/semiconductor-physics/study-guide.md": [
+    "避免题目未明说时盲目默认热平衡，要求先读偏压与光照条件。",
+    "修正准费米能级的文字错误。"
+  ],
+  "docs/notes/campus/modeling-guide.md": [
+    "保留原始小红书短链并标注本次检查返回 404，避免读者误以为是可直接使用的资料。"
+  ]
+}

@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>电路原理复习讲义 · 雪山大地</title>
+<meta name="description" content="电路原理八章讲义整本阅读与打印，含推导、数值例题、自测解答及原课件索引。">
+<style>
+:root{color-scheme:light;--ink:#263f36;--pine:#367466;--paper:#fbfaf5;--line:#d5e0d7}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.9 system-ui,"Microsoft YaHei",sans-serif}header,main,footer{max-width:1000px;margin:auto;padding:28px 42px}header{padding-top:60px;border-bottom:1px solid var(--line)}h1{font-size:2rem;line-height:1.4;margin:.6em 0}h2{font-size:1.65rem;line-height:1.45;margin:2.8em 0 1em}h3{font-size:1.3rem;margin:2em 0 .8em}h4{font-size:1.1rem;margin:1.5em 0 .6em}p{margin:.8em 0 1.1em}a{color:var(--pine);text-underline-offset:4px}button,.button{font:inherit;border:1px solid var(--line);border-radius:7px;background:#fff;padding:8px 15px;cursor:pointer;color:var(--pine);text-decoration:none;display:inline-block;margin:5px 10px 5px 0}.eyebrow{color:var(--pine);font-size:.85rem;letter-spacing:.12em}.toc{padding:24px;background:#f1f5ed;border-radius:12px}.toc a{display:block;margin:6px 0}.chapter{padding-bottom:35px;border-bottom:1px solid var(--line)}img{max-width:100%;height:auto;display:block;margin:24px auto}table{border-collapse:collapse;width:100%;font-size:.9rem;margin:20px 0}td,th{border:1px solid var(--line);padding:9px;text-align:left;vertical-align:top}pre,.arithmatex{max-width:100%;overflow-x:auto}pre{padding:16px;background:#eef2eb;font-size:.85rem}details,.admonition{border:1px solid var(--line);border-left:4px solid var(--pine);padding:16px 20px;margin:22px 0;border-radius:7px}summary{cursor:pointer;font-weight:600}details p:last-child{margin-bottom:0}.headerlink{display:none}mjx-container[display="true"]{max-width:100%;overflow-x:auto;overflow-y:hidden;padding:6px 0}.actions{display:flex;flex-wrap:wrap;align-items:center}footer{font-size:.85rem;color:#52695f}section{scroll-margin-top:20px}
+@media(max-width:650px){body{font-size:16px}header,main,footer{padding:22px}h1{font-size:1.65rem}h2{font-size:1.4rem}table{display:block;overflow-x:auto}details{padding:13px}}
+@media print{@page{size:A4;margin:16mm 15mm}body{background:#fff;color:#111;font-size:10.5pt;line-height:1.65}header,main,footer{max-width:none;padding:0}.actions,.toc,.headerlink{display:none!important}.chapter{break-before:page;border:0}h2,h3,h4,summary{break-after:avoid}img{max-height:180mm;break-inside:avoid}pre,.arithmatex,mjx-container[display="true"]{overflow:visible!important}a{color:inherit;text-decoration:none}table{font-size:9pt}tr{break-inside:avoid}details{border:1px solid #bbb;padding:10px}header{padding-bottom:20px}footer{break-before:avoid}}
+</style>
+<script src="../../../assets/javascripts/mathjax-config.js"></script>
+</head>
+<body>
+<header>
+<p class="eyebrow">雪山大地 · 电路原理</p>
+<h1>电路原理复习讲义</h1>
+<p>从电路模型、方程与端口出发，逐步学习正弦稳态、动态过程、非正弦与三相，再完成综合训练。数值例题为教学自编；原课程PDF与网页讲解分别标注。</p>
+<div class="actions"><a class="button" href="./">返回课程目录</a><button type="button" id="print-book">打印 / 另存为 PDF</button><button type="button" id="toggle-answers">展开全部解答</button></div>
+<p>打印时会自动展开所有解答。需要原始题图或课堂顺序，请使用各章文末的课件页码链接。</p>
+<nav class="toc" aria-label="讲义目录">
+<a href="#chapter-01">01 模型、参考方向与基本定律</a><a href="#chapter-02">02 节点电压法、网孔法与方程</a><a href="#chapter-03">03 网络定理与端口等效</a><a href="#chapter-04">04 正弦稳态、谐振与功率</a><a href="#chapter-05">05 动态电路与换路</a><a href="#chapter-06">06 非正弦与三相</a><a href="#chapter-07">07 综合训练与提高题</a><a href="#chapter-08">08 耦合、变压器与二端口</a>
+</nav>
+</header>
+<main id="handout-chapters">
+<!-- HANDOUT_CHAPTERS -->
+<p>也可以按章阅读：<a href="topics/01-models-laws/">模型</a>、<a href="topics/02-equations/">方程</a>、<a href="topics/03-theorems/">定理</a>、<a href="topics/04-ac/">交流</a>、<a href="topics/05-transients/">动态</a>、<a href="topics/06-three-phase/">三相</a>、<a href="topics/07-problems/">综合题</a>、<a href="topics/08-coupling-twoports/">耦合与二端口</a>。</p>
+</main>
+<footer>雪山大地 · <a href="resources-guide/">原讲义与资料索引</a>。公式、方向和模型假设是解题的一部分，打印后仍应对照题设使用。</footer>
+<script src="../../../assets/vendor/mathjax/es5/tex-mml-chtml.js"></script>
+<script>
+(()=>{const answers=()=>[...document.querySelectorAll('details')];const toggle=document.getElementById('toggle-answers');let before=[];toggle.addEventListener('click',()=>{const open=answers().some(x=>!x.open);answers().forEach(x=>x.open=open);toggle.textContent=open?'收起全部解答':'展开全部解答'});document.getElementById('print-book').addEventListener('click',async()=>{if(window.MathJax?.startup?.promise)await MathJax.startup.promise;window.print()});window.addEventListener('beforeprint',()=>{before=answers().map(x=>x.open);answers().forEach(x=>x.open=true)});window.addEventListener('afterprint',()=>answers().forEach((x,i)=>x.open=before[i]??false))})();
+</script>
+</body></html>

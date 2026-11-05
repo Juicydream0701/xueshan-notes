@@ -1,6 +1,6 @@
 # PDF 资料中心
 
-这里把课程页面里的精选 PDF 重新按用途列成一张索引。资料仍保存在本站仓库中，点击链接会在新标签页打开浏览器 PDF 阅读器；需要边看边记时，可以直接使用[站内 PDF 阅读器](pdf-reader.md)。页面中的阅读器支持切换资料、调节高度和打开本地 PDF，本地文件只在当前浏览器中读取。
+这里把课程页面里的精选 PDF 重新按用途列成一张索引。资料仍保存在本站仓库中，点击链接可打开浏览器 PDF 阅读器；需要保留当前页时，使用“新标签页打开”；需要边看边记时，可以直接使用[站内 PDF 阅读器](pdf-reader.md)。页面中的阅读器支持切换资料、调节高度和打开本地 PDF，本地文件只在当前浏览器中读取。
 
 ## 先按复习任务选择
 
@@ -49,7 +49,7 @@
 
 1. 先打开课程主线页面，确定当前专题、符号和先修知识。
 2. 再从本页选一份短资料，用 PDF 阅读器核对推导、例题和图表。
-3. 把仍然不清楚的公式写回课程页面的“易错点”或自己的 Markdown 草稿；行内公式使用 `\\( ... \\)`，行间公式使用 `\\[ ... \\]`，本站会由 MathJax 编译显示。
+3. 把仍然不清楚的公式写回课程页面的“易错点”或自己的 Markdown 草稿；行内公式使用 `$ ... $`，行间公式使用独占一行的 `$$` 包围公式（上下各一行），本站会由 MathJax 编译显示。
 
 公开站点只保留适合长期复习的精选资料，不上传成绩、名单、个人作业和实验报告。课程页面仍然是最完整的入口，本页用于按任务快速定位。
 
@@ -58,7 +58,7 @@
 专题页按“模型 → 方程 → 定理 → 频域 → 暂态 → 三相”重新编排了课程资料。需要原始讲义时，可直接打开：
 
 - [元件、信号、KCL 与 KVL](../courses/circuit-theory/resources/source-lectures/01-元件信号-KCL-KVL.pdf)
-- [等效法与电路方程](../courses/circuit-theory/resources/source-lectures/02-等效法-2024.pdf) · [电路方程（2024）](../courses/circuit-theory/resources/source-lectures/03-电路方程-2024.pdf)
+- [等效法](../courses/circuit-theory/resources/source-lectures/02-等效法-2024.pdf) · [电路方程（2024）](../courses/circuit-theory/resources/source-lectures/03-电路方程-2024.pdf)
 - [电路定理（2024）](../courses/circuit-theory/resources/source-lectures/04-电路定理-2024.pdf) · [非正弦稳态（2024）](../courses/circuit-theory/resources/source-lectures/05-非正弦稳态-2024.pdf)
 - [一阶暂态：阶跃与冲激](../courses/circuit-theory/resources/source-lectures/06-一阶暂态-阶跃冲激.pdf) · [三相补充解答](../courses/circuit-theory/resources/source-lectures/08-三相补充解答.pdf)
 - [非正弦竞答题](../courses/circuit-theory/resources/source-lectures/09-非正弦竞答题.pdf) · [过渡过程竞答题](../courses/circuit-theory/resources/source-lectures/10-过渡过程竞答题.pdf)

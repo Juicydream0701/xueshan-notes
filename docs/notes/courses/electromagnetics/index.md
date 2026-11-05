@@ -18,7 +18,7 @@
 
 ## 平面波与传输线
 
-均匀介质平面波中 $\mathbf E\perp\mathbf H\perp\mathbf k$，波阻抗 $\eta=\sqrt{\mu/\varepsilon}$，传播常数同时包含衰减和相位。正入射边界由切向场连续确定反射、透射系数；传输线反射系数 $\Gamma=(Z_L-Z_0)/(Z_L+Z_0)$，匹配时无反射。
+均匀、各向同性介质中的均匀平面波为横电磁波；在无耗介质中 $\mathbf E$、$\mathbf H$、$\mathbf k$ 两两垂直，波阻抗 $\eta=\sqrt{\mu/\varepsilon}$。采用 $e^{j\omega t}$ 约定的有耗介质应使用 $\eta=\sqrt{j\omega\mu/(\sigma+j\omega\varepsilon)}$，传播常数同时包含衰减和相位。正入射边界由切向场连续确定反射、透射系数；传输线反射系数 $\Gamma=(Z_L-Z_0)/(Z_L+Z_0)$，匹配时无反射。
 
 ## 解题清单
 

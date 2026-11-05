@@ -20,7 +20,7 @@
 
 | 指令 | 空间 | 典型用途 |
 | --- | --- | --- |
-| `MOV` | 内部 RAM、寄存器、SFR | 通用数据移动；不支持任意两个 RAM 单元直接互传时，借助 A 或临时寄存器 |
+| `MOV` | 内部 RAM、寄存器、SFR | 支持 `MOV direct,direct`，例如 `MOV 31H,30H`；不支持 `MOV @R0,@R1`，这类间接地址间传送需借助 A |
 | `MOVX` | 外部数据 RAM | `MOVX A,@DPTR` 读；`MOVX @DPTR,A` 写 |
 | `MOVC` | 程序存储器 | `MOVC A,@A+DPTR` 或 `MOVC A,@A+PC` 查常量表 |
 | `PUSH` / `POP` | 内部 RAM 堆栈 | 保存和恢复直接地址指定的字节；顺序相反才能恢复原值 |

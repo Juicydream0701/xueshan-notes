@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 340" role="img" aria-labelledby="title"><style>text{font:18px 'Microsoft YaHei',sans-serif;fill:#264e45}.wire{fill:none;stroke:#264e45;stroke-width:2.8;stroke-linecap:round;stroke-linejoin:round}.label{font-size:15px}.accent{stroke:#b17c43;fill:none;stroke-width:2.5}.dot{fill:#264e45}</style><rect width="100%" height="100%" rx="12" fill="#fffdf7"/><title id="title">交流节点法例题，电源串2欧电阻，节点对地并联4欧电阻和j4欧电感</title>
+<path class="wire" d="M90 145V80H220 M310 80H650V136 M90 205V265H650V216 M445 80V145 M445 205V265"/>
+<circle class="wire" cx="90" cy="175" r="30"/><text x="83" y="169">+</text><text x="83" y="197">−</text>
+<rect class="wire" x="220" y="68" width="90" height="24"/><rect class="wire" x="433" y="145" width="24" height="60"/>
+<path class="wire" d="M650 136c-24 0-24 20 0 20c-24 0-24 20 0 20c-24 0-24 20 0 20c-24 0-24 20 0 20"/>
+<circle class="dot" cx="445" cy="80" r="5"/><circle class="dot" cx="445" cy="265" r="5"/>
+<text x="235" y="52">2 Ω</text><text x="400" y="53">a，Vₐ</text><text x="470" y="180">4 Ω</text><text x="685" y="181">j4 Ω</text>
+<text x="130" y="175">10∠0° V</text><text x="310" y="310" class="label">节点方程：(Vₐ − 10)/2 + Vₐ/4 + Vₐ/(j4) = 0</text></svg>

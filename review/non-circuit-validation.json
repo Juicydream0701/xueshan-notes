@@ -1,0 +1,17 @@
+{
+  "files_reviewed": 93,
+  "files_corrected": 33,
+  "corrections": 63,
+  "control_characters": [],
+  "suspected_literal_newlines": [],
+  "missing_local_links": [],
+  "odd_display_math_delimiter_counts": [],
+  "verified_calculations": [
+    "8051：12 MHz、12T 内核、方式 1 计时 1 ms，计数 1000，初值 FC18H。",
+    "微积分：约束 x²+2y²=1 下，x+y 的最大值 √(3/2)，由柯西不等式与乘子方程交叉核验。",
+    "微积分：f(x)=x e⁻ˣ 的一、二阶导数 e⁻ˣ(1−x)、e⁻ˣ(x−2) 用独立差分核验。",
+    "积分：绕 x 轴的水平壳层使用半径 |y| 和 dy；常长区间积分还原圆柱体积 πR²L。",
+    "概率：正概率互斥事件满足 P(AB)=0<P(A)P(B)，与独立性不相容；独立事件则可有正交集概率。",
+    "数电：按捕获时钟晚到 s 的约定，从数据到达/要求时刻推导 setup ≤T+s、hold ≥t_hold+s，最大/最小延迟方向一致。"
+  ]
+}

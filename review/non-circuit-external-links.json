@@ -1,0 +1,821 @@
+[
+  {
+    "url": "https://docs.scipy.org/doc/scipy/reference/optimize.html",
+    "sources": [
+      "docs/notes/campus/modeling-guide.md"
+    ],
+    "status": 200,
+    "final_url": "https://docs.scipy.org/doc/scipy/reference/optimize.html",
+    "content_type": "text/html",
+    "elapsed_seconds": 1.06
+  },
+  {
+    "url": "https://file.cc98.org/v4-upload/d/2025/0621/uzcrdppi.pdf",
+    "sources": [
+      "docs/notes/campus/course-selection.md"
+    ],
+    "status": 200,
+    "final_url": "https://file.cc98.org/v4-upload/d/2025/0621/uzcrdppi.pdf",
+    "content_type": "application/pdf",
+    "elapsed_seconds": 0.05
+  },
+  {
+    "url": "https://file.cc98.org/v4-upload/d/2025/0622/v5qicwpw.docx",
+    "sources": [
+      "docs/notes/campus/course-selection.md"
+    ],
+    "status": 200,
+    "final_url": "https://file.cc98.org/v4-upload/d/2025/0622/v5qicwpw.docx",
+    "content_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+    "elapsed_seconds": 0.05
+  },
+  {
+    "url": "https://file.cc98.org/v4-upload/d/2026/0115/amvzxg4s.pdf",
+    "sources": [
+      "docs/notes/campus/resource-index.md"
+    ],
+    "status": 200,
+    "final_url": "https://file.cc98.org/v4-upload/d/2026/0115/amvzxg4s.pdf",
+    "content_type": "application/pdf",
+    "elapsed_seconds": 0.05
+  },
+  {
+    "url": "https://file.cc98.org/v4-upload/d/2026/0115/dzqv33nc.pdf",
+    "sources": [
+      "docs/notes/campus/resource-index.md"
+    ],
+    "status": 200,
+    "final_url": "https://file.cc98.org/v4-upload/d/2026/0115/dzqv33nc.pdf",
+    "content_type": "application/pdf",
+    "elapsed_seconds": 0.05
+  },
+  {
+    "url": "https://file.cc98.org/v4-upload/d/2026/0115/f5nrclmn.pdf",
+    "sources": [
+      "docs/notes/campus/resource-index.md"
+    ],
+    "status": 200,
+    "final_url": "https://file.cc98.org/v4-upload/d/2026/0115/f5nrclmn.pdf",
+    "content_type": "application/pdf",
+    "elapsed_seconds": 0.03
+  },
+  {
+    "url": "https://file.cc98.org/v4-upload/d/2026/0115/ggaqps2i.pdf",
+    "sources": [
+      "docs/notes/campus/resource-index.md"
+    ],
+    "status": 200,
+    "final_url": "https://file.cc98.org/v4-upload/d/2026/0115/ggaqps2i.pdf",
+    "content_type": "application/pdf",
+    "elapsed_seconds": 0.06
+  },
+  {
+    "url": "https://file.cc98.org/v4-upload/d/2026/0115/ghpa3tog.pdf",
+    "sources": [
+      "docs/notes/campus/resource-index.md"
+    ],
+    "status": 200,
+    "final_url": "https://file.cc98.org/v4-upload/d/2026/0115/ghpa3tog.pdf",
+    "content_type": "application/pdf",
+    "elapsed_seconds": 0.05
+  },
+  {
+    "url": "https://file.cc98.org/v4-upload/d/2026/0115/iz5zejp3.pdf",
+    "sources": [
+      "docs/notes/campus/resource-index.md"
+    ],
+    "status": 200,
+    "final_url": "https://file.cc98.org/v4-upload/d/2026/0115/iz5zejp3.pdf",
+    "content_type": "application/pdf",
+    "elapsed_seconds": 0.06
+  },
+  {
+    "url": "https://file.cc98.org/v4-upload/d/2026/0115/lc4yvtjl.pdf",
+    "sources": [
+      "docs/notes/campus/resource-index.md"
+    ],
+    "status": 200,
+    "final_url": "https://file.cc98.org/v4-upload/d/2026/0115/lc4yvtjl.pdf",
+    "content_type": "application/pdf",
+    "elapsed_seconds": 0.05
+  },
+  {
+    "url": "https://file.cc98.org/v4-upload/d/2026/0115/vi2dj54w.pdf",
+    "sources": [
+      "docs/notes/campus/resource-index.md"
+    ],
+    "status": 200,
+    "final_url": "https://file.cc98.org/v4-upload/d/2026/0115/vi2dj54w.pdf",
+    "content_type": "application/pdf",
+    "elapsed_seconds": 0.08
+  },
+  {
+    "url": "https://file.cc98.org/v4-upload/d/2026/0704/1vzptc1w.zip",
+    "sources": [
+      "docs/notes/campus/resource-index.md"
+    ],
+    "status": 200,
+    "final_url": "https://file.cc98.org/v4-upload/d/2026/0704/1vzptc1w.zip",
+    "content_type": "application/x-zip-compressed",
+    "elapsed_seconds": 0.05
+  },
+  {
+    "url": "https://file.cc98.org/v4-upload/d/2026/0704/bjgfl5lk.pdf",
+    "sources": [
+      "docs/notes/campus/resource-index.md"
+    ],
+    "status": 200,
+    "final_url": "https://file.cc98.org/v4-upload/d/2026/0704/bjgfl5lk.pdf",
+    "content_type": "application/pdf",
+    "elapsed_seconds": 0.06
+  },
+  {
+    "url": "https://file.cc98.org/v4-upload/d/2026/0704/ibi5kspp.pdf",
+    "sources": [
+      "docs/notes/campus/resource-index.md"
+    ],
+    "status": 200,
+    "final_url": "https://file.cc98.org/v4-upload/d/2026/0704/ibi5kspp.pdf",
+    "content_type": "application/pdf",
+    "elapsed_seconds": 0.05
+  },
+  {
+    "url": "https://file.cc98.org/v4-upload/d/2026/0704/j1yghni0.pdf",
+    "sources": [
+      "docs/notes/campus/resource-index.md"
+    ],
+    "status": 200,
+    "final_url": "https://file.cc98.org/v4-upload/d/2026/0704/j1yghni0.pdf",
+    "content_type": "application/pdf",
+    "elapsed_seconds": 0.03
+  },
+  {
+    "url": "https://file.cc98.org/v4-upload/d/2026/0704/nog1niaj.pdf",
+    "sources": [
+      "docs/notes/campus/resource-index.md"
+    ],
+    "status": 200,
+    "final_url": "https://file.cc98.org/v4-upload/d/2026/0704/nog1niaj.pdf",
+    "content_type": "application/pdf",
+    "elapsed_seconds": 0.03
+  },
+  {
+    "url": "https://file.cc98.org/v4-upload/d/2026/0704/opsl0mcf.pdf",
+    "sources": [
+      "docs/notes/campus/resource-index.md"
+    ],
+    "status": 200,
+    "final_url": "https://file.cc98.org/v4-upload/d/2026/0704/opsl0mcf.pdf",
+    "content_type": "application/pdf",
+    "elapsed_seconds": 0.06
+  },
+  {
+    "url": "https://file.cc98.org/v4-upload/d/2026/0704/uwr3cuy5.pdf",
+    "sources": [
+      "docs/notes/campus/resource-index.md"
+    ],
+    "status": 200,
+    "final_url": "https://file.cc98.org/v4-upload/d/2026/0704/uwr3cuy5.pdf",
+    "content_type": "application/pdf",
+    "elapsed_seconds": 0.05
+  },
+  {
+    "url": "https://file.cc98.org/v4-upload/d/2026/0704/xbm1iyfy.pdf",
+    "sources": [
+      "docs/notes/campus/resource-index.md"
+    ],
+    "status": 200,
+    "final_url": "https://file.cc98.org/v4-upload/d/2026/0704/xbm1iyfy.pdf",
+    "content_type": "application/pdf",
+    "elapsed_seconds": 0.03
+  },
+  {
+    "url": "https://file.cc98.org/v4-upload/d/2026/0704/y0kmth4c.pdf",
+    "sources": [
+      "docs/notes/campus/resource-index.md"
+    ],
+    "status": 200,
+    "final_url": "https://file.cc98.org/v4-upload/d/2026/0704/y0kmth4c.pdf",
+    "content_type": "application/pdf",
+    "elapsed_seconds": 0.05
+  },
+  {
+    "url": "https://file.cc98.org/v4-upload/d/2026/0711/bvrjsquc.webp",
+    "sources": [
+      "docs/notes/campus/ai-lab-guide.md"
+    ],
+    "status": 200,
+    "final_url": "https://file.cc98.org/v4-upload/d/2026/0711/bvrjsquc.webp",
+    "content_type": "image/webp",
+    "elapsed_seconds": 0.41
+  },
+  {
+    "url": "https://file.cc98.org/v4-upload/d/2026/0711/e0k4bdft.pdf",
+    "sources": [
+      "docs/notes/campus/resource-index.md"
+    ],
+    "status": 200,
+    "final_url": "https://file.cc98.org/v4-upload/d/2026/0711/e0k4bdft.pdf",
+    "content_type": "application/pdf",
+    "elapsed_seconds": 0.03
+  },
+  {
+    "url": "https://file.cc98.org/v4-upload/d/2026/0711/eplptics.pdf",
+    "sources": [
+      "docs/notes/campus/resource-index.md"
+    ],
+    "status": 200,
+    "final_url": "https://file.cc98.org/v4-upload/d/2026/0711/eplptics.pdf",
+    "content_type": "application/pdf",
+    "elapsed_seconds": 0.05
+  },
+  {
+    "url": "https://file.cc98.org/v4-upload/d/2026/0711/hkbbnbrx.pdf",
+    "sources": [
+      "docs/notes/campus/resource-index.md"
+    ],
+    "status": 200,
+    "final_url": "https://file.cc98.org/v4-upload/d/2026/0711/hkbbnbrx.pdf",
+    "content_type": "application/pdf",
+    "elapsed_seconds": 0.06
+  },
+  {
+    "url": "https://file.cc98.org/v4-upload/d/2026/0711/idzqegnq.pdf",
+    "sources": [
+      "docs/notes/campus/resource-index.md"
+    ],
+    "status": 200,
+    "final_url": "https://file.cc98.org/v4-upload/d/2026/0711/idzqegnq.pdf",
+    "content_type": "application/pdf",
+    "elapsed_seconds": 0.03
+  },
+  {
+    "url": "https://file.cc98.org/v4-upload/d/2026/0711/lsovknig.pdf",
+    "sources": [
+      "docs/notes/campus/resource-index.md"
+    ],
+    "status": 200,
+    "final_url": "https://file.cc98.org/v4-upload/d/2026/0711/lsovknig.pdf",
+    "content_type": "application/pdf",
+    "elapsed_seconds": 0.05
+  },
+  {
+    "url": "https://file.cc98.org/v4-upload/d/2026/0711/mhx3awvx.pdf",
+    "sources": [
+      "docs/notes/campus/resource-index.md"
+    ],
+    "status": 200,
+    "final_url": "https://file.cc98.org/v4-upload/d/2026/0711/mhx3awvx.pdf",
+    "content_type": "application/pdf",
+    "elapsed_seconds": 0.05
+  },
+  {
+    "url": "https://file.cc98.org/v4-upload/d/2026/0711/nt4gf2z3.pdf",
+    "sources": [
+      "docs/notes/campus/resource-index.md"
+    ],
+    "status": 200,
+    "final_url": "https://file.cc98.org/v4-upload/d/2026/0711/nt4gf2z3.pdf",
+    "content_type": "application/pdf",
+    "elapsed_seconds": 0.03
+  },
+  {
+    "url": "https://file.cc98.org/v4-upload/d/2026/0711/onfofh0v.pdf",
+    "sources": [
+      "docs/notes/campus/resource-index.md"
+    ],
+    "status": 200,
+    "final_url": "https://file.cc98.org/v4-upload/d/2026/0711/onfofh0v.pdf",
+    "content_type": "application/pdf",
+    "elapsed_seconds": 0.03
+  },
+  {
+    "url": "https://file.cc98.org/v4-upload/d/2026/0711/phefuni3.pdf",
+    "sources": [
+      "docs/notes/campus/resource-index.md"
+    ],
+    "status": 200,
+    "final_url": "https://file.cc98.org/v4-upload/d/2026/0711/phefuni3.pdf",
+    "content_type": "application/pdf",
+    "elapsed_seconds": 0.03
+  },
+  {
+    "url": "https://file.cc98.org/v4-upload/d/2026/0711/ryjb1nfa.pdf",
+    "sources": [
+      "docs/notes/campus/resource-index.md"
+    ],
+    "status": 200,
+    "final_url": "https://file.cc98.org/v4-upload/d/2026/0711/ryjb1nfa.pdf",
+    "content_type": "application/pdf",
+    "elapsed_seconds": 0.06
+  },
+  {
+    "url": "https://file.cc98.org/v4-upload/d/2026/0711/xbp4nqnx.pdf",
+    "sources": [
+      "docs/notes/campus/resource-index.md"
+    ],
+    "status": 200,
+    "final_url": "https://file.cc98.org/v4-upload/d/2026/0711/xbp4nqnx.pdf",
+    "content_type": "application/pdf",
+    "elapsed_seconds": 0.09
+  },
+  {
+    "url": "https://file.cc98.org/v4-upload/d/2026/0711/yt1ns4g5.webp",
+    "sources": [
+      "docs/notes/campus/ai-lab-guide.md"
+    ],
+    "status": 200,
+    "final_url": "https://file.cc98.org/v4-upload/d/2026/0711/yt1ns4g5.webp",
+    "content_type": "image/webp",
+    "elapsed_seconds": 0.39
+  },
+  {
+    "url": "https://file.cc98.org/v4-upload/d/2026/1013/zb2xwiw3.pdf",
+    "sources": [
+      "docs/notes/campus/modeling-guide.md"
+    ],
+    "status": 200,
+    "final_url": "https://file.cc98.org/v4-upload/d/2026/1013/zb2xwiw3.pdf",
+    "content_type": "application/pdf",
+    "elapsed_seconds": 0.06
+  },
+  {
+    "url": "https://github.com/Rya1cc/math-modeling-paper",
+    "sources": [
+      "docs/notes/campus/modeling-guide.md"
+    ],
+    "status": null,
+    "error": "URLError: <urlopen error timed out>",
+    "elapsed_seconds": 12.01
+  },
+  {
+    "url": "https://github.com/ZSLlearn/my-math-modeling-skill",
+    "sources": [
+      "docs/notes/campus/modeling-guide.md"
+    ],
+    "status": null,
+    "error": "URLError: <urlopen error timed out>",
+    "elapsed_seconds": 12.03
+  },
+  {
+    "url": "https://github.com/personqianduixue/Math_Model",
+    "sources": [
+      "docs/notes/campus/modeling-guide.md"
+    ],
+    "status": null,
+    "error": "URLError: <urlopen error timed out>",
+    "elapsed_seconds": 12.02
+  },
+  {
+    "url": "https://github.com/zhanwen/MathModel",
+    "sources": [
+      "docs/notes/campus/modeling-guide.md"
+    ],
+    "status": null,
+    "error": "URLError: <urlopen error timed out>",
+    "elapsed_seconds": 12.01
+  },
+  {
+    "url": "https://matplotlib.org/stable/gallery/index.html",
+    "sources": [
+      "docs/notes/campus/modeling-guide.md"
+    ],
+    "status": 200,
+    "final_url": "https://matplotlib.org/stable/gallery/index.html",
+    "content_type": "text/html; charset=utf-8",
+    "elapsed_seconds": 0.94
+  },
+  {
+    "url": "https://mp.weixin.qq.com/s/ctXMmrxcCrpNnvm1lbOmlw",
+    "sources": [
+      "docs/notes/campus/ai-lab-guide.md"
+    ],
+    "status": 200,
+    "final_url": "https://mp.weixin.qq.com/s/ctXMmrxcCrpNnvm1lbOmlw",
+    "content_type": "text/html; charset=UTF-8",
+    "elapsed_seconds": 1.31
+  },
+  {
+    "url": "https://pan.baidu.com/s/1vFVUDZLMSBd2Xzq5LwCDow?pwd=kjma",
+    "sources": [
+      "docs/notes/campus/resource-index.md"
+    ],
+    "status": 200,
+    "final_url": "https://pan.baidu.com/share/init?surl=vFVUDZLMSBd2Xzq5LwCDow&pwd=kjma",
+    "content_type": "text/html; charset=utf-8",
+    "elapsed_seconds": 1.92
+  },
+  {
+    "url": "https://pan.zju.edu.cn/share/3e1953abc3e58dd83b89456dd3",
+    "sources": [
+      "docs/notes/campus/ai-lab-guide.md",
+      "docs/notes/campus/resource-index.md"
+    ],
+    "status": 200,
+    "final_url": "https://pan.zju.edu.cn/share/3e1953abc3e58dd83b89456dd3",
+    "content_type": "text/html; charset=UTF-8",
+    "elapsed_seconds": 0.67
+  },
+  {
+    "url": "https://pan.zju.edu.cn/share/670468d1a1fe24dba24f755da1",
+    "sources": [
+      "docs/notes/campus/resource-index.md"
+    ],
+    "status": 200,
+    "final_url": "https://pan.zju.edu.cn/share/670468d1a1fe24dba24f755da1",
+    "content_type": "text/html; charset=UTF-8",
+    "elapsed_seconds": 0.28
+  },
+  {
+    "url": "https://scikit-learn.org/stable/",
+    "sources": [
+      "docs/notes/campus/modeling-guide.md"
+    ],
+    "status": 200,
+    "final_url": "https://scikit-learn.org/stable/",
+    "content_type": "text/html; charset=utf-8",
+    "elapsed_seconds": 0.81
+  },
+  {
+    "url": "https://www.bilibili.com/video/BV136dUYKEYU/?spm_id_from=333.1387.favlist.content.click",
+    "sources": [
+      "docs/notes/campus/ai-lab-guide.md"
+    ],
+    "status": 200,
+    "final_url": "https://www.bilibili.com/video/BV136dUYKEYU/?spm_id_from=333.1387.favlist.content.click",
+    "content_type": "text/html; charset=utf-8",
+    "elapsed_seconds": 0.48
+  },
+  {
+    "url": "https://www.cc98.org/topic/5377915",
+    "sources": [
+      "docs/notes/campus/course-selection.md"
+    ],
+    "status": 200,
+    "final_url": "https://www.cc98.org/topic/5377915",
+    "content_type": "text/html",
+    "elapsed_seconds": 0.09
+  },
+  {
+    "url": "https://www.cc98.org/topic/5782188",
+    "sources": [
+      "docs/notes/campus/course-selection.md"
+    ],
+    "status": 200,
+    "final_url": "https://www.cc98.org/topic/5782188",
+    "content_type": "text/html",
+    "elapsed_seconds": 0.09
+  },
+  {
+    "url": "https://www.cc98.org/topic/6033529",
+    "sources": [
+      "docs/notes/campus/resource-index.md"
+    ],
+    "status": 200,
+    "final_url": "https://www.cc98.org/topic/6033529",
+    "content_type": "text/html",
+    "elapsed_seconds": 0.05
+  },
+  {
+    "url": "https://www.cc98.org/topic/6097356",
+    "sources": [
+      "docs/notes/campus/transfer-modeling.md"
+    ],
+    "status": 200,
+    "final_url": "https://www.cc98.org/topic/6097356",
+    "content_type": "text/html",
+    "elapsed_seconds": 0.05
+  },
+  {
+    "url": "https://www.cc98.org/topic/6115466",
+    "sources": [
+      "docs/notes/campus/transfer-modeling.md"
+    ],
+    "status": 200,
+    "final_url": "https://www.cc98.org/topic/6115466",
+    "content_type": "text/html",
+    "elapsed_seconds": 0.03
+  },
+  {
+    "url": "https://www.cc98.org/topic/6163027",
+    "sources": [
+      "docs/notes/campus/course-selection.md"
+    ],
+    "status": 200,
+    "final_url": "https://www.cc98.org/topic/6163027",
+    "content_type": "text/html",
+    "elapsed_seconds": 1.06
+  },
+  {
+    "url": "https://www.cc98.org/topic/6166465",
+    "sources": [
+      "docs/notes/campus/course-selection.md"
+    ],
+    "status": 200,
+    "final_url": "https://www.cc98.org/topic/6166465",
+    "content_type": "text/html",
+    "elapsed_seconds": 0.06
+  },
+  {
+    "url": "https://www.cc98.org/topic/6208350",
+    "sources": [
+      "docs/notes/campus/course-selection.md"
+    ],
+    "status": 200,
+    "final_url": "https://www.cc98.org/topic/6208350",
+    "content_type": "text/html",
+    "elapsed_seconds": 0.06
+  },
+  {
+    "url": "https://www.cc98.org/topic/6219200",
+    "sources": [
+      "docs/notes/campus/course-selection.md"
+    ],
+    "status": 200,
+    "final_url": "https://www.cc98.org/topic/6219200",
+    "content_type": "text/html",
+    "elapsed_seconds": 0.06
+  },
+  {
+    "url": "https://www.cc98.org/topic/6219287",
+    "sources": [
+      "docs/notes/campus/course-selection.md"
+    ],
+    "status": 200,
+    "final_url": "https://www.cc98.org/topic/6219287",
+    "content_type": "text/html",
+    "elapsed_seconds": 0.06
+  },
+  {
+    "url": "https://www.cc98.org/topic/6221095",
+    "sources": [
+      "docs/notes/campus/course-selection.md"
+    ],
+    "status": 200,
+    "final_url": "https://www.cc98.org/topic/6221095",
+    "content_type": "text/html",
+    "elapsed_seconds": 1.09
+  },
+  {
+    "url": "https://www.cc98.org/topic/6224831",
+    "sources": [
+      "docs/notes/campus/course-selection.md"
+    ],
+    "status": 200,
+    "final_url": "https://www.cc98.org/topic/6224831",
+    "content_type": "text/html",
+    "elapsed_seconds": 0.08
+  },
+  {
+    "url": "https://www.cc98.org/topic/6224941",
+    "sources": [
+      "docs/notes/campus/course-selection.md"
+    ],
+    "status": 200,
+    "final_url": "https://www.cc98.org/topic/6224941",
+    "content_type": "text/html",
+    "elapsed_seconds": 0.08
+  },
+  {
+    "url": "https://www.cc98.org/topic/6230841",
+    "sources": [
+      "docs/notes/campus/resource-index.md"
+    ],
+    "status": 200,
+    "final_url": "https://www.cc98.org/topic/6230841",
+    "content_type": "text/html",
+    "elapsed_seconds": 0.05
+  },
+  {
+    "url": "https://www.cc98.org/topic/6289187",
+    "sources": [
+      "docs/notes/campus/transfer-modeling.md"
+    ],
+    "status": 200,
+    "final_url": "https://www.cc98.org/topic/6289187",
+    "content_type": "text/html",
+    "elapsed_seconds": 0.05
+  },
+  {
+    "url": "https://www.cc98.org/topic/6306982",
+    "sources": [
+      "docs/notes/campus/modeling-guide.md",
+      "docs/notes/campus/transfer-modeling.md"
+    ],
+    "status": 200,
+    "final_url": "https://www.cc98.org/topic/6306982",
+    "content_type": "text/html",
+    "elapsed_seconds": 0.05
+  },
+  {
+    "url": "https://www.cc98.org/topic/6311185",
+    "sources": [
+      "docs/notes/campus/modeling-guide.md",
+      "docs/notes/campus/transfer-modeling.md"
+    ],
+    "status": 200,
+    "final_url": "https://www.cc98.org/topic/6311185",
+    "content_type": "text/html",
+    "elapsed_seconds": 0.05
+  },
+  {
+    "url": "https://www.cc98.org/topic/6333009",
+    "sources": [
+      "docs/notes/campus/resource-index.md"
+    ],
+    "status": 200,
+    "final_url": "https://www.cc98.org/topic/6333009",
+    "content_type": "text/html",
+    "elapsed_seconds": 0.05
+  },
+  {
+    "url": "https://www.cc98.org/topic/6345982",
+    "sources": [
+      "docs/notes/campus/resource-index.md"
+    ],
+    "status": 200,
+    "final_url": "https://www.cc98.org/topic/6345982",
+    "content_type": "text/html",
+    "elapsed_seconds": 0.05
+  },
+  {
+    "url": "https://www.cc98.org/topic/6368420",
+    "sources": [
+      "docs/notes/campus/course-selection.md"
+    ],
+    "status": 200,
+    "final_url": "https://www.cc98.org/topic/6368420",
+    "content_type": "text/html",
+    "elapsed_seconds": 0.06
+  },
+  {
+    "url": "https://www.cc98.org/topic/6375975",
+    "sources": [
+      "docs/notes/campus/resource-index.md"
+    ],
+    "status": 200,
+    "final_url": "https://www.cc98.org/topic/6375975",
+    "content_type": "text/html",
+    "elapsed_seconds": 0.05
+  },
+  {
+    "url": "https://www.cc98.org/topic/6387331",
+    "sources": [
+      "docs/notes/campus/resource-index.md"
+    ],
+    "status": 200,
+    "final_url": "https://www.cc98.org/topic/6387331",
+    "content_type": "text/html",
+    "elapsed_seconds": 0.06
+  },
+  {
+    "url": "https://www.cc98.org/topic/6388413",
+    "sources": [
+      "docs/notes/campus/resource-index.md"
+    ],
+    "status": 200,
+    "final_url": "https://www.cc98.org/topic/6388413",
+    "content_type": "text/html",
+    "elapsed_seconds": 0.03
+  },
+  {
+    "url": "https://www.cc98.org/topic/6398287",
+    "sources": [
+      "docs/notes/campus/resource-index.md"
+    ],
+    "status": 200,
+    "final_url": "https://www.cc98.org/topic/6398287",
+    "content_type": "text/html",
+    "elapsed_seconds": 0.06
+  },
+  {
+    "url": "https://www.cc98.org/topic/6399781",
+    "sources": [
+      "docs/notes/campus/resource-index.md"
+    ],
+    "status": 200,
+    "final_url": "https://www.cc98.org/topic/6399781",
+    "content_type": "text/html",
+    "elapsed_seconds": 0.05
+  },
+  {
+    "url": "https://www.cc98.org/topic/6404587",
+    "sources": [
+      "docs/notes/campus/resource-index.md"
+    ],
+    "status": 200,
+    "final_url": "https://www.cc98.org/topic/6404587",
+    "content_type": "text/html",
+    "elapsed_seconds": 0.06
+  },
+  {
+    "url": "https://www.cc98.org/topic/6406582",
+    "sources": [
+      "docs/notes/campus/resource-index.md"
+    ],
+    "status": 200,
+    "final_url": "https://www.cc98.org/topic/6406582",
+    "content_type": "text/html",
+    "elapsed_seconds": 0.05
+  },
+  {
+    "url": "https://www.cc98.org/topic/6406657",
+    "sources": [
+      "docs/notes/campus/resource-index.md"
+    ],
+    "status": 200,
+    "final_url": "https://www.cc98.org/topic/6406657",
+    "content_type": "text/html",
+    "elapsed_seconds": 0.03
+  },
+  {
+    "url": "https://www.cc98.org/topic/6406709",
+    "sources": [
+      "docs/notes/campus/resource-index.md"
+    ],
+    "status": 200,
+    "final_url": "https://www.cc98.org/topic/6406709",
+    "content_type": "text/html",
+    "elapsed_seconds": 0.05
+  },
+  {
+    "url": "https://www.cc98.org/topic/6406716",
+    "sources": [
+      "docs/notes/campus/resource-index.md"
+    ],
+    "status": 200,
+    "final_url": "https://www.cc98.org/topic/6406716",
+    "content_type": "text/html",
+    "elapsed_seconds": 0.06
+  },
+  {
+    "url": "https://www.cc98.org/topic/6565764",
+    "sources": [
+      "docs/notes/campus/resource-index.md"
+    ],
+    "status": 200,
+    "final_url": "https://www.cc98.org/topic/6565764",
+    "content_type": "text/html",
+    "elapsed_seconds": 0.06
+  },
+  {
+    "url": "https://www.cc98.org/topic/6657612",
+    "sources": [
+      "docs/notes/campus/modeling-guide.md",
+      "docs/notes/campus/transfer-modeling.md"
+    ],
+    "status": 200,
+    "final_url": "https://www.cc98.org/topic/6657612",
+    "content_type": "text/html",
+    "elapsed_seconds": 0.05
+  },
+  {
+    "url": "https://www.cvxpy.org/",
+    "sources": [
+      "docs/notes/campus/modeling-guide.md"
+    ],
+    "status": 200,
+    "final_url": "https://www.cvxpy.org/",
+    "content_type": "text/html; charset=utf-8",
+    "elapsed_seconds": 0.91
+  },
+  {
+    "url": "https://xhslink.cn/o/7RbSqas6OQs",
+    "sources": [
+      "docs/notes/campus/modeling-guide.md"
+    ],
+    "status": 404,
+    "final_url": "https://xhslink.cn/o/7RbSqas6OQs",
+    "error": "Not Found",
+    "elapsed_seconds": 0.12
+  },
+  {
+    "url": "https://xueshan-notes-library.onrender.com/",
+    "sources": [
+      "docs/managed/index.md",
+      "docs/notes/campus/index.md"
+    ],
+    "status": null,
+    "error": "TimeoutError: The read operation timed out",
+    "elapsed_seconds": 12.88
+  },
+  {
+    "url": "https://xueshan-notes-library.onrender.com/login",
+    "sources": [
+      "docs/managed/index.md"
+    ],
+    "status": null,
+    "error": "TimeoutError: The read operation timed out",
+    "elapsed_seconds": 12.88
+  },
+  {
+    "url": "https://zensical.org/",
+    "sources": [
+      "docs/about.md"
+    ],
+    "status": 200,
+    "final_url": "https://zensical.org/",
+    "content_type": "text/html",
+    "elapsed_seconds": 2.41
+  }
+]

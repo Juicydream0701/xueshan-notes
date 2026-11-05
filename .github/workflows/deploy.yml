@@ -33,6 +33,8 @@ jobs:
         run: pip install -r requirements.txt
       - name: 构建网站
         run: zensical build --clean
+      - name: 生成电路原理整本阅读版
+        run: python scripts/build_circuit_handout.py
       - name: 上传网站文件
         uses: actions/upload-pages-artifact@v3
         with:

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 340" role="img" aria-labelledby="title"><style>text{font:18px 'Microsoft YaHei',sans-serif;fill:#264e45}.wire{fill:none;stroke:#264e45;stroke-width:2.8;stroke-linecap:round;stroke-linejoin:round}.label{font-size:15px}.accent{stroke:#b17c43;fill:none;stroke-width:2.5}.dot{fill:#264e45}</style><rect width="100%" height="100%" rx="12" fill="#fffdf7"/><title id="title">串联RLC电路及各元件参数，电流自左向右</title>
+<path class="wire" d="M90 150V90H210 M290 90H370 M450 90H545 M565 90H710V260H90V210"/>
+<circle class="wire" cx="90" cy="180" r="30"/><text x="82" y="174">+</text><text x="83" y="203">−</text>
+<rect class="wire" x="210" y="78" width="80" height="24"/>
+<path class="wire" d="M370 90c0-24 20-24 20 0c0-24 20-24 20 0c0-24 20-24 20 0c0-24 20-24 20 0"/>
+<path class="wire" d="M545 60V120M565 60V120"/>
+<text x="201" y="57">R = 6 Ω</text><text x="350" y="57">L = 10 mH</text><text x="520" y="42">C = 250 μF</text>
+<text x="133" y="179">Uₛ = 60∠0° V</text><text x="133" y="205" class="label">ω = 1000 rad/s，全部为有效值</text>
+<path class="accent" d="M120 130H175l-10-6m10 6-10 6"/><text x="130" y="155">I →</text>
+<text x="205" y="302" class="label">每个元件电压均取左正右负；回线为公共参考节点。</text></svg>

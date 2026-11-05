@@ -61,7 +61,7 @@ AI 可帮助生成建模思路、写代码、阅读文献、整理图表和修�
 - [2025 浙大国赛成绩统计](https://www.cc98.org/topic/6306982)
 - [2025 国赛 A 题总结](https://www.cc98.org/topic/6311185)
 - [数学建模提示词汇总 PDF](https://file.cc98.org/v4-upload/d/2026/1013/zb2xwiw3.pdf)
-- [作者数学建模论文示例](https://xhslink.cn/o/7RbSqas6OQs)
+- [作者数学建模论文示例](https://xhslink.cn/o/7RbSqas6OQs)（短链访问状态不稳定，本次复核跳转至小红书登录页，可能需要登录）
 - [国赛、美赛论文与建模资料合集](https://github.com/zhanwen/MathModel)
 - [数学建模算法代码及论文资料](https://github.com/personqianduixue/Math_Model)
 - [数学建模论文结构参考](https://github.com/Rya1cc/math-modeling-paper)

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 340" role="img" aria-labelledby="title"><style>text{font:18px 'Microsoft YaHei',sans-serif;fill:#264e45}.wire{fill:none;stroke:#264e45;stroke-width:2.8;stroke-linecap:round;stroke-linejoin:round}.label{font-size:15px}.accent{stroke:#b17c43;fill:none;stroke-width:2.5}.dot{fill:#264e45}</style><rect width="100%" height="100%" rx="12" fill="#fffdf7"/><title id="title">三相不平衡星形负载，三条相线分别接10、20、30欧，公共星点悬浮</title>
+<path class="wire" d="M120 80H320 M405 80H600V165 M120 165H320 M405 165H600 M120 250H320 M405 250H600V165"/>
+<rect class="wire" x="320" y="68" width="85" height="24"/><rect class="wire" x="320" y="153" width="85" height="24"/><rect class="wire" x="320" y="238" width="85" height="24"/>
+<circle class="dot" cx="600" cy="165" r="5"/>
+<text x="45" y="86">A</text><text x="45" y="171">B</text><text x="45" y="256">C</text>
+<text x="335" y="53">10 Ω</text><text x="335" y="138">20 Ω</text><text x="335" y="223">30 Ω</text>
+<text x="625" y="167">n′</text><text x="620" y="195" class="label">星点无零线连接</text>
+<text x="120" y="307" class="label">各相电压相对电源 N 定义：120∠0°、120∠−120°、120∠120° V</text></svg>

@@ -1,0 +1,475 @@
+{
+  "site": {
+    "pages": 109,
+    "local_references": 16488,
+    "local_issues": [],
+    "pdfs": 146,
+    "pdf_errors": [],
+    "source_files_verified": 49,
+    "source_changes": [],
+    "external": [
+      {
+        "url": "https://docs.scipy.org/doc/scipy/reference/optimize.html",
+        "status": 200
+      },
+      {
+        "url": "https://file.cc98.org/v4-upload/d/2025/0621/uzcrdppi.pdf",
+        "status": 200
+      },
+      {
+        "url": "https://file.cc98.org/v4-upload/d/2025/0622/v5qicwpw.docx",
+        "status": 200
+      },
+      {
+        "url": "https://file.cc98.org/v4-upload/d/2026/0115/amvzxg4s.pdf",
+        "status": 200
+      },
+      {
+        "url": "https://file.cc98.org/v4-upload/d/2026/0115/dzqv33nc.pdf",
+        "status": 200
+      },
+      {
+        "url": "https://file.cc98.org/v4-upload/d/2026/0115/f5nrclmn.pdf",
+        "status": 200
+      },
+      {
+        "url": "https://file.cc98.org/v4-upload/d/2026/0115/ggaqps2i.pdf",
+        "status": 200
+      },
+      {
+        "url": "https://file.cc98.org/v4-upload/d/2026/0115/ghpa3tog.pdf",
+        "status": 200
+      },
+      {
+        "url": "https://file.cc98.org/v4-upload/d/2026/0115/iz5zejp3.pdf",
+        "status": 200
+      },
+      {
+        "url": "https://file.cc98.org/v4-upload/d/2026/0115/lc4yvtjl.pdf",
+        "status": 200
+      },
+      {
+        "url": "https://file.cc98.org/v4-upload/d/2026/0115/vi2dj54w.pdf",
+        "status": 200
+      },
+      {
+        "url": "https://file.cc98.org/v4-upload/d/2026/0704/1vzptc1w.zip",
+        "status": 200
+      },
+      {
+        "url": "https://file.cc98.org/v4-upload/d/2026/0704/bjgfl5lk.pdf",
+        "status": 200
+      },
+      {
+        "url": "https://file.cc98.org/v4-upload/d/2026/0704/ibi5kspp.pdf",
+        "status": 200
+      },
+      {
+        "url": "https://file.cc98.org/v4-upload/d/2026/0704/j1yghni0.pdf",
+        "status": 200
+      },
+      {
+        "url": "https://file.cc98.org/v4-upload/d/2026/0704/nog1niaj.pdf",
+        "status": 200
+      },
+      {
+        "url": "https://file.cc98.org/v4-upload/d/2026/0704/opsl0mcf.pdf",
+        "status": 200
+      },
+      {
+        "url": "https://file.cc98.org/v4-upload/d/2026/0704/uwr3cuy5.pdf",
+        "status": 200
+      },
+      {
+        "url": "https://file.cc98.org/v4-upload/d/2026/0704/xbm1iyfy.pdf",
+        "status": 200
+      },
+      {
+        "url": "https://file.cc98.org/v4-upload/d/2026/0704/y0kmth4c.pdf",
+        "status": 200
+      },
+      {
+        "url": "https://file.cc98.org/v4-upload/d/2026/0711/bvrjsquc.webp",
+        "status": 200
+      },
+      {
+        "url": "https://file.cc98.org/v4-upload/d/2026/0711/e0k4bdft.pdf",
+        "status": 200
+      },
+      {
+        "url": "https://file.cc98.org/v4-upload/d/2026/0711/eplptics.pdf",
+        "status": 200
+      },
+      {
+        "url": "https://file.cc98.org/v4-upload/d/2026/0711/hkbbnbrx.pdf",
+        "status": 200
+      },
+      {
+        "url": "https://file.cc98.org/v4-upload/d/2026/0711/idzqegnq.pdf",
+        "status": 200
+      },
+      {
+        "url": "https://file.cc98.org/v4-upload/d/2026/0711/lsovknig.pdf",
+        "status": 200
+      },
+      {
+        "url": "https://file.cc98.org/v4-upload/d/2026/0711/mhx3awvx.pdf",
+        "status": 200
+      },
+      {
+        "url": "https://file.cc98.org/v4-upload/d/2026/0711/nt4gf2z3.pdf",
+        "status": 200
+      },
+      {
+        "url": "https://file.cc98.org/v4-upload/d/2026/0711/onfofh0v.pdf",
+        "status": 200
+      },
+      {
+        "url": "https://file.cc98.org/v4-upload/d/2026/0711/phefuni3.pdf",
+        "status": 200
+      },
+      {
+        "url": "https://file.cc98.org/v4-upload/d/2026/0711/ryjb1nfa.pdf",
+        "status": 200
+      },
+      {
+        "url": "https://file.cc98.org/v4-upload/d/2026/0711/xbp4nqnx.pdf",
+        "status": 200
+      },
+      {
+        "url": "https://file.cc98.org/v4-upload/d/2026/0711/yt1ns4g5.webp",
+        "status": 200
+      },
+      {
+        "url": "https://file.cc98.org/v4-upload/d/2026/1013/zb2xwiw3.pdf",
+        "status": 200
+      },
+      {
+        "url": "https://github.com/Rya1cc/math-modeling-paper",
+        "status": 200
+      },
+      {
+        "url": "https://github.com/ZSLlearn/my-math-modeling-skill",
+        "status": 200
+      },
+      {
+        "url": "https://github.com/personqianduixue/Math_Model",
+        "status": 200
+      },
+      {
+        "url": "https://github.com/zhanwen/MathModel",
+        "status": 200
+      },
+      {
+        "url": "https://matplotlib.org/stable/gallery/index.html",
+        "status": 200
+      },
+      {
+        "url": "https://mp.weixin.qq.com/s/ctXMmrxcCrpNnvm1lbOmlw",
+        "status": 200
+      },
+      {
+        "url": "https://nptel.ac.in/courses",
+        "status": 200
+      },
+      {
+        "url": "https://ocw.mit.edu/courses/6-002-circuits-and-electronics-spring-2007/",
+        "status": 200
+      },
+      {
+        "url": "https://openstax.org/details/books/university-physics-volume-2",
+        "status": 200
+      },
+      {
+        "url": "https://pan.baidu.com/s/1vFVUDZLMSBd2Xzq5LwCDow?pwd=kjma",
+        "status": 200
+      },
+      {
+        "url": "https://pan.zju.edu.cn/share/3e1953abc3e58dd83b89456dd3",
+        "status": 200
+      },
+      {
+        "url": "https://pan.zju.edu.cn/share/670468d1a1fe24dba24f755da1",
+        "status": 200
+      },
+      {
+        "url": "https://scikit-learn.org/stable/",
+        "status": 200
+      },
+      {
+        "url": "https://www.allaboutcircuits.com/textbook/alternating-current/",
+        "status": 403
+      },
+      {
+        "url": "https://www.allaboutcircuits.com/textbook/direct-current/",
+        "status": 403
+      },
+      {
+        "url": "https://www.bilibili.com/video/BV136dUYKEYU/?spm_id_from=333.1387.favlist.content.click",
+        "status": 200
+      },
+      {
+        "url": "https://www.cc98.org/topic/5377915",
+        "status": 200
+      },
+      {
+        "url": "https://www.cc98.org/topic/5782188",
+        "status": 200
+      },
+      {
+        "url": "https://www.cc98.org/topic/6033529",
+        "status": 200
+      },
+      {
+        "url": "https://www.cc98.org/topic/6097356",
+        "status": 200
+      },
+      {
+        "url": "https://www.cc98.org/topic/6115466",
+        "status": 200
+      },
+      {
+        "url": "https://www.cc98.org/topic/6163027",
+        "status": 200
+      },
+      {
+        "url": "https://www.cc98.org/topic/6166465",
+        "status": 200
+      },
+      {
+        "url": "https://www.cc98.org/topic/6208350",
+        "status": 200
+      },
+      {
+        "url": "https://www.cc98.org/topic/6219200",
+        "status": 200
+      },
+      {
+        "url": "https://www.cc98.org/topic/6219287",
+        "status": 200
+      },
+      {
+        "url": "https://www.cc98.org/topic/6221095",
+        "status": 200
+      },
+      {
+        "url": "https://www.cc98.org/topic/6224831",
+        "status": 200
+      },
+      {
+        "url": "https://www.cc98.org/topic/6224941",
+        "status": 200
+      },
+      {
+        "url": "https://www.cc98.org/topic/6230841",
+        "status": 200
+      },
+      {
+        "url": "https://www.cc98.org/topic/6289187",
+        "status": 200
+      },
+      {
+        "url": "https://www.cc98.org/topic/6306982",
+        "status": 200
+      },
+      {
+        "url": "https://www.cc98.org/topic/6311185",
+        "status": 200
+      },
+      {
+        "url": "https://www.cc98.org/topic/6333009",
+        "status": 200
+      },
+      {
+        "url": "https://www.cc98.org/topic/6345982",
+        "status": 200
+      },
+      {
+        "url": "https://www.cc98.org/topic/6368420",
+        "status": 200
+      },
+      {
+        "url": "https://www.cc98.org/topic/6375975",
+        "status": 200
+      },
+      {
+        "url": "https://www.cc98.org/topic/6387331",
+        "status": 200
+      },
+      {
+        "url": "https://www.cc98.org/topic/6388413",
+        "status": 200
+      },
+      {
+        "url": "https://www.cc98.org/topic/6398287",
+        "status": 200
+      },
+      {
+        "url": "https://www.cc98.org/topic/6399781",
+        "status": 200
+      },
+      {
+        "url": "https://www.cc98.org/topic/6404587",
+        "status": 200
+      },
+      {
+        "url": "https://www.cc98.org/topic/6406582",
+        "status": 200
+      },
+      {
+        "url": "https://www.cc98.org/topic/6406657",
+        "status": 200
+      },
+      {
+        "url": "https://www.cc98.org/topic/6406709",
+        "status": 200
+      },
+      {
+        "url": "https://www.cc98.org/topic/6406716",
+        "status": 200
+      },
+      {
+        "url": "https://www.cc98.org/topic/6565764",
+        "status": 200
+      },
+      {
+        "url": "https://www.cc98.org/topic/6657612",
+        "status": 200
+      },
+      {
+        "url": "https://www.cvxpy.org/",
+        "status": 200
+      },
+      {
+        "url": "https://xhslink.cn/o/7RbSqas6OQs",
+        "status": 200
+      },
+      {
+        "url": "https://xueshan-notes-library.onrender.com/",
+        "status": "unconfirmed",
+        "error": "The read operation timed out"
+      },
+      {
+        "url": "https://xueshan-notes-library.onrender.com/login",
+        "status": "unconfirmed",
+        "error": "The read operation timed out"
+      },
+      {
+        "url": "https://zensical.org/",
+        "status": 200
+      }
+    ],
+    "source_verification_note": "49份电路课程源PDF与本轮提取前的SHA256比对一致；原路径清单只保留于本地tmp，未发布。"
+  },
+  "browser": {
+    "pages": 107,
+    "formulas": 2095,
+    "issues": []
+  },
+  "visual": {
+    "imageMetrics": [
+      {
+        "src": "../../figures/transient-rc.svg",
+        "width": 674,
+        "natural": 300,
+        "visible": true
+      },
+      {
+        "src": "../../figures/transient-rl.svg",
+        "width": 674,
+        "natural": 300,
+        "visible": true
+      },
+      {
+        "src": "../../figures/transient-pulse.svg",
+        "width": 674,
+        "natural": 300,
+        "visible": true
+      },
+      {
+        "src": "../../figures/transient-rlc.svg",
+        "width": 674,
+        "natural": 300,
+        "visible": true
+      }
+    ],
+    "details": {
+      "open": true,
+      "math": 1,
+      "errors": 0
+    },
+    "mobile": {
+      "01-models-laws": {
+        "viewport": 390,
+        "width": 375,
+        "errors": 0
+      },
+      "02-equations": {
+        "viewport": 390,
+        "width": 375,
+        "errors": 0
+      },
+      "03-theorems": {
+        "viewport": 390,
+        "width": 375,
+        "errors": 0
+      },
+      "04-ac": {
+        "viewport": 390,
+        "width": 375,
+        "errors": 0
+      },
+      "05-transients": {
+        "viewport": 390,
+        "width": 375,
+        "errors": 0
+      },
+      "06-three-phase": {
+        "viewport": 390,
+        "width": 375,
+        "errors": 0
+      },
+      "07-problems": {
+        "viewport": 390,
+        "width": 375,
+        "errors": 0
+      },
+      "08-coupling-twoports": {
+        "viewport": 390,
+        "width": 375,
+        "errors": 0
+      }
+    },
+    "book": {
+      "chapters": 8,
+      "formulas": 1386,
+      "errors": 0,
+      "details": 38,
+      "open": 38,
+      "images": 0
+    },
+    "pdfBefore": {
+      "select": "../../courses/circuit-theory/resources/source-lectures/07-二阶暂态.pdf#view=FitH",
+      "height": "1000",
+      "frame": "../../courses/circuit-theory/resources/source-lectures/07-二阶暂态.pdf#view=FitH",
+      "open": "http://127.0.0.1:8767/notes/courses/circuit-theory/resources/source-lectures/07-%E4%BA%8C%E9%98%B6%E6%9A%82%E6%80%81.pdf#view=FitH"
+    },
+    "pdfAfter": {
+      "select": "../../courses/circuit-theory/resources/source-lectures/07-二阶暂态.pdf#view=FitH",
+      "height": "1000",
+      "frame": "../../courses/circuit-theory/resources/source-lectures/07-二阶暂态.pdf#view=FitH"
+    },
+    "failures": []
+  },
+  "dynamic_math_print": {
+    "before": 1386,
+    "after": 1386,
+    "nested": 0,
+    "reply": {
+      "rendered": 2,
+      "errors": 0
+    },
+    "printExpanded": true,
+    "printRestored": true
+  }
+}

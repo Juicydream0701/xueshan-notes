@@ -528,3 +528,20 @@ body.focus-mode .floating-tools__toggle { background: var(--sun); color: #27352f
   .home-hero { grid-template-columns: 1fr; }
   .home-hero .hero-copy h1 { white-space: normal; font-size: clamp(2.7rem, 14vw, 4.1rem); }
 }
+
+/* 讲义中的电路图保留完整端口和图注，按正文宽度缩放。 */
+.md-typeset img[src*="/figures/"] {
+  display: block;
+  width: 100%;
+  max-width: 48rem;
+  height: auto;
+  margin: 1.5rem auto;
+  padding: .3rem;
+  border: 1px solid rgba(53,114,102,.18);
+  border-radius: 12px;
+  background: #fbfaf5;
+}
+@media print {
+  .md-typeset img[src*="/figures/"] { break-inside: avoid; }
+  .md-typeset .arithmatex { overflow: visible; }
+}

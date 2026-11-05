@@ -4,6 +4,8 @@
 
 ## 当前收录
 
+- [课程阅读说明与资料使用](reading-guide.md)
+- [电路原理整本讲义与打印](../courses/circuit-theory/handout.html)
 - [站内 PDF 阅读器](pdf-reader.md)
 - [Markdown 写作入门](markdown.md)
 - [AI 实验实践指南](../campus/ai-lab-guide.md)
