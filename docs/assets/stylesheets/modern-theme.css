@@ -514,6 +514,149 @@ body:not(.legacy-frontend) .new-home__footer-line {
   text-align: center;
 }
 
+/*
+ * 版本 2 的第二轮细化：
+ * - 使用更稳定的中文字体回退，避免不同系统上出现字重和字宽跳变；
+ * - 提高导航与正文的可读性；
+ * - 放宽桌面内容区，让阅读线不被两侧栏挤成窄列；
+ * - 修复“阅读顺序”中说明文字落入编号列的一字一行问题。
+ */
+body:not(.legacy-frontend),
+body:not(.legacy-frontend) .md-header,
+body:not(.legacy-frontend) .md-tabs,
+body:not(.legacy-frontend) .md-nav,
+body:not(.legacy-frontend) .md-typeset {
+  font-family: "HarmonyOS Sans SC", "HarmonyOS Sans", "PingFang SC",
+    "Microsoft YaHei UI", "Microsoft YaHei", "Noto Sans CJK SC",
+    system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body:not(.legacy-frontend) .md-tabs__link {
+  font-size: 1.04rem;
+  font-weight: 650;
+  letter-spacing: .015em;
+  transition: color .32s cubic-bezier(.22, 1, .36, 1),
+    background-color .32s cubic-bezier(.22, 1, .36, 1);
+}
+
+body:not(.legacy-frontend) .md-main__inner {
+  max-width: 1680px;
+}
+
+body:not(.legacy-frontend) .md-content__inner {
+  max-width: 1200px;
+  padding-right: 1.65rem;
+  padding-left: 1.65rem;
+}
+
+body:not(.legacy-frontend) .md-typeset {
+  font-size: 1.04rem;
+  line-height: 2;
+  letter-spacing: .005em;
+}
+
+body:not(.legacy-frontend) .md-typeset h1,
+body:not(.legacy-frontend) .md-typeset h2,
+body:not(.legacy-frontend) .md-typeset h3 {
+  font-weight: 750;
+  text-wrap: pretty;
+}
+
+body:not(.legacy-frontend) .md-typeset p,
+body:not(.legacy-frontend) .md-typeset li,
+body:not(.legacy-frontend) .md-typeset blockquote {
+  overflow-wrap: anywhere;
+}
+
+body:not(.legacy-frontend) .new-home {
+  max-width: 1500px;
+}
+
+/* Zensical 会给标题自动插入一个很大的透明锚点符号；它不应参与首页标题的换行计算。 */
+body:not(.legacy-frontend) .new-home__title > h1 .headerlink {
+  display: none;
+}
+
+body:not(.legacy-frontend) .new-home__title > h1 {
+  white-space: nowrap;
+}
+
+body:not(.legacy-frontend) .new-home__body {
+  gap: clamp(2rem, 4vw, 4rem);
+}
+
+body:not(.legacy-frontend) .new-home__route-item {
+  align-items: start;
+  transition: transform .36s cubic-bezier(.22, 1, .36, 1),
+    border-color .36s ease, background-color .36s ease;
+}
+
+body:not(.legacy-frontend) .new-home__route-item > strong,
+body:not(.legacy-frontend) .new-home__route-item > em {
+  grid-column: 2;
+  min-width: 0;
+}
+
+body:not(.legacy-frontend) .new-home__route-item > br {
+  display: none;
+}
+
+body:not(.legacy-frontend) .new-home__route-item em {
+  max-width: none;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+body:not(.legacy-frontend) .new-home__route-item:hover {
+  transform: translateX(.35rem);
+  border-color: rgba(53, 114, 102, .34);
+  background: linear-gradient(90deg, rgba(53, 114, 102, .055), transparent 82%);
+}
+
+body:not(.legacy-frontend) .new-home__rail-block li,
+body:not(.legacy-frontend) .new-home__stream-row p,
+body:not(.legacy-frontend) .new-home__question span {
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+body:not(.legacy-frontend) .new-home__rail-block,
+body:not(.legacy-frontend) .new-home__stream-row,
+body:not(.legacy-frontend) .new-home__question,
+body:not(.legacy-frontend) .new-home__route-item,
+body:not(.legacy-frontend) .md-typeset .md-button,
+body:not(.legacy-frontend) .floating-tools__panel,
+body:not(.legacy-frontend) .floating-ai__dialog {
+  transition: transform .36s cubic-bezier(.22, 1, .36, 1),
+    background-color .36s ease, border-color .36s ease,
+    box-shadow .36s cubic-bezier(.22, 1, .36, 1);
+}
+
+body:not(.legacy-frontend) .md-header {
+  background: rgba(36, 75, 69, .94) !important;
+  backdrop-filter: blur(16px) saturate(120%);
+  -webkit-backdrop-filter: blur(16px) saturate(120%);
+}
+
+body:not(.legacy-frontend) .md-typeset .md-button {
+  border-radius: 999px;
+  box-shadow: 0 5px 14px rgba(36, 75, 69, .08);
+}
+
+body:not(.legacy-frontend) .md-typeset .md-button:hover,
+body:not(.legacy-frontend) .floating-tools__toggle:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(36, 75, 69, .16);
+}
+
+/* 桌面端两侧栏略收窄，把多出来的空间还给正文。 */
+@media (min-width: 1220px) {
+  body:not(.legacy-frontend) .md-sidebar--primary { width: 220px; }
+  body:not(.legacy-frontend) .md-sidebar--secondary { width: 200px; }
+}
+
 @media (max-width: 1000px) {
   body:not(.legacy-frontend) .new-home__body { grid-template-columns: minmax(0, 1fr) minmax(200px, .34fr); gap: 2rem; }
   body:not(.legacy-frontend) .new-home__question { grid-template-columns: 1fr; gap: .2rem; }
@@ -524,12 +667,13 @@ body:not(.legacy-frontend) .new-home__footer-line {
   .frontend-switcher { top: 3.9rem; right: .7rem; padding: .38rem .58rem; font-size: .68rem; }
   body:not(.legacy-frontend) .md-main__inner { padding-top: .85rem; }
   body:not(.legacy-frontend) .md-content__inner { padding-right: 1rem; padding-left: 1rem; }
-  body:not(.legacy-frontend) .md-typeset { font-size: .95rem; line-height: 1.82; }
+  body:not(.legacy-frontend) .md-typeset { font-size: 1rem; line-height: 1.9; }
+  body:not(.legacy-frontend) .md-tabs__link { font-size: .98rem; }
   body:not(.legacy-frontend) .md-typeset h1 { font-size: 1.85rem; margin-bottom: 1.15rem; }
   body:not(.legacy-frontend) .md-typeset h2 { margin-top: 2.15rem; font-size: 1.35rem; }
   body:not(.legacy-frontend) .md-typeset table:not([class]) { display: block; overflow-x: auto; }
   body:not(.legacy-frontend) .new-home__masthead { grid-template-columns: 1fr; gap: 1.3rem; padding-bottom: 1.45rem; }
-  body:not(.legacy-frontend) .new-home__title > h1 { font-size: clamp(3rem, 18vw, 5rem); }
+  body:not(.legacy-frontend) .new-home__title > h1 { font-size: clamp(3rem, 18vw, 5rem); white-space: normal; }
   body:not(.legacy-frontend) .new-home__meta { padding: .85rem 0 0; border-top: 1px solid var(--v2-rule); border-left: 0; }
   body:not(.legacy-frontend) .new-home__body { grid-template-columns: 1fr; gap: 0; }
   body:not(.legacy-frontend) .new-home__rail { position: static; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
