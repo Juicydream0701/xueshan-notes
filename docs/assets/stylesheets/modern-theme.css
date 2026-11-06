@@ -29,6 +29,11 @@ body,
   transition: background-color .28s ease, color .28s ease, box-shadow .28s ease;
 }
 
+/* 顶部栏目文字与导航底边留出更舒展的呼吸空间。两套版本共用这项微调。 */
+.md-tabs__link {
+  padding-bottom: 1.04rem;
+}
+
 body.frontend-transitioning .md-main__inner {
   animation: frontend-page-settle .28s ease both;
 }
