@@ -2,11 +2,14 @@
   "use strict";
 
   var modeKey = "xueshan:frontend-mode";
-  var modes = ["modern", "v2", "legacy"];
+  // 两套前端：legacy 是版本 1（原版），modern 是版本 2（阅读台）。
+  var modes = ["modern", "legacy"];
 
   function readMode() {
     try {
       var value = window.localStorage.getItem(modeKey);
+      // 兼容旧浏览器中保存过的旧模式值：统一回退到当前阅读台。
+      if (value === "v2") value = "modern";
       return modes.indexOf(value) >= 0 ? value : "modern";
     } catch (error) {
       return "modern";
@@ -26,42 +29,50 @@
   }
 
   function modeLabel(mode) {
-    if (mode === "v2") return "第二版";
-    if (mode === "legacy") return "旧版";
-    return "新版";
+    return mode === "legacy" ? "版本 1" : "版本 2";
   }
 
   function modeButtonLabel(mode) {
-    if (mode === "v2") return "第二版 · 切到旧版";
-    if (mode === "legacy") return "旧版 · 切到新版";
-    return "新版 · 切到第二版";
+    return mode === "legacy" ? "版本 1 · 切到版本 2" : "版本 2 · 切到版本 1";
   }
 
   function setMode(mode, persist) {
     var legacy = mode === "legacy";
-    var v2 = mode === "v2";
+    mode = legacy ? "legacy" : "modern";
+    document.body.classList.add("frontend-transitioning");
     document.body.classList.toggle("legacy-frontend", legacy);
-    document.body.classList.toggle("frontend-v2", v2);
+    document.body.setAttribute("data-frontend-version", legacy ? "1" : "2");
 
     var button = document.querySelector("[data-frontend-switcher]");
+    var badge = document.querySelector("[data-frontend-version-badge]");
     if (button) {
       button.textContent = modeButtonLabel(mode);
       button.setAttribute("aria-label", "当前为" + modeLabel(mode) + "，点击切换到下一套界面");
       button.setAttribute("title", "当前为" + modeLabel(mode) + "；下一次切换：" + modeLabel(nextMode(mode)));
-      button.setAttribute("aria-pressed", String(mode !== "modern"));
+      button.setAttribute("aria-pressed", String(legacy));
       button.setAttribute("data-frontend-mode", mode);
+    }
+    if (badge) {
+      badge.textContent = modeLabel(mode);
+      badge.setAttribute("data-frontend-version", legacy ? "1" : "2");
     }
 
     var progress = document.querySelector(".frontend-reading-progress");
-    if (progress) {
-      progress.style.display = legacy ? "none" : "block";
-    }
+    if (progress) progress.style.display = "block";
     if (persist !== false) saveMode(mode);
     updateProgress();
+    window.setTimeout(function () {
+      document.body.classList.remove("frontend-transitioning");
+    }, 340);
   }
 
   function createSwitcher() {
     if (document.querySelector("[data-frontend-switcher]")) return;
+    var badge = document.createElement("span");
+    badge.className = "frontend-version-badge";
+    badge.setAttribute("data-frontend-version-badge", "");
+    badge.setAttribute("aria-hidden", "true");
+    document.body.appendChild(badge);
     var button = document.createElement("button");
     button.type = "button";
     button.className = "frontend-switcher";
@@ -69,7 +80,7 @@
     button.addEventListener("click", function () {
       var current = document.body.classList.contains("legacy-frontend")
         ? "legacy"
-        : (document.body.classList.contains("frontend-v2") ? "v2" : "modern");
+        : "modern";
       setMode(nextMode(current));
     });
     document.body.appendChild(button);
@@ -87,10 +98,6 @@
   function updateProgress() {
     var progress = document.querySelector(".frontend-reading-progress");
     if (!progress) return;
-    if (document.body.classList.contains("legacy-frontend")) {
-      progress.style.display = "none";
-      return;
-    }
     progress.style.display = "block";
     var root = document.documentElement;
     var scrollable = Math.max(1, root.scrollHeight - root.clientHeight);
