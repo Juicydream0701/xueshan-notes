@@ -65,6 +65,16 @@
 [查看清单](competition-checklist.md)
 
 </div>
+
+<div class="note-index-card" markdown>
+
+## 07 竞赛档案与复盘
+
+把 2025—2026 年的美赛、校赛、国赛和培训资料按时间重新定位，说明哪些内容适合公开、怎样复盘判断，以及下一次比赛应准备哪些可复用文件。
+
+[查看竞赛档案](case-archive.md)
+
+</div>
 </div>
 
 ## 资料入口

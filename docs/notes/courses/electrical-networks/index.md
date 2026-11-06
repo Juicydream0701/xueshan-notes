@@ -27,3 +27,36 @@ Z、Y、h、ABCD 参数分别适合串联、并联、混合和级联连接。级
 ## 配套资料
 
 [电网络分析笔记](resources/network-analysis-notes.pdf)
+
+## 六、代表题：二端口端接与级联
+
+设二端口采用传输参数约定
+
+$$
+\begin{bmatrix}V_1\\ I_1\end{bmatrix}=\begin{bmatrix}A&B\\C&D\end{bmatrix}\begin{bmatrix}V_2\\-I_2\end{bmatrix},
+$$
+
+负载为 (Z_L) 时有 (V_2=Z_LI_2)。先把端口 2 的负载关系代入，再求输入阻抗
+
+$$
+ Z_{in}=\frac{V_1}{I_1}=\frac{AZ_L-B}{CZ_L-D}.
+$$
+
+多个二端口级联时，按信号传播顺序相乘矩阵；但如果教材把 (I_2) 定义为流入二端口而不是流出，矩阵中的负号会改变。答题开头先写参数定义，避免结果与参考答案只差一个符号。
+
+## 七、综合题流程：开关暂态到频域
+
+1. 先求 (0^-) 的稳态，确定电容电压和电感电流；
+2. 用连续性得到 (0^+)，再求 (t\to\infty) 的终值；
+3. 由等效电阻得到时间常数，写出一阶或二阶响应；
+4. 若题目转入正弦稳态，再令 (s=j\omega) 并核对相量约定；
+5. 用初值、终值、极限频率和功率正负做四次检查。
+
+## 易错点与资料对应
+
+- 受控源不能在求 (R_{th}) 时直接置零，应加测试源；
+- 二端口参数的端口电流方向必须与定义一致；
+- 谐振频率不等于任意观测量的峰值频率，先明确看的是电流、电压还是阻抗；
+- 长线题要同时写传播常数、特性阻抗和端接条件。
+
+复习顺序可按[网络分析笔记](resources/network-analysis-notes.pdf)建立总框架，再用[拉普拉斯网络](resources/networks-laplace-1.pdf)、[矩阵方程](resources/networks-matrix-equations.pdf)、[二端口网络](resources/networks-two-port.pdf)逐专题核对。
