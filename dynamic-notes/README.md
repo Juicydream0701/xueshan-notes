@@ -1,6 +1,6 @@
 # 独立动态资料库
 
-这是与 Zensical/GitHub Pages 静态主站分开的动态 Flask 应用。成员登录后按角色浏览或管理资料：`xueshan` 是不可删除的所有者，可以添加、删除成员并调整权限；编辑者可以上传、编辑、删除和排序资料；只读成员只能浏览。公开访客可浏览目录、在线打开 Markdown、PDF 与图片。
+这是与 Zensical/GitHub Pages 静态主站分开的动态 Flask 应用。成员登录后按角色浏览或管理资料：`xueshan` 是不可删除的所有者，可以添加、删除成员并调整权限；编辑者可以上传、编辑、删除和排序资料；只读成员只能浏览。公开访客可浏览目录、在线打开 Markdown、PDF 与图片。`/convert` 提供在线 PDF、图片、TXT/CSV 转换入口。
 
 `seed/library/` 是每次服务启动时可恢复的初始内容。新增精选导读应放进这里并提交到 GitHub，避免把大 PDF 重复上传到 Render。免费实例没有持久磁盘，服务休眠、重启或重新部署后，运行时上传的文件、`users.json` 和权限改动可能丢失；GitHub 中的初始 Markdown 资料不会丢失。
 
@@ -36,4 +36,6 @@ python -m venv .venv
 
 打开 `http://127.0.0.1:5000/`。本地资料默认保存在 `data/library`，此目录不纳入 Git。
 
-上传支持 Markdown、PDF、图片、TXT、DOCX、PPTX、XLSX 和 ZIP，单次请求上限 100 MB。删除非空文件夹前需先移除其中文件。用户密码使用哈希保存，不会写入明文；所有管理表单要求 CSRF 令牌。
+上传支持 Markdown、PDF、图片、TXT、DOCX、PPTX、XLSX 和 ZIP，单次请求上限 100 MB。在线转换单个输入限制为 25 MB，最多 20 个文件，输出完成后直接下载。删除非空文件夹前需先移除其中文件。用户密码使用哈希保存，不会写入明文；所有管理表单要求 CSRF 令牌。
+
+你提供的 Windows EXE 是独立的 PyInstaller 桌面版，包含依赖 Microsoft Office 的 PPT/Word/Excel 能力。浏览器和 Render Linux 不能直接执行它，所以网页端只重做可跨平台的 PDF、图片和文本功能；完整 Office 转换仍需在 Windows 本机运行该工具。EXE 不放进 GitHub 仓库或 Render 文件系统，避免超过 GitHub 单文件限制和免费实例的临时存储限制。

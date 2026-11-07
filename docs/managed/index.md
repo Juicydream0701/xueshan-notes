@@ -10,6 +10,7 @@
 
 [浏览动态资料库](https://xueshan-notes-library.onrender.com/){ .md-button .md-button--primary }
 [管理员登录](https://xueshan-notes-library.onrender.com/login){ .md-button }
+[科研文件转换工具](https://xueshan-notes-library.onrender.com/convert){ .md-button }
 
 </div>
 
@@ -30,10 +31,11 @@
 - 上传 PDF、图片和其他学习附件；
 - 在线编辑已上传的 Markdown 笔记；
 - 通过文件夹、文件名和拖动排序管理资料；
+- 在成员登录后使用在线 PDF、图片、TXT/CSV 转换工具；
 - 保持动态资料与静态课程笔记相互独立。
 
 <a id="external-backend"></a>
 
 ## 当前内容
 
-进入动态资料库后可查看“爱班资料”“方法与工具”“资料索引”三个分类。当前课程笔记仍在[学习笔记](../notes/index.md)中维护，两套内容相互独立。
+进入动态资料库后可查看“爱班资料”“方法与工具”“资料索引”“课程导读”和“生活随感”分类。在线转换入口位于动态站顶部“转换工具”。当前课程笔记仍在[学习笔记](../notes/index.md)中维护，两套内容相互独立。

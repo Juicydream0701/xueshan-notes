@@ -2,8 +2,12 @@ import io
 import os
 import tempfile
 import unittest
+import zipfile
 from pathlib import Path
 from unittest.mock import patch
+
+import fitz
+from PIL import Image
 
 
 class LibraryAppTests(unittest.TestCase):
@@ -108,6 +112,40 @@ class LibraryAppTests(unittest.TestCase):
         blocked = self.client.post("/admin/users/xueshan/delete", data={"csrf": owner_csrf}, follow_redirects=True)
         self.assertEqual(blocked.status_code, 200)
         self.assertIn("所有者账号不能删除".encode(), blocked.data)
+
+    def test_online_converter_pdf_and_image(self):
+        csrf = self.login()
+        first = fitz.open(); first.new_page().insert_text((72, 72), "one"); first_pdf = first.tobytes(); first.close()
+        second = fitz.open(); second.new_page().insert_text((72, 72), "two"); second_pdf = second.tobytes(); second.close()
+        merged = self.client.post("/convert", data={
+            "csrf": csrf, "operation": "pdf_merge", "files": [
+                (io.BytesIO(first_pdf), "one.pdf"), (io.BytesIO(second_pdf), "two.pdf"),
+            ],
+        }, content_type="multipart/form-data")
+        self.assertEqual(merged.status_code, 200)
+        document = fitz.open(stream=merged.data, filetype="pdf")
+        self.assertEqual(document.page_count, 2)
+        document.close()
+        split = self.client.post("/convert", data={
+            "csrf": csrf, "operation": "pdf_split", "pages": "2",
+            "files": (io.BytesIO(merged.data), "merged.pdf"),
+        }, content_type="multipart/form-data")
+        self.assertEqual(split.status_code, 200)
+        with zipfile.ZipFile(io.BytesIO(split.data)) as bundle:
+            self.assertEqual(bundle.namelist(), ["merged-001.pdf"])
+        text_pdf = self.client.post("/convert", data={
+            "csrf": csrf, "operation": "text_pdf", "files": (io.BytesIO("中文文本".encode("utf-8")), "note.txt"),
+        }, content_type="multipart/form-data")
+        self.assertEqual(text_pdf.status_code, 200)
+        self.assertTrue(text_pdf.data.startswith(b"%PDF"))
+        image = Image.new("RGBA", (20, 10), (20, 120, 90, 255)); image_data = io.BytesIO(); image.save(image_data, format="PNG")
+        converted = self.client.post("/convert", data={
+            "csrf": csrf, "operation": "image_convert", "format": "JPEG", "max_size": "10",
+            "files": (io.BytesIO(image_data.getvalue()), "test.png"),
+        }, content_type="multipart/form-data")
+        self.assertEqual(converted.status_code, 200)
+        self.assertEqual(converted.mimetype, "image/jpeg")
+        self.assertLessEqual(Image.open(io.BytesIO(converted.data)).width, 10)
 
 
 if __name__ == "__main__":
