@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block title %}用户与权限 · 雪山资料库{% endblock %}
+{% block content %}
+<section class="admin-panel">
+  <div class="admin-panel__head">
+    <div><div class="eyebrow">ACCESS CONTROL</div><h1>用户与权限</h1><p>只有 xueshan 所有者可以管理成员；资料权限在每次请求时重新检查。</p></div>
+    <div class="account-summary"><span class="account-avatar">雪</span><span><strong>{{ current_user.username }}</strong><br><small>所有者 · 不可删除</small></span></div>
+  </div>
+  <div class="storage-note"><strong>保存边界</strong><span>当前 Render Free 服务使用临时文件系统。用户新增、改密和权限调整会立即生效，但服务重启或重新部署后可能恢复到环境变量初始化的 xueshan 所有者；长期使用请配置持久磁盘或外部数据库。</span></div>
+
+  <h2>添加成员</h2>
+  <form class="user-form" action="{{ url_for('create_user') }}" method="post">
+    <input type="hidden" name="csrf" value="{{ csrf_token }}">
+    <label>用户名<input name="username" autocomplete="off" required minlength="2" maxlength="40" pattern="[A-Za-z][A-Za-z0-9_.-]{1,39}" placeholder="例如 study-friend"></label>
+    <label>初始密码<input name="password" type="password" autocomplete="new-password" required minlength="8" placeholder="至少 8 个字符"></label>
+    <label>权限<select name="role"><option value="viewer">只读成员：只能浏览和打开资料</option><option value="editor">编辑者：可上传、编辑、删除和整理资料</option></select></label>
+    <div class="user-form__submit"><button class="primary" type="submit">添加成员</button></div>
+  </form>
+
+  <h2>现有成员</h2>
+  <div class="user-table-wrap">
+    <table class="user-table"><thead><tr><th>账号</th><th>权限</th><th>创建时间</th><th>修改权限或密码</th><th>操作</th></tr></thead><tbody>
+    {% for item in users %}
+      <tr>
+        <td><strong>{{ item.username }}</strong>{% if item.role == 'owner' %}<small class="user-note">主账号</small>{% endif %}</td>
+        <td><span class="permission-chip {{ 'permission-chip--admin' if item.role == 'owner' else '' }}">{{ item.label }}</span></td>
+        <td>{{ item.created_at[:10] if item.created_at else '—' }}</td>
+        <td>{% if item.role == 'owner' %}<span class="muted">由 Render 环境变量保护</span>{% else %}<form class="inline-user-form" action="{{ url_for('update_user', username=item.username) }}" method="post"><input type="hidden" name="csrf" value="{{ csrf_token }}"><select name="role"><option value="viewer" {{ 'selected' if item.role == 'viewer' else '' }}>只读成员</option><option value="editor" {{ 'selected' if item.role == 'editor' else '' }}>编辑者</option></select><input name="password" type="password" minlength="8" placeholder="留空则不改密码"><button class="outline" type="submit">保存</button></form>{% endif %}</td>
+        <td>{% if item.role == 'owner' %}<span class="muted">受保护</span>{% else %}<form action="{{ url_for('delete_user', username=item.username) }}" method="post" onsubmit="return confirm('确定删除 {{ item.username }}？')"><input type="hidden" name="csrf" value="{{ csrf_token }}"><button class="danger-button" type="submit">删除</button></form>{% endif %}</td>
+      </tr>
+    {% else %}<tr><td colspan="5" class="admin-empty">还没有其他成员。你可以从上方添加只读成员或编辑者。</td></tr>{% endfor %}
+    </tbody></table>
+  </div>
+  <div class="permission-help"><strong>权限说明</strong><span><b>所有者</b>：资料、成员和权限全权管理；<b>编辑者</b>：上传、编辑、删除和整理资料；<b>只读成员</b>：只能查看公开资料与在线文件。</span></div>
+</section>
+{% endblock %}

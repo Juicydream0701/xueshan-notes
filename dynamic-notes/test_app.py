@@ -36,6 +36,12 @@ class LibraryAppTests(unittest.TestCase):
         with self.client.session_transaction() as session:
             return session["csrf"]
 
+    def login_as(self, username, password):
+        response = self.client.post("/login", data={"username": username, "password": password})
+        self.assertEqual(response.status_code, 302)
+        with self.client.session_transaction() as session:
+            return session["csrf"]
+
     def test_public_library_and_unicode_markdown(self):
         note = self.library_app.LIBRARY / "测试笔记.md"
         note.write_text("# 标题\n\n正文", encoding="utf-8")
@@ -85,6 +91,23 @@ class LibraryAppTests(unittest.TestCase):
         self.assertEqual(response.status_code, 404)
         hidden = self.client.get("/view/.order.json")
         self.assertEqual(hidden.status_code, 404)
+
+    def test_owner_can_manage_members_and_viewer_is_read_only(self):
+        csrf = self.login()
+        created = self.client.post("/admin/users/create", data={
+            "csrf": csrf, "username": "reader", "password": "reader-pass", "role": "viewer",
+        })
+        self.assertEqual(created.status_code, 302)
+        self.assertEqual(self.client.get("/admin/users").status_code, 200)
+        self.client.post("/logout", data={"csrf": csrf})
+        viewer_csrf = self.login_as("reader", "reader-pass")
+        self.assertEqual(self.client.get("/admin/users").status_code, 403)
+        self.assertEqual(self.client.post("/folder", data={"csrf": viewer_csrf, "name": "blocked"}).status_code, 403)
+        self.client.post("/logout", data={"csrf": viewer_csrf})
+        owner_csrf = self.login()
+        blocked = self.client.post("/admin/users/xueshan/delete", data={"csrf": owner_csrf}, follow_redirects=True)
+        self.assertEqual(blocked.status_code, 200)
+        self.assertIn("所有者账号不能删除".encode(), blocked.data)
 
 
 if __name__ == "__main__":

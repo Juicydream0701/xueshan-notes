@@ -3,11 +3,14 @@ import json
 import os
 import secrets
 import shutil
+import re
+from datetime import datetime, timezone
 from pathlib import Path, PurePosixPath
 
 import bleach
 import markdown
 from flask import Flask, abort, flash, redirect, render_template, request, send_file, session, url_for
+from werkzeug.security import check_password_hash, generate_password_hash
 
 app = Flask(__name__)
 app.secret_key = os.environ.get("SECRET_KEY", "") or secrets.token_hex(32)
@@ -17,10 +20,11 @@ app.config["SESSION_COOKIE_SAMESITE"] = "Lax"
 app.config["SESSION_COOKIE_SECURE"] = bool(os.environ.get("RENDER_EXTERNAL_URL"))
 DATA_DIR = Path(os.environ.get("DATA_DIR", Path(__file__).parent / "data"))
 LIBRARY = DATA_DIR / "library"
+USERS_FILE = DATA_DIR / "users.json"
 LIBRARY.mkdir(parents=True, exist_ok=True)
 SEED_LIBRARY = Path(__file__).parent / "seed" / "library"
-SEED_MARKER = DATA_DIR / ".seed-v1-done"
-if SEED_LIBRARY.exists() and not SEED_MARKER.exists():
+SEED_MARKER = DATA_DIR / ".seed-v2-done"
+if SEED_LIBRARY.exists():
     for source in SEED_LIBRARY.rglob("*"):
         target = LIBRARY / source.relative_to(SEED_LIBRARY)
         if source.is_dir():
@@ -28,12 +32,63 @@ if SEED_LIBRARY.exists() and not SEED_MARKER.exists():
         elif not target.exists():
             target.parent.mkdir(parents=True, exist_ok=True)
             shutil.copy2(source, target)
-    SEED_MARKER.touch()
+    if not SEED_MARKER.exists():
+        SEED_MARKER.touch()
 ALLOWED = {"md", "markdown", "pdf", "png", "jpg", "jpeg", "gif", "webp", "txt", "docx", "pptx", "xlsx", "zip"}
 TAGS = {
     "p", "br", "hr", "h1", "h2", "h3", "h4", "blockquote", "ul", "ol", "li",
     "strong", "em", "code", "pre", "table", "thead", "tbody", "tr", "th", "td", "a",
 }
+ROLES = {
+    "owner": {"label": "所有者", "can_edit": True, "can_delete": True, "can_users": True},
+    "editor": {"label": "编辑者", "can_edit": True, "can_delete": True, "can_users": False},
+    "viewer": {"label": "只读成员", "can_edit": False, "can_delete": False, "can_users": False},
+}
+USERNAME_RE = re.compile(r"^[A-Za-z][A-Za-z0-9_.-]{1,39}$")
+
+
+def now_iso():
+    return datetime.now(timezone.utc).isoformat(timespec="seconds")
+
+
+def read_users():
+    try:
+        data = json.loads(USERS_FILE.read_text(encoding="utf-8"))
+    except (OSError, ValueError, TypeError):
+        return {}
+    if not isinstance(data, dict):
+        return {}
+    return {name: value for name, value in data.items() if isinstance(name, str) and isinstance(value, dict)}
+
+
+def write_users(users):
+    DATA_DIR.mkdir(parents=True, exist_ok=True)
+    temporary = USERS_FILE.with_suffix(".tmp")
+    temporary.write_text(json.dumps(users, ensure_ascii=False, indent=2), encoding="utf-8")
+    os.replace(temporary, USERS_FILE)
+
+
+def ensure_user_store():
+    """Create the owner from Render's private env vars on a fresh instance."""
+    users = read_users()
+    username = (os.environ.get("ADMIN_USERNAME", "xueshan") or "xueshan").strip()
+    password = os.environ.get("ADMIN_PASSWORD", "")
+    if not USERNAME_RE.fullmatch(username):
+        username = "xueshan"
+    current = users.get(username)
+    if not current or current.get("role") != "owner" or not current.get("password_hash"):
+        if password:
+            users[username] = {
+                "password_hash": generate_password_hash(password),
+                "role": "owner",
+                "created_at": current.get("created_at", now_iso()) if current else now_iso(),
+                "updated_at": now_iso(),
+            }
+            write_users(users)
+    return users
+
+
+ensure_user_store()
 
 
 def safe_path(rel=""):
@@ -47,7 +102,24 @@ def safe_path(rel=""):
 
 
 def logged_in():
-    return session.get("admin") is True
+    return current_user() is not None
+
+
+def current_user():
+    username = session.get("user")
+    if not username:
+        return None
+    user = read_users().get(username)
+    if not user or user.get("disabled") or user.get("role") not in ROLES:
+        return None
+    return {"username": username, **user, **ROLES[user["role"]]}
+
+
+def require_role(permission):
+    user = current_user()
+    if not user or not user.get(permission):
+        abort(403)
+    return user
 
 
 def clean_name(value):
@@ -60,7 +132,7 @@ def clean_name(value):
 
 @app.get("/health")
 def health():
-    return {"status": "ok"}
+    return {"status": "ok", "service": "xueshan-notes-library", "storage": "ephemeral-free"}
 
 
 @app.get("/")
@@ -77,20 +149,26 @@ def index():
         order_map = {name: index for index, name in enumerate(order)}
         for item in sorted((p for p in folder.iterdir() if p.name != ".order.json"), key=lambda p: (order_map.get(p.name, 999999), not p.is_dir(), p.name.casefold())):
             rel = item.relative_to(LIBRARY).as_posix()
-            items.append({"name": item.name, "path": rel, "folder": item.is_dir(), "ext": item.suffix.lower()})
-    return render_template("index.html", items=items, folder=current, admin=logged_in())
+            try:
+                stat = item.stat()
+                size = stat.st_size if item.is_file() else sum(child.stat().st_size for child in item.rglob("*") if child.is_file())
+                updated = datetime.fromtimestamp(stat.st_mtime, timezone.utc).astimezone().strftime("%Y-%m-%d")
+            except OSError:
+                size, updated = 0, ""
+            items.append({"name": item.name, "path": rel, "folder": item.is_dir(), "ext": item.suffix.lower(), "size": size, "updated": updated})
+    user = current_user()
+    return render_template("index.html", items=items, folder=current, admin=bool(user), user=user)
 
 
 @app.route("/login", methods=["GET", "POST"])
 def login():
     if request.method == "POST":
-        expected_user = os.environ.get("ADMIN_USERNAME", "")
-        expected_password = os.environ.get("ADMIN_PASSWORD", "")
-        if not expected_user or not expected_password:
-            flash("后台尚未配置管理员账号，请联系站点管理员。", "error")
-        elif hmac.compare_digest(request.form.get("username", ""), expected_user) and hmac.compare_digest(request.form.get("password", ""), expected_password):
+        username = request.form.get("username", "").strip()
+        password = request.form.get("password", "")
+        user = read_users().get(username)
+        if user and not user.get("disabled") and check_password_hash(user.get("password_hash", ""), password):
             session.clear()
-            session["admin"] = True
+            session["user"] = username
             session["csrf"] = secrets.token_urlsafe(32)
             return redirect(url_for("index"))
         else:
@@ -113,6 +191,7 @@ def check_csrf():
 @app.post("/folder")
 def create_folder():
     check_csrf()
+    require_role("can_edit")
     parent = request.form.get("folder", "")
     name = clean_name(request.form.get("name", ""))
     if not name:
@@ -126,6 +205,7 @@ def create_folder():
 @app.post("/upload")
 def upload():
     check_csrf()
+    require_role("can_edit")
     folder = request.form.get("folder", "")
     destination = safe_path(folder)
     destination.mkdir(parents=True, exist_ok=True)
@@ -142,8 +222,7 @@ def upload():
 
 @app.route("/edit/<path:rel>", methods=["GET", "POST"])
 def edit_file(rel):
-    if not logged_in():
-        abort(403)
+    require_role("can_edit")
     path = safe_path(rel)
     if not path.is_file() or path.suffix.lower() not in {".md", ".markdown"}:
         abort(404)
@@ -172,6 +251,7 @@ def view_file(rel):
 @app.post("/delete")
 def delete_item():
     check_csrf()
+    require_role("can_delete")
     path = safe_path(request.form.get("path", ""))
     parent = request.form.get("folder", "")
     if path.is_dir():
@@ -188,6 +268,7 @@ def delete_item():
 @app.post("/reorder")
 def reorder():
     check_csrf()
+    require_role("can_edit")
     folder = safe_path(request.form.get("folder", ""))
     names = request.form.getlist("name")
     actual = {p.name for p in folder.iterdir() if p.name != ".order.json"}
@@ -199,7 +280,87 @@ def reorder():
 
 @app.context_processor
 def inject_template_values():
-    return {"csrf_token": session.get("csrf", ""), "parent_folder": lambda value: str(PurePosixPath(value).parent) if "/" in value else ""}
+    user = current_user()
+    return {
+        "csrf_token": session.get("csrf", ""),
+        "parent_folder": lambda value: str(PurePosixPath(value).parent) if "/" in value else "",
+        "current_user": user,
+        "role_labels": {key: value["label"] for key, value in ROLES.items()},
+    }
+
+
+@app.get("/admin/users")
+def users_admin():
+    require_role("can_users")
+    users = read_users()
+    rows = [{"username": name, **value, **ROLES.get(value.get("role"), ROLES["viewer"])} for name, value in sorted(users.items())]
+    return render_template("users.html", users=rows)
+
+
+@app.post("/admin/users/create")
+def create_user():
+    check_csrf()
+    require_role("can_users")
+    username = request.form.get("username", "").strip()
+    password = request.form.get("password", "")
+    role = request.form.get("role", "viewer")
+    users = read_users()
+    if not USERNAME_RE.fullmatch(username):
+        flash("用户名需以英文字母开头，使用 2–40 个字母、数字、点、下划线或短横线。", "error")
+    elif username in users:
+        flash("这个用户名已经存在。", "error")
+    elif role not in {"editor", "viewer"}:
+        flash("新用户只能设置为编辑者或只读成员。", "error")
+    elif len(password) < 8:
+        flash("密码至少需要 8 个字符。", "error")
+    else:
+        users[username] = {"password_hash": generate_password_hash(password), "role": role, "created_at": now_iso(), "updated_at": now_iso()}
+        write_users(users)
+        flash(f"已添加用户 {username}。", "success")
+    return redirect(url_for("users_admin"))
+
+
+@app.post("/admin/users/<username>/update")
+def update_user(username):
+    check_csrf()
+    require_role("can_users")
+    users = read_users()
+    target = users.get(username)
+    if not target:
+        abort(404)
+    role = request.form.get("role", target.get("role"))
+    password = request.form.get("password", "")
+    if target.get("role") == "owner":
+        flash("所有者账号只能由 Render 的 ADMIN_PASSWORD 环境变量初始化，不能在此降级。", "error")
+    elif role not in {"editor", "viewer"}:
+        flash("权限选择无效。", "error")
+    elif password and len(password) < 8:
+        flash("新密码至少需要 8 个字符。", "error")
+    else:
+        target["role"] = role
+        if password:
+            target["password_hash"] = generate_password_hash(password)
+        target["updated_at"] = now_iso()
+        write_users(users)
+        flash(f"已更新用户 {username}。", "success")
+    return redirect(url_for("users_admin"))
+
+
+@app.post("/admin/users/<username>/delete")
+def delete_user(username):
+    check_csrf()
+    owner = require_role("can_users")
+    users = read_users()
+    target = users.get(username)
+    if not target:
+        abort(404)
+    if username == owner["username"] or target.get("role") == "owner":
+        flash("所有者账号不能删除。", "error")
+    else:
+        del users[username]
+        write_users(users)
+        flash(f"已删除用户 {username}。", "success")
+    return redirect(url_for("users_admin"))
 
 
 if __name__ == "__main__":
