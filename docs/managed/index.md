@@ -11,6 +11,7 @@
 [浏览动态资料库](https://xueshan-notes-library.onrender.com/){ .md-button .md-button--primary }
 [管理员登录](https://xueshan-notes-library.onrender.com/login){ .md-button }
 [科研文件转换工具](https://xueshan-notes-library.onrender.com/convert){ .md-button }
+[下载 Windows 完整版](https://github.com/Juicydream0701/xueshan-notes/releases/download/desktop-tool-v1/research-file-converter-windows.exe){ .md-button }
 
 </div>
 
