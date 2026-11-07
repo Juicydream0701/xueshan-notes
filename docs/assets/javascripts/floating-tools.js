@@ -303,7 +303,10 @@
         viewport.setAttribute("aria-label", "可拖拽调整高度的 PDF 阅读区域");
         if (window.ResizeObserver) {
           new ResizeObserver(function (entries) {
-            var height = Math.round(entries[0].contentRect.height);
+            // CSS height 包含边框；保存 contentRect 会导致每次刷新丢掉 2px。
+            var borderBoxes = entries[0].borderBoxSize;
+            var borderBox = borderBoxes && (borderBoxes[0] || borderBoxes);
+            var height = Math.round(borderBox && borderBox.blockSize || viewport.getBoundingClientRect().height);
             if (height < 400) return;
             if (heightInput) heightInput.value = String(Math.min(1600, Math.max(560, height)));
             if (heightOutput) heightOutput.value = height + " px";

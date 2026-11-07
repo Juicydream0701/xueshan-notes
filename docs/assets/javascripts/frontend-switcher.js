@@ -4,6 +4,8 @@
   var modeKey = "xueshan:frontend-mode";
   // 两套前端：legacy 是版本 1（原版），modern 是版本 2（阅读台）。
   var modes = ["modern", "legacy"];
+  var transitionTimer = 0;
+  var progressFrame = 0;
 
   function readMode() {
     try {
@@ -33,13 +35,14 @@
   }
 
   function modeButtonLabel(mode) {
-    return mode === "legacy" ? "版本 1 · 切到版本 2" : "版本 2 · 切到版本 1";
+    return mode === "legacy" ? "版本 1 · 切到版本 2" : "版本 2 · 切换";
   }
 
   function setMode(mode, persist) {
     var legacy = mode === "legacy";
     mode = legacy ? "legacy" : "modern";
-    document.body.classList.add("frontend-transitioning");
+    window.clearTimeout(transitionTimer);
+    document.body.classList.toggle("frontend-transitioning", persist !== false);
     document.body.classList.toggle("legacy-frontend", legacy);
     document.body.setAttribute("data-frontend-version", legacy ? "1" : "2");
 
@@ -51,6 +54,9 @@
       button.setAttribute("title", "当前为" + modeLabel(mode) + "；下一次切换：" + modeLabel(nextMode(mode)));
       button.setAttribute("aria-pressed", String(legacy));
       button.setAttribute("data-frontend-mode", mode);
+      // 新版控件参加顶栏的 flex 布局，不再悬在正文目录上方。
+      var parent = legacy ? document.body : document.querySelector(".md-header__inner");
+      if (parent && button.parentElement !== parent) parent.appendChild(button);
     }
     if (badge) {
       badge.textContent = modeLabel(mode);
@@ -61,7 +67,7 @@
     if (progress) progress.style.display = "block";
     if (persist !== false) saveMode(mode);
     updateProgress();
-    window.setTimeout(function () {
+    transitionTimer = window.setTimeout(function () {
       document.body.classList.remove("frontend-transitioning");
     }, 340);
   }
@@ -105,13 +111,26 @@
     progress.style.width = (ratio * 100).toFixed(2) + "%";
   }
 
+  function scheduleProgress() {
+    if (progressFrame) return;
+    progressFrame = window.requestAnimationFrame(function () {
+      progressFrame = 0;
+      updateProgress();
+    });
+  }
+
   function init() {
     if (!document.body) return;
+    document.body.classList.toggle("frontend-home", !!document.querySelector(".new-home"));
     createProgress();
     createSwitcher();
     updateProgress();
-    window.addEventListener("scroll", updateProgress, { passive: true });
-    window.addEventListener("resize", updateProgress, { passive: true });
+    window.addEventListener("scroll", scheduleProgress, { passive: true });
+    window.addEventListener("resize", scheduleProgress, { passive: true });
+    if (window.ResizeObserver) {
+      var content = document.querySelector(".md-content");
+      if (content) new ResizeObserver(scheduleProgress).observe(content);
+    }
   }
 
   if (document.readyState === "loading") {

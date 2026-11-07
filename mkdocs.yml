@@ -79,12 +79,12 @@ markdown_extensions:
 
 extra_css:
   - assets/stylesheets/green-theme.css
-  - assets/stylesheets/modern-theme.css
+  - assets/stylesheets/modern-theme.css?v=20261107
 
 extra_javascript:
   - assets/javascripts/mathjax-config.js
-  - assets/javascripts/floating-tools.js
-  - assets/javascripts/frontend-switcher.js
+  - assets/javascripts/floating-tools.js?v=20261107
+  - assets/javascripts/frontend-switcher.js?v=20261107
   - assets/javascripts/semiconductor-review.js
   - assets/vendor/mathjax/es5/tex-mml-chtml.js
 

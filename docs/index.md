@@ -30,41 +30,53 @@
 </div>
 </div>
 
-<div class="new-home__body" markdown>
-
-<main class="new-home__main" markdown>
-
 <section class="new-home__lead" markdown>
 
 <p class="new-home__section-label">START HERE</p>
 
 <h2>先判断你现在要解决什么</h2>
 
+<div class="new-home__questions" markdown>
+
 <div class="new-home__question" markdown>
-<strong>我要系统学一门课</strong>
-<span>从课程首页开始，沿着专题、复习路线和资料索引阅读。</span>
-<a href="notes/courses/index.md">进入课程总览 →</a>
+<div class="new-home__question-copy" markdown>
+<p class="new-home__question-title"><strong>我要系统学一门课</strong></p>
+<p>从课程首页开始，沿着专题、复习路线和资料索引阅读。</p>
+</div>
+<p class="new-home__question-link"><a href="notes/courses/index.md">进入课程总览 →</a></p>
 </div>
 
 <div class="new-home__question" markdown>
-<strong>我只想解决一道题</strong>
-<span>先搜索关键词，再用专题页的适用条件、例题和易错点定位。</span>
-<a href="notes/index.md">打开学习笔记 →</a>
+<div class="new-home__question-copy" markdown>
+<p class="new-home__question-title"><strong>我只想解决一道题</strong></p>
+<p>先搜索关键词，再用专题页的适用条件、例题和易错点定位。</p>
+</div>
+<p class="new-home__question-link"><a href="notes/index.md">打开学习笔记 →</a></p>
 </div>
 
 <div class="new-home__question" markdown>
-<strong>我需要一份讲义或原题</strong>
-<span>进入 PDF 资料中心，按课程和知识点打开、阅读或下载。</span>
-<a href="notes/tools/pdf-library.md">查找资料 →</a>
+<div class="new-home__question-copy" markdown>
+<p class="new-home__question-title"><strong>我需要一份讲义或原题</strong></p>
+<p>进入 PDF 资料中心，按课程和知识点打开、阅读或下载。</p>
+</div>
+<p class="new-home__question-link"><a href="notes/tools/pdf-library.md">查找资料 →</a></p>
+</div>
+
 </div>
 
 </section>
+
+<div class="new-home__body" markdown>
+
+<div class="new-home__main" markdown>
 
 <section class="new-home__stream" markdown>
 
 <p class="new-home__section-label">READING STREAM</p>
 
 <h2>六条长期维护的主线</h2>
+
+<div class="new-home__stream-grid" markdown>
 
 <div class="new-home__stream-row" markdown>
 <span class="new-home__index">01</span>
@@ -120,6 +132,8 @@
 </div>
 </div>
 
+</div>
+
 </section>
 
 <section class="new-home__route-section" markdown>
@@ -139,7 +153,7 @@
 
 </section>
 
-</main>
+</div>
 
 <aside class="new-home__rail" markdown>
 
@@ -173,7 +187,7 @@
 
 [PDF 阅读器](notes/tools/pdf-reader.md)<br>
 [Markdown 写作](notes/tools/markdown.md)<br>
-[打开 AI 笔记助手](notes/tools/index.md){ .md-button .md-button--primary }
+<a class="md-button md-button--primary" href="notes/tools/index.md" data-ai-open>打开 AI 笔记助手</a>
 
 </div>
 
