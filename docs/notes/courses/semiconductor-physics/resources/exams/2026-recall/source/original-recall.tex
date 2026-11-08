@@ -1,0 +1,310 @@
+\documentclass[UTF8,a4paper,12pt]{ctexart}
+
+\usepackage{geometry}
+\geometry{left=2.0cm,right=2.0cm,top=1.8cm,bottom=1.8cm}
+\usepackage{enumitem}
+\usepackage{amsmath,amssymb}
+\usepackage{fancyhdr}
+\usepackage{setspace}
+\usepackage{tikz}
+\usepackage{xcolor}
+\usepackage{graphicx}
+
+\setlength{\parindent}{2em}
+\setlength{\parskip}{0.12em}
+\setstretch{1.10}
+\pagestyle{fancy}
+\fancyhf{}
+\cfoot{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+
+% 全局禁止浮动体默认居中
+\makeatletter
+\g@addto@macro\@floatboxreset\centeringfalse
+\makeatother
+
+% 通用作答线
+\newcommand{\answerlines}[1]{%
+	\par\noindent
+	\foreach \i in {1,...,#1}{%
+		\vspace{0.7em}\par\noindent\rule{\linewidth}{0.35pt}\par
+	}%
+}
+
+% 绘图框
+\newcommand{\drawingbox}[1][5cm]{%
+	\par\vspace{0.3em}\noindent
+	\fbox{\parbox[c][#1][t]{\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax}{\small\color{gray}作图区域}}
+	\par\vspace{0.3em}
+}
+
+% 四大部分标题
+\newcommand{\parttitle}[2]{%
+	\par\vspace{0.6em}
+	\noindent{\zihao{4}\bfseries 第#1部分\quad #2}\par\vspace{0.2em}
+	\hrule\vspace{0.4em}
+}
+
+% 选择题：题目正文左对齐，选项左对齐
+\newcommand{\question}[2]{%
+	\item
+	\textbf{（2分）}#1
+	\begin{enumerate}[label=\Alph*.,leftmargin=2.4em,itemsep=0.22em,topsep=0.2em,align=left]
+		#2
+	\end{enumerate}
+	\vspace{0.35em}
+}
+
+\begin{document}
+	
+	% 试卷标题：这里仍居中，因为它是试卷标题
+	\begin{center}
+		{\zihao{2}\bfseries 半导体物理}\\[0.4em]
+		{\zihao{3}2026-2027学年秋学期回忆卷}
+	\end{center}
+	
+	\vspace{0.3em}
+	\noindent
+	姓名：\underline{\hspace{3.5cm}}
+	\hfill
+	学号：\underline{\hspace{3.5cm}}
+	\hfill
+	得分：\underline{\hspace{3.5cm}}
+	
+	\vspace{0.6em}
+	\vspace{0.9em}
+	
+	\parttitle{一}{选择题}
+	
+	\noindent
+	\textbf{不定项选择题（共5题，每题2分，共10分）}
+	
+	\noindent
+	说明：每题选项中可能有一个或多个符合题意，请将正确选项全部选出。
+	
+	\vspace{0.4em}
+	
+	\begin{enumerate}[label=\arabic*.,leftmargin=2.2em,itemsep=0.45em,topsep=0.2em,align=left]
+		
+		\question{关于半导体能带与载流子的说法，下列选项中正确的是（\quad）。}{
+			\item 半导体的能带一般分为允带和禁带。
+			\item 本征半导体中的电子可以位于禁带的能级上。
+			\item 对于电子来说，导带的电势能大于价带。
+			\item 对于空穴来说，导带的电势能大于价带。
+			\item 当热力学温度等于 \(0\,\mathrm{K}\) 时，绝缘体、半导体、导体的导带均为空带。
+		}
+		
+		\question{以下晶体中，离子键代表有（\quad），共价键代表有（\quad），金属键代表有（\quad），混合键代表有（\quad）。}{
+			\item Ge
+			\item GaAs
+			\item NaCl
+			\item 金刚石
+			\item Au
+		}
+		
+		\question{关于半导体的说法，下列选项中正确的是（\quad）。}{
+			\item 半导体的电阻率小于 \(10^{-3}\,\Omega\cdot\mathrm{cm}\)。
+			\item Si、Ge 是第二代半导体。
+			\item 金刚石是第三代半导体。
+			\item 从第一代到第四代半导体，禁带宽度逐渐变大。
+			\item 温度的升高可以显著地增加半导体的导电能力。
+		}
+		
+		\question{以下有关化学键的说法，正确的有（\quad）。}{
+			\item 金属键是电子的完全转移。
+			\item 混合键是电子的部分共有和部分转移。
+			\item 离子键是电子在所有原子的共有。
+			\item 共价键是同种原子的共有。
+			\item III 族、V 族元素化合产生共价键和离子键。
+		}
+		
+		\question{以下有关晶体结构与晶面的说法，正确的有（\quad）。}{
+			\item 金刚石结构的特点是在体对角线长度为$\sqrt{3}a$的范围内，共有 7 个相互平行的 $\{111\}$ 面。
+			\item $\{110\}$ 是 Ge、Si 的解离面。
+			\item 晶面指数是晶面与晶轴的截面截距的互质整数比。
+			\item $<100>$指代的是同类晶面。
+			\item 在立方晶系中，晶列指数和晶面指数相同的晶向和晶面之间是相互垂直的。
+		}
+		
+	\end{enumerate}
+	
+	\graphicspath{{figure/}}
+	
+	% 图片左对齐显示，最大宽度为页宽，保证清晰度
+	\newcommand{\recallfigure}[2][0.92\linewidth]{%
+		\par\smallskip\noindent
+		\IfFileExists{figure/#2.png}{\includegraphics[width=#1]{figure/#2.png}}{%
+			\IfFileExists{figure/#2.jpg}{\includegraphics[width=#1]{figure/#2.jpg}}{%
+				\IfFileExists{figure/#2.jpeg}{\includegraphics[width=#1]{figure/#2.jpeg}}{%
+					\IfFileExists{figure/#2.pdf}{\includegraphics[width=#1]{figure/#2.pdf}}{%
+						\fbox{\parbox{0.8\linewidth}{\centering 图片 #2 未找到，请检查 figure 文件夹及扩展名}}%
+					}%
+				}%
+			}%
+		}\par\smallskip
+	}
+	
+	% ===== 第二部分：填空题 =====
+	\parttitle{二}{填空题}
+	
+	\noindent\textbf{填空题（共10题，分值待补充）}
+	
+	\begin{enumerate}[label=\arabic*.,leftmargin=2.2em,itemsep=0.7em]
+		
+		\item N 型半导体和 P 型半导体中的多数载流子分别为
+		\underline{\hspace{2.5cm}} 和
+		\underline{\hspace{2.5cm}}。
+		
+		\item $\langle 100\rangle$ 晶列的 6 个同类晶向分别为
+		\underline{\hspace{8cm}}；
+		
+		$\{110\}$ 晶簇的 8 个同类晶面分别为
+		\underline{\hspace{8cm}}。
+		
+		\item 载流子的两个产生机理分别为
+		\underline{\hspace{2.5cm}} 和
+		\underline{\hspace{2.5cm}}。
+		
+		请问在下面三个温度区间，主要由哪个产生机理占主导：
+		
+		① 低温弱电离区：
+		\underline{\hspace{3cm}}；
+		
+		② 强电离区：
+		\underline{\hspace{3cm}}；
+		
+		③ 高温本征激发区：
+		\underline{\hspace{3cm}}。
+		
+		\item PN 结二极管正向导通的电流机制为
+		\underline{\hspace{4cm}}；
+		
+		肖特基结二极管正向导通的电流机制为
+		\underline{\hspace{4cm}}。
+		
+		\item \textbf{【题目已遗忘，待补充】}
+		
+		\item 本征激发的机理为
+		\underline{\hspace{4cm}}；
+		
+		杂质电离的机制为
+		\underline{\hspace{4cm}}。
+		
+		\item 半导体中载流子的两种散射机制分别为
+		\underline{\hspace{3cm}} 和
+		\underline{\hspace{3cm}}；
+		
+		在高掺杂条件下，迁移率随温度的变化规律为
+		\underline{\hspace{5cm}}。
+		
+		\item \underline{\hspace{2.5cm}}
+		反映载流子在电场作用下运动的难易程度；
+		
+		\underline{\hspace{2.5cm}}
+		反映存在浓度梯度时载流子运动的难易程度；
+		
+		\underline{\hspace{2.5cm}} 和
+		\underline{\hspace{2.5cm}}
+		是外力产生电流的源。
+		
+		\item PN 结二极管的反向恢复电荷比肖特基二极管
+		\underline{\hspace{1.5cm}}（多/少）。
+		
+		请解释其中包含的机理：
+		
+		\underline{\hspace{12cm}}
+		
+		\underline{\hspace{12cm}}
+		
+		\item 在分析半导体中的载流子浓度时，我们会使用
+		电中性条件，即正电荷数量等于负电荷数量。
+		
+		请问在 N 型半导体中：
+		
+		正电荷包括：
+		\underline{\hspace{5cm}}；
+		
+		负电荷包括：
+		\underline{\hspace{5cm}}。
+		
+	\end{enumerate}
+	
+	% ===== 第三部分：简答和画图题 =====
+	\parttitle{三}{简答和画图题}
+	
+	\noindent\textbf{画图题回忆（共30分）}
+	
+	\begin{enumerate}[label=\arabic*.,leftmargin=2.2em,itemsep=0.75em]
+		
+		\item \textbf{GaAs 晶体结构与晶面（9分）}\\
+		参考 GaAs 晶体的 $\langle110\rangle$ 晶向及 $\{110\}$ 晶面。
+		\par (1) 画出图示五个面的原子排布；以黑框表示边界，
+		Ga、As 原子分别用黑色和白色表示。（5分）
+		\recallfigure[0.48\linewidth]{figure1}
+		\recallfigure[0.92\linewidth]{figure2}
+		\par (2) 直接写出原子线密度、面间距、原子面密度及共价键密度。（4分）
+		
+		\item \textbf{布里渊区与能带（6分）}\\
+		画出第一、第二、第三布里渊区及三个允带、禁带，
+		并在图中标明布里渊区。
+		
+		\noindent
+		\includegraphics[width=0.92\linewidth]{figure/figure3}
+		
+		\vspace{0.4em}
+		
+		\noindent
+		\includegraphics[width=0.92\linewidth]{figure/figure11}
+		
+		\item \textbf{不同掺杂情况下的能带示意图（5分）}\\
+		分别画出强 P 型、弱 P 型、本征、弱 N 型、强 N 型半导体的能带示意图，
+		标注 $E_c$、$E_v$、$E_f$、$E_i$、$E_D$、$E_A$。
+		
+		\noindent
+		\includegraphics[width=0.92\linewidth]{figure/figure12}
+		
+		\item \textbf{零偏压 PN 结（3分）}\\
+		画出未加外加电压时 PN 结的能带示意图。
+		\recallfigure[0.72\linewidth]{figure4}
+		
+		\item \textbf{零偏压金属--半导体接触（7分）}\\
+		画出未加外加电压时金属与半导体接触的能带示意图，
+		标注 $qV_D$、$q\phi$，并说明功函数与电子亲和能的关系。
+		\recallfigure[0.92\linewidth]{figure5}
+		
+	\end{enumerate}
+	
+	% ===== 第四部分：计算题 =====
+	\parttitle{四}{计算题}
+	
+	\noindent\textbf{计算与推导（共50分）}\\
+	\noindent\small 说明：以下为回忆内容；图片为参考例题，原题中的部分数据尚待核实。\normalsize
+	
+	\begin{enumerate}[label=\arabic*.,leftmargin=2.2em,itemsep=0.8em]
+		
+		\item \textbf{载流子浓度相关计算（15分）}\\
+		题型类似下图的例题。回忆数据为
+		$2\times10^{16}$、$5\times10^{17}$、$2\times10^{18}$
+		（具体物理量、单位及题目条件待核实）。
+		\recallfigure[0.92\linewidth]{figure6}
+		
+		\item \textbf{电阻率计算（10分）}\\
+		回忆数据为 $1.25\times10^{16}$、$9.5\times10^{15}$
+		（具体物理量、单位及其余条件待核实）。参考下图。
+		\recallfigure[0.92\linewidth]{figure7}
+		
+		\item \textbf{两道合并的计算题（7分＋4分，共11分）}\\
+		原题由两小题合并，具体数据已遗忘。下图为参考例题，
+		涉及载流子浓度、迁移率与电导率，以及扩散长度等计算。
+		\recallfigure[0.92\linewidth]{figure8}
+		
+		\item \textbf{PN 结势垒电容相关推导（14分）}\\
+		(1) 推导 $N_A$、$N_D$、$x_n$、$x_p$ 之间的关系。（1分）
+		\par (2) 推导电场 $E(x)$ 与电压的关系，并且指出电场方向、电场强度最大的位置及其电场强度值。（6分）
+		\par (3) 求耗尽层宽度 $X_D$与$N_A$、$N_D$、$V_D$的关系式。（7分）
+		\recallfigure[0.92\linewidth]{figure9}
+		\recallfigure[0.92\linewidth]{figure10}
+		
+	\end{enumerate}
+	
+\end{document}

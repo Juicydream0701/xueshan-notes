@@ -144,4 +144,95 @@ $$
 
 电场方向、电势升降、能带弯曲三者应一致；两侧耗尽电荷应等量；反偏宽度应增大、电容应减小；平衡费米能级应水平。计算 I–V 时再次确认少数载流子边界和低注入条件。以上检查比仅核对一个最终数值更能定位错误。
 
+## 10. 最新回忆卷：14 分耗尽层推导怎样完整作答 {#recall-depletion}
+
+[查看回忆卷第 8—10 页](../resources/exams/2026-recall/semiconductor-recall-2026-2027.pdf#page=8)。题目记录为电中性关系 1 分、电场和方向 6 分、宽度关系 7 分。以下是本站建议的书写顺序，并非官方评分细则。题名虽含“势垒电容”，回忆到的三个小问止于耗尽宽度；电容推导放在末尾作为同一模型的延伸。
+
+### 第一步：先把边界条件写在图旁
+
+采用本章坐标和突变、完全电离、耗尽近似；忽略界面片电荷，令 $\varepsilon_s=\varepsilon_r\varepsilon_0$。定义实际耗尽势降
+
+$$
+U=V_{bi}-V>0.
+$$
+
+零偏原题中的 $V_D$ 即 $V_{bi}$，此时 $U=V_D$。边界为 $E(-x_p)=E(x_n)=0$；结面没有片电荷，所以 $E(0^-)=E(0^+)$。对整个耗尽区积分 $dE/dx=\rho/\varepsilon_s$，得
+
+$$
+0=\frac1{\varepsilon_s}\int_{-x_p}^{x_n}\rho\,dx
+=\frac q{\varepsilon_s}(N_Dx_n-N_Ax_p),
+\qquad \boxed{N_Ax_p=N_Dx_n}.
+$$
+
+这一步说明的是两侧**电荷面密度**相等，而非杂质浓度相等。轻掺杂一侧必须提供更宽的耗尽区。
+
+### 第二步：积分常数决定电场的符号
+
+p 侧积分为 $E_p=-qN_Ax/\varepsilon_s+C_p$，代入左边界，$C_p=-qN_Ax_p/\varepsilon_s$；n 侧为 $E_n=qN_Dx/\varepsilon_s+C_n$，代入右边界，$C_n=-qN_Dx_n/\varepsilon_s$。因此
+
+$$
+\boxed{E_p=-\frac{qN_A}{\varepsilon_s}(x+x_p)},\qquad
+\boxed{E_n=\frac{qN_D}{\varepsilon_s}(x-x_n)}.
+$$
+
+在各自定义域内二者均小于等于零，电场由 n 指向 p，结面处绝对值最大：
+
+$$
+E(0)=-\frac{qN_Ax_p}{\varepsilon_s}
+=-\frac{qN_Dx_n}{\varepsilon_s},\qquad
+|E_{\max}|=\frac{qN_Ax_p}{\varepsilon_s}.
+$$
+
+最新卷第 10 页参考图与原笔记第 92 页的 n 侧公式在 $qN_D(x-x_n)/\varepsilon_s$ 前多了负号；原图按原貌保留，作答应使用上式。若照抄，n 侧会得到向右电场，并与 p 侧在结面不连续。
+
+### 第三步：再次积分，得到连续的分段电势
+
+取左侧准中性区电势为零，即 $\psi(-x_p)=0$。由 $d\psi/dx=-E$，p 侧积分后用左边界定常数；n 侧用 $\psi(x_n)=U$ 定常数，得到
+
+$$
+\psi(x)=\begin{cases}
+0,&x\le -x_p,\\
+\dfrac{qN_A}{2\varepsilon_s}(x+x_p)^2,&-x_p\le x\le0,\\
+U-\dfrac{qN_D}{2\varepsilon_s}(x_n-x)^2,&0\le x\le x_n,\\
+U,&x\ge x_n.
+\end{cases}
+$$
+
+两侧电势在结面连续，于是
+
+$$
+\boxed{U=\frac q{2\varepsilon_s}(N_Ax_p^2+N_Dx_n^2)}.
+$$
+
+电势从 p 向 n 上升，电子能带边缘随 $-q\psi$ 下降；这与零偏能带图的方向一致。电势零点可以更换，势差和电场不变。
+
+### 第四步：用一个总宽度消去两个未知量
+
+令 $X_D=x_p+x_n$。先由电中性写出
+
+$$
+x_p=\frac{N_D}{N_A+N_D}X_D,\qquad
+x_n=\frac{N_A}{N_A+N_D}X_D.
+$$
+
+代入上一步，化简为 $U=qN_AN_DX_D^2/[2\varepsilon_s(N_A+N_D)]$，所以
+
+$$
+\boxed{X_D=\sqrt{\frac{2\varepsilon_sU}{q}
+\left(\frac1{N_A}+\frac1{N_D}\right)}},\qquad
+\boxed{|E_{\max}|=\frac{2U}{X_D}}.
+$$
+
+零偏将 $U$ 换成 $V_D$，即得到题目所求。可按“电荷关系；两段积分与峰值；势差积分与消元”检查 1＋6＋7 分三个小问是否都有过程。即使某步数值出错，也应保留后续符号推导。
+
+### 延伸：由宽度推到电容，不要把导数符号弄反
+
+n 侧正电荷的大小为 $Q=qAN_Dx_n$。由 $Q=A\sqrt{2q\varepsilon_sN_AN_DU/(N_A+N_D)}$，得 $dQ/dU=\varepsilon_sA/X_D$。若改对正向电压 $V$ 求导，因 $dU/dV=-1$，正电荷**大小**的导数为负；通常所报正的结电容取对应端电荷的导数或其幅值：
+
+$$
+\boxed{C_j=\frac{\varepsilon_sA}{X_D}}.
+$$
+
+最后检查四项：$X_D$ 的量纲为长度；$N_A\gg N_D$ 时耗尽层主要在 n 侧；反偏加深使 $U,X_D$ 增大、$C_j$ 减小；电场积分的负值与电势上升量相符。
+
 [上一章：非平衡载流子](06-nonequilibrium.md) · [下一章：金属接触](08-contacts.md)

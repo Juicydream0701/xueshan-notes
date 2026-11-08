@@ -86,6 +86,7 @@ extra_javascript:
   - assets/javascripts/floating-tools.js?v=20261107
   - assets/javascripts/frontend-switcher.js?v=20261107
   - assets/javascripts/semiconductor-review.js
+  - assets/javascripts/exam-gallery.js?v=20261108
   - assets/vendor/mathjax/es5/tex-mml-chtml.js
 
 extra:
@@ -119,6 +120,7 @@ nav:
               - 半导体物理:
                   - notes/courses/semiconductor-physics/index.md
                   - 2026—2027 秋学期最新回忆卷: notes/courses/semiconductor-physics/latest-recall.md
+                  - 最新卷题目文字与原图: notes/courses/semiconductor-physics/latest-recall-questions.md
                   - 复习安排与进度: notes/courses/semiconductor-physics/review-mode.md
                   - 讲义目录与概要: notes/courses/semiconductor-physics/chapter-notes.md
                   - 01 晶体结构与晶向晶面: notes/courses/semiconductor-physics/topics/01-crystal.md

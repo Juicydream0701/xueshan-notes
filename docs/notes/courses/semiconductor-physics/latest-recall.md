@@ -4,7 +4,7 @@
 
 这是一份最新整理的 **2026—2027 学年秋学期半导体物理回忆卷**。原卷由课程资料中的 PDF、LaTeX 源文件和配图组成；本页把原 PDF 原样保留，同时将每一页渲染成可放大查看的图片，方便在手机上核对题干、图示和页码。
 
-> **资料性质。** 这是回忆卷，不是教师发布的正式试卷。题目中明确写有“题目已遗忘”“数据待核实”的部分，我会保留原样并在解题区标出不确定性；参考答案用于复习训练，不能代替教师的标准答案。
+> **资料性质。** 这是回忆卷。题目中“题目已遗忘”“数据待核实”的位置均保留；以下解答与校勘由本站整理，原卷配图中的例题数据与本次考试的回忆数据分别标明。
 
 ## 先看资料
 
@@ -12,7 +12,10 @@
 <a class="md-button md-button--primary" href="resources/exams/2026-recall/semiconductor-recall-2026-2027.pdf" download>下载原 PDF</a>
 <a class="md-button" href="resources/exams/2026-recall/semiconductor-recall-2026-2027.pdf" target="_blank" rel="noopener">新标签页打开 PDF</a>
 <a class="md-button" href="resources/exams/2026-recall/source/semiconductor-recall-2026-2027.tex" download>下载 LaTeX 源文件</a>
+<a class="md-button" href="resources/exams/2026-recall/semiconductor-recall-2026-2027-source.zip" download>源码与配图 ZIP</a>
 </div>
+
+[阅读可搜索的题目文字版](latest-recall-questions.md) · [统计与电离率详解](topics/04-statistics.md#donor-ionization-check) · [光照与扩散长度](topics/06-nonequilibrium.md) · [pn 结推导](topics/07-pn-junction.md)
 
 | 部分 | 原卷结构 | 复习目标 |
 | --- | --- | --- |
@@ -23,19 +26,19 @@
 
 ## PDF 原页预览（1:1 版式）
 
-下面的图片由原 PDF 逐页渲染，保留了原页边距、题号、插图和页码。点击任意页面可打开大图；需要复制文字或打印时，优先使用上方原 PDF。
+下列原页保持 PDF 的版式、题号、插图和页码，不依赖浏览器的 PDF 插件。点击图片可放大；手机可在弹窗内缩放、滚动。正文中的参考例题截图与考题一起保留，第 9、10 页是 pn 结推导资料。
 
-<div class="exam-page-gallery">
+<div class="exam-page-gallery" data-exam-gallery>
   <figure><a href="resources/exams/2026-recall/pages/page-01.png"><img src="resources/exams/2026-recall/pages/page-01.png" alt="回忆卷第 1 页" loading="lazy"></a><figcaption>第 1 页：选择题 1—4</figcaption></figure>
-  <figure><a href="resources/exams/2026-recall/pages/page-02.png"><img src="resources/exams/2026-recall/pages/page-02.png" alt="回忆卷第 2 页" loading="lazy"></a><figcaption>第 2 页：选择题 5、填空题 1—10</figcaption></figure>
+  <figure><a href="resources/exams/2026-recall/pages/page-02.png"><img src="resources/exams/2026-recall/pages/page-02.png" alt="回忆卷第 2 页" loading="lazy"></a><figcaption>第 2 页：选择题 5、填空题 1—9</figcaption></figure>
   <figure><a href="resources/exams/2026-recall/pages/page-03.png"><img src="resources/exams/2026-recall/pages/page-03.png" alt="回忆卷第 3 页" loading="lazy"></a><figcaption>第 3 页：填空题 10、GaAs 晶面与布里渊区</figcaption></figure>
-  <figure><a href="resources/exams/2026-recall/pages/page-04.png"><img src="resources/exams/2026-recall/pages/page-04.png" alt="回忆卷第 4 页" loading="lazy"></a><figcaption>第 4 页：不同掺杂的能带图</figcaption></figure>
+  <figure><a href="resources/exams/2026-recall/pages/page-04.png"><img src="resources/exams/2026-recall/pages/page-04.png" alt="回忆卷第 4 页" loading="lazy"></a><figcaption>第 4 页：布里渊区参考图、五种掺杂能带</figcaption></figure>
   <figure><a href="resources/exams/2026-recall/pages/page-05.png"><img src="resources/exams/2026-recall/pages/page-05.png" alt="回忆卷第 5 页" loading="lazy"></a><figcaption>第 5 页：零偏 pn 结、金属—半导体接触</figcaption></figure>
-  <figure><a href="resources/exams/2026-recall/pages/page-06.png"><img src="resources/exams/2026-recall/pages/page-06.png" alt="回忆卷第 6 页" loading="lazy"></a><figcaption>第 6 页：载流子浓度题与参考例题</figcaption></figure>
+  <figure><a href="resources/exams/2026-recall/pages/page-06.png"><img src="resources/exams/2026-recall/pages/page-06.png" alt="回忆卷第 6 页" loading="lazy"></a><figcaption>第 6 页：肖特基接触参考图、计算题 1</figcaption></figure>
   <figure><a href="resources/exams/2026-recall/pages/page-07.png"><img src="resources/exams/2026-recall/pages/page-07.png" alt="回忆卷第 7 页" loading="lazy"></a><figcaption>第 7 页：施主电离、电阻率、输运综合题</figcaption></figure>
   <figure><a href="resources/exams/2026-recall/pages/page-08.png"><img src="resources/exams/2026-recall/pages/page-08.png" alt="回忆卷第 8 页" loading="lazy"></a><figcaption>第 8 页：光照电导率、扩散长度、pn 结推导</figcaption></figure>
-  <figure><a href="resources/exams/2026-recall/pages/page-09.png"><img src="resources/exams/2026-recall/pages/page-09.png" alt="回忆卷第 9 页" loading="lazy"></a><figcaption>第 9 页：原卷留白页</figcaption></figure>
-  <figure><a href="resources/exams/2026-recall/pages/page-10.png"><img src="resources/exams/2026-recall/pages/page-10.png" alt="回忆卷第 10 页" loading="lazy"></a><figcaption>第 10 页：原卷留白页</figcaption></figure>
+  <figure><a href="resources/exams/2026-recall/pages/page-09.png"><img src="resources/exams/2026-recall/pages/page-09.png" alt="回忆卷第 9 页" loading="lazy"></a><figcaption>第 9 页：pn 结电荷、电场、电势图与电中性条件</figcaption></figure>
+  <figure><a href="resources/exams/2026-recall/pages/page-10.png"><img src="resources/exams/2026-recall/pages/page-10.png" alt="回忆卷第 10 页" loading="lazy"></a><figcaption>第 10 页：分区积分、边界条件与耗尽层宽度</figcaption></figure>
 </div>
 
 ## 一、选择题：把定义和方向分开判断
@@ -69,28 +72,28 @@
 
 题面回忆中可确定的判断点是：
 
-- $\langle100\rangle$ 表示晶向族，不是晶面族；晶面族使用 ${hkl}$。
+- $\langle100\rangle$ 表示晶向族，不是晶面族；晶面族使用 $\{hkl\}$。
 - 立方晶系中，$[hkl]$ 晶向与 $(hkl)$ 晶面法向平行，因此“指数相同的晶向与晶面相互垂直”成立。
 - 晶面指数不是“截距的互质整数比”，而是截距倒数化为最小整数比。
-- Ge、Si（金刚石结构）的理想解理面通常写作 ${111}$；回忆卷把 ${110}$ 写成解理面时应在订正本中标注疑点。
-- 题面关于体对角线范围内 ${111}$ 平面数量的说法，需要以课堂所用晶胞图和计数约定核对，不能脱离图直接背数字。
+- Ge、Si（金刚石结构）的理想解理面通常写作 $\{111\}$；回忆卷把 $\{110\}$ 写成解理面时应在订正本中标注疑点。
+- 题面关于体对角线范围内 $\{111\}$ 平面数量的说法，需要以课堂所用晶胞图和计数约定核对，不能脱离图直接背数字。
 
 ## 二、填空题：给出可直接套用的答题骨架
 
 1. **多数载流子：** N 型为电子，P 型为空穴。
-2. $\langle100\rangle$ 的六个方向是 $[100],[\bar100],[010],[0\bar10],[001],[00\bar1]$。注意：立方晶系完整的 ${110}$ 晶面族按排列和正负号计数通常有 12 个成员，题面写“8 个”很可能是回忆或排版错误；考试应以老师课堂约定为准。
+2. $\langle100\rangle$ 的六个方向是 $[100],[\bar{1}00],[010],[0\bar{1}0],[001],[00\bar{1}]$。注意：立方晶系完整的 $\{110\}$ 晶面族按排列和正负号计数通常有 12 个成员，题面写“8 个”很可能是回忆或排版错误；考试应以老师课堂约定为准。
 3. 载流子产生机制是本征激发和杂质电离。低温弱电离区主要看杂质电离但电离率低；强电离区以杂质电离供给多数载流子；高温本征区由本征激发主导。
 4. PN 结正向电流主要是少数载流子注入后的扩散与复合；肖特基结正向电流以多数载流子的热发射/越过势垒为主，重掺杂时还可能出现隧穿。
 5. 题目在原卷中标注“已遗忘”，不补造答案。
 6. 本征激发是价带电子获得 $E_g$ 附近能量跃迁到导带；杂质电离是施主电子进入导带或价带电子跃迁到受主能级。
-7. 两类基本散射可写为晶格振动（声子）散射和电离杂质散射。高掺杂时电离杂质散射占比增加，常温附近迁移率对温度呈上升趋势，具体幂律取决于课程模型。
+7. 两类基本散射可写为晶格振动（声子）散射和电离杂质散射。在非简并且电离杂质散射占主导的模型范围内，常用 $\mu_I\propto T^{3/2}$；高掺杂本身不足以保证总迁移率随温度上升，还需比较声子散射的贡献。
 8. 迁移率反映电场下运动难易；扩散系数反映浓度梯度下运动难易；电场和浓度梯度是产生电流的外力来源。
 9. PN 二极管反向恢复电荷通常比肖特基二极管多，因为 PN 结存在少数载流子存储，反向切换时需要先抽空存储电荷；肖特基器件是多数载流子器件，恢复过程主要由结电容决定。
 10. 无补偿的 N 型半导体中，正电荷包括离化施主 $N_D^+$ 和少量空穴 $p$；负电荷包括自由电子 $n$。若有受主补偿，还必须把 $N_A^-$ 加入负电荷一侧，电中性式为 $p+N_D^+=n+N_A^-$。
 
 ## 三、画图题：按“坐标—边界—物理量—结论”作图
 
-### 1. GaAs 的 $\langle110\rangle$ 晶向与 ${110}$ 晶面
+### 1. GaAs 的 $\langle110\rangle$ 晶向与 $\{110\}$ 晶面
 
 先在立方晶胞中画出 $x,y,z$ 轴和 $[110]$ 方向，再标出 Ga、As 两套互相错开的面心立方子晶格。五个截面图不要只画小球，要在图旁写清楚“截面边界、原子种类、一个晶胞是否完整”。计算时先定义计数对象：
 
@@ -108,7 +111,7 @@ $$
 
 ### 3. 五种掺杂能带图
 
-横轴取位置、纵轴取能量，八条标注不能漏：$E_C,E_V,E_F,E_i,E_D,E_A$ 以及材料区域。弱 P 型时 $E_F$ 靠近 $E_V$，强 P 型进一步靠近价带甚至进入价带；本征时 $E_F\approx E_i$；弱 N 型时 $E_F$ 靠近 $E_C$，强 N 型进一步靠近导带甚至进入导带。$E_D$ 应靠近 $E_C$，$E_A$ 应靠近 $E_V$。若题目把“强”仅作为高浓度而未要求简并，仍要按老师的强弱定义作图。
+将五块均匀样品并列，纵轴取能量；每块样品内部能带平直，横向只是各样品的示意范围。标出 $E_C,E_V,E_F,E_i$，p 型样品补 $E_A$，n 型样品补 $E_D$。弱 P 型时 $E_F$ 位于 $E_i$ 下方，较强 P 型进一步靠近价带；本征时 $E_F=E_i$；N 型则相反。只有达到简并条件，$E_F$ 才可能进入能带；“强掺杂”这几个字本身不意味着必须进入能带。$E_D$ 靠近 $E_C$，$E_A$ 靠近 $E_V$。参见[第三章作图专题](topics/03-impurities.md)。
 
 ### 4. 零偏压 PN 结
 
@@ -153,7 +156,7 @@ $$
 f_D=\frac{1}{1+g_D\exp[(E_D-E_F)/kT]},
 $$
 
-其中简并因子 $g_D$ 必须按课堂约定取值。先算 $E_F$ 与 $E_D$ 的相对位置，再判断“全部电离”是否成立；当掺杂从 $10^{16}$ 提高到 $10^{18}$ 或 $10^{19}\,\mathrm{cm^{-3}}$ 时，不能不检查非简并和完全电离假设。
+此处占据式中的系数为 $g_D=1/2$；对应电离式 $N_D^+=N_D/[1+2e^{(E_F-E_D)/kT}]$，后者的简并权重为 2，不能把两个系数混用。先试算 $E_F$，再检验电离率；检验不通过时须重新联立求解。完整数值表与自洽二次方程见[第四章最新卷专题](topics/04-statistics.md#donor-ionization-check)。
 
 ### 2. 电阻率
 
@@ -189,10 +192,20 @@ $$
 1. 电中性：$N_Ax_p=N_Dx_n$。
 2. 泊松方程：$\mathrm dE/\mathrm dx=\rho/\varepsilon_s$，分区积分并用耗尽层边界 $E(-x_p)=E(x_n)=0$。
 3. 最大电场位于冶金结 $x=0$，其绝对值为
-   $$|E_{\max}|=\frac{qN_Ax_p}{\varepsilon_s}=\frac{qN_Dx_n}{\varepsilon_s}.$$ 
+
+    $$
+    |E_{\max}|=\frac{qN_Ax_p}{\varepsilon_s}=\frac{qN_Dx_n}{\varepsilon_s}.
+    $$
+
 4. 电势降为电场面积，得到
-   $$V_D=\frac{q}{2\varepsilon_s}(N_Ax_p^2+N_Dx_n^2),$$
-   $$X_D=x_p+x_n=\sqrt{\frac{2\varepsilon_sV_D}{q}\left(\frac1{N_A}+\frac1{N_D}\right)}.$$
+
+    $$
+    V_D=\frac{q}{2\varepsilon_s}(N_Ax_p^2+N_Dx_n^2),
+    $$
+
+    $$
+    X_D=x_p+x_n=\sqrt{\frac{2\varepsilon_sV_D}{q}\left(\frac1{N_A}+\frac1{N_D}\right)}.
+    $$
 
 若要求势垒电容，再由 $Q_D=qAN_Ax_p=qAN_Dx_n$ 对电压求导；突变结近似下 $C_j\approx\varepsilon_sA/X_D$。画图时把电荷、$E(x)$、电势和能带四张图的横坐标方向保持一致，最容易拿到过程分。
 
@@ -205,7 +218,7 @@ $$
 
 ## 原始配图与源文件
 
-压缩包中的 LaTeX 源文件已整理为可下载的独立文件，12 张配图也保留在同一目录，便于你继续修订题面或重新编译。源文件中的图片引用路径为 `figure/figure1.png` 等；网页展示使用的是 PDF 逐页渲染图，避免浏览器缺少中文 LaTeX 环境时出现版式差异。
+下载[完整源码包](resources/exams/2026-recall/semiconductor-recall-2026-2027-source.zip)，解压后有 `main.tex`、`figure/` 中的 12 张配图和说明文件，可用中文 LaTeX 环境继续编辑。另保留[原始 TEX](resources/exams/2026-recall/source/original-recall.tex)的原字节；[站点 TEX](resources/exams/2026-recall/source/semiconductor-recall-2026-2027.tex)只调整图片路径为 `figures/`。网页原页图直接由原 PDF 渲染，不使用重新编译的文件替换原卷。
 
 <details>
 <summary>展开查看原始配图素材</summary>
@@ -221,8 +234,8 @@ $$
   <img src="resources/exams/2026-recall/source/figures/figure8.png" alt="源文件配图 8" loading="lazy">
   <img src="resources/exams/2026-recall/source/figures/figure9.png" alt="源文件配图 9" loading="lazy">
   <img src="resources/exams/2026-recall/source/figures/figure10.png" alt="源文件配图 10" loading="lazy">
-  <img src="resources/exams/2026-recall/source/figures/figure11.png" alt="源文件配图 11" loading="lazy">
-  <img src="resources/exams/2026-recall/source/figures/figure12.png" alt="源文件配图 12" loading="lazy">
+  <img src="resources/exams/2026-recall/source/figures/figure11.png" alt="源文件配图 11：布里渊区与能带" loading="lazy">
+  <img src="resources/exams/2026-recall/source/figures/figure12.png" alt="源文件配图 12：五种掺杂能级" loading="lazy">
 </div>
 
 </details>
