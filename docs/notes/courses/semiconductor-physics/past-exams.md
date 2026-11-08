@@ -1,6 +1,6 @@
 # 半导体物理：历年卷与题型索引
 
-[复习入口](review-mode.md) · [分章讲义](chapter-notes.md) · [历年卷解答与方法](past-exam-solutions.md) · [综合模拟卷](mock-exam.md)
+[复习入口](review-mode.md) · [分章讲义](chapter-notes.md) · [历年卷解答与方法](past-exam-solutions.md) · [综合模拟卷](mock-exam.md) · [最新 2026—2027 回忆卷原页](latest-recall.md)
 
 本页收录两份课程资料中的回忆卷。PDF 原件按原样保存，网页只对可辨认的题型、分值和知识点做索引。回忆卷中写有“忘了”“不太清楚”的位置，不能当作完整原题；本页的补充答案是依据课程讲义编写的训练解法，也不替代教师公布的标准答案。
 
@@ -8,6 +8,7 @@
 
 | 资料 | 页数与结构 | 适合用途 |
 | --- | --- | --- |
+| [2026—2027 秋学期最新回忆卷](latest-recall.md) · [PDF 原件](resources/exams/2026-recall/semiconductor-recall-2026-2027.pdf) | 10 页；选择、填空、5 道画图、4 类计算/推导 | 最新题型入口；逐页原图、LaTeX 源文件和订正后的答题框架 |
 | [25–26 学年半导体物理回忆卷](resources/exams/semiconductor-recall-2025-2026.pdf) | 4 页；选择 10 分、填空 10 分、简答/画图 30 分、计算 50 分 | 优先做题，熟悉本课程的题型比例和作图要求 |
 | [2024 秋电信半导体物理回忆卷](resources/exams/semiconductor-recall-2024-autumn.pdf) | 10 页；选择、填空、画图、5 道计算题及公式回忆 | 用于比较不同年份的知识覆盖，重点看统计分区与有效质量 |
 | [原 102 页课程笔记](resources/semiconductor-exam-notes.pdf) | 八章课程资料 | 对照符号、页码和公式前提 |

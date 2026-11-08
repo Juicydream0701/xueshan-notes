@@ -78,7 +78,7 @@ $$
 - [第 7 章：pn 结](resources/semiconductor-chapter-7.pdf)
 - [第 8 章：金属和半导体接触](resources/semiconductor-chapter-8.pdf)
 - [本次参考笔记（102 页）](resources/semiconductor-exam-notes.pdf)
-- [25–26 学年回忆卷](resources/exams/semiconductor-recall-2025-2026.pdf) · [2024 秋电信回忆卷](resources/exams/semiconductor-recall-2024-autumn.pdf)
+- [2026—2027 秋学期最新回忆卷与逐页讲解](latest-recall.md) · [25–26 学年回忆卷](resources/exams/semiconductor-recall-2025-2026.pdf) · [2024 秋电信回忆卷](resources/exams/semiconductor-recall-2024-autumn.pdf)
 - [既有复习讲义与历年卷详解](resources/semiconductor-full-review.pdf)
 - [2025–2026 学年回忆卷](resources/semiconductor-recall-2025-2026.pdf)
 
