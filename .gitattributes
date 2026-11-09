@@ -1,0 +1,2 @@
+# Keep PDF attachments byte-for-byte and show binary diffs.
+*.pdf binary

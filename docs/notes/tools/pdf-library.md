@@ -12,6 +12,7 @@
 | 复习微积分和向量积分 | [积分方法总结](../courses/foundations/calculus/resources/calculus-integral-methods.pdf) · [向量积分总结](../courses/foundations/calculus/resources/calculus2-vector-integrals.pdf) | [微积分专题](../courses/foundations/calculus/index.md) |
 | 梳理信号变换和滤波 | [变换汇总](../courses/signal-analysis/resources/signal-transform-summary.pdf) · [滤波器专题](../courses/signal-analysis/resources/signal-filters.pdf) | [信号分析](../courses/signal-analysis/index.md) |
 | 准备微机原理综合题 | [2026 复习提要](../courses/microcomputer/resources/2026-review-notes.pdf) · [题库](../courses/microcomputer/resources/question-bank.pdf) | [微机主线](../courses/microcomputer/index.md) |
+| 复习电力电子与变换器波形 | [八章 PDF 阅读器](../courses/power-electronics/resources-guide.md) · [历年卷](../courses/power-electronics/past-exams.md) | [八章详细讲义](../courses/power-electronics/index.md) · [典型题解答](../courses/power-electronics/exam-solutions.md) |
 
 ## 按知识模块浏览
 

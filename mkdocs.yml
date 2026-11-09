@@ -178,6 +178,18 @@ nav:
                   - 场方程与传播: notes/courses/electromagnetics/study-guide.md
               - 电力电子技术Ⅰ:
                   - notes/courses/power-electronics/index.md
+                  - 01 功率器件与额定值: notes/courses/power-electronics/chapters/01-devices.md
+                  - 02 驱动与保护: notes/courses/power-electronics/chapters/02-drive-protection.md
+                  - 03 整流与有源逆变: notes/courses/power-electronics/chapters/03-rectifiers.md
+                  - 04 交流调压与变频: notes/courses/power-electronics/chapters/04-ac-ac.md
+                  - 05 直流变换与工作模式: notes/courses/power-electronics/chapters/05-dc-dc.md
+                  - 06 逆变器与换流: notes/courses/power-electronics/chapters/06-inverters.md
+                  - 07 PWM与死区: notes/courses/power-electronics/chapters/07-pwm.md
+                  - 08 谐振与软开关: notes/courses/power-electronics/chapters/08-soft-switching.md
+                  - 历年卷与专题索引: notes/courses/power-electronics/past-exams.md
+                  - 典型题分步解答: notes/courses/power-electronics/exam-solutions.md
+                  - PDF资料与页码: notes/courses/power-electronics/resources-guide.md
+                  - 公式约定与校勘: notes/courses/power-electronics/corrections.md
                   - 变换器与波形分析: notes/courses/power-electronics/exam-guide.md
                   - 器件、整流、斩波与逆变专题: notes/courses/power-electronics/topics.md
               - 电子测量与智能仪器:
