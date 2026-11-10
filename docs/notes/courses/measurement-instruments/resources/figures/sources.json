@@ -1,0 +1,932 @@
+{
+  "source_pdf": "../measurement-notes.pdf",
+  "page_numbering": "PDF file pages, 1-based",
+  "figures": [
+    {
+      "file": "ch02-01-precision.webp",
+      "pdf_page": 9,
+      "pdf_image_objects": [
+        "X275",
+        "X276"
+      ],
+      "native_pixels": [
+        [
+          601,
+          686
+        ],
+        [
+          922,
+          642
+        ]
+      ],
+      "output_pixels": [
+        946,
+        1376
+      ]
+    },
+    {
+      "file": "ch02-02-substitution.webp",
+      "pdf_page": 21,
+      "pdf_image_objects": [
+        "X412"
+      ],
+      "native_pixels": [
+        [
+          945,
+          607
+        ]
+      ],
+      "output_pixels": [
+        969,
+        631
+      ]
+    },
+    {
+      "file": "ch02-03-fit.webp",
+      "pdf_page": 29,
+      "pdf_image_objects": [
+        "X499"
+      ],
+      "native_pixels": [
+        [
+          838,
+          475
+        ]
+      ],
+      "output_pixels": [
+        862,
+        499
+      ]
+    },
+    {
+      "file": "ch03-01-loading.webp",
+      "pdf_page": 39,
+      "pdf_image_objects": [
+        "X579"
+      ],
+      "native_pixels": [
+        [
+          508,
+          379
+        ]
+      ],
+      "output_pixels": [
+        532,
+        403
+      ]
+    },
+    {
+      "file": "ch03-03-average-detector.webp",
+      "pdf_page": 42,
+      "pdf_image_objects": [
+        "X605"
+      ],
+      "native_pixels": [
+        [
+          1016,
+          666
+        ]
+      ],
+      "output_pixels": [
+        1040,
+        690
+      ]
+    },
+    {
+      "file": "ch03-04-peak-detector.webp",
+      "pdf_page": 42,
+      "pdf_image_objects": [
+        "X612"
+      ],
+      "native_pixels": [
+        [
+          576,
+          722
+        ]
+      ],
+      "output_pixels": [
+        600,
+        746
+      ]
+    },
+    {
+      "file": "ch03-05-rms.webp",
+      "pdf_page": 44,
+      "pdf_image_objects": [
+        "X623"
+      ],
+      "native_pixels": [
+        [
+          1034,
+          516
+        ]
+      ],
+      "output_pixels": [
+        1058,
+        540
+      ]
+    },
+    {
+      "file": "ch03-06-dmm.webp",
+      "pdf_page": 51,
+      "pdf_image_objects": [
+        "X691"
+      ],
+      "native_pixels": [
+        [
+          891,
+          629
+        ]
+      ],
+      "output_pixels": [
+        915,
+        653
+      ]
+    },
+    {
+      "file": "ch03-07-sar.webp",
+      "pdf_page": 52,
+      "pdf_image_objects": [
+        "X702"
+      ],
+      "native_pixels": [
+        [
+          771,
+          287
+        ]
+      ],
+      "output_pixels": [
+        795,
+        311
+      ]
+    },
+    {
+      "file": "ch03-08-dual-slope.webp",
+      "pdf_page": 54,
+      "pdf_image_objects": [
+        "X724"
+      ],
+      "native_pixels": [
+        [
+          1196,
+          410
+        ]
+      ],
+      "output_pixels": [
+        1220,
+        434
+      ]
+    },
+    {
+      "file": "ch03-09-four-wire.webp",
+      "pdf_page": 57,
+      "pdf_image_objects": [
+        "X766"
+      ],
+      "native_pixels": [
+        [
+          1116,
+          394
+        ]
+      ],
+      "output_pixels": [
+        1140,
+        418
+      ]
+    },
+    {
+      "file": "ch04-01-frequency-counter.webp",
+      "pdf_page": 65,
+      "pdf_image_objects": [
+        "X847"
+      ],
+      "native_pixels": [
+        [
+          1025,
+          665
+        ]
+      ],
+      "output_pixels": [
+        1049,
+        689
+      ]
+    },
+    {
+      "file": "ch04-02-period-counter.webp",
+      "pdf_page": 67,
+      "pdf_image_objects": [
+        "X869"
+      ],
+      "native_pixels": [
+        [
+          1026,
+          642
+        ]
+      ],
+      "output_pixels": [
+        1050,
+        666
+      ]
+    },
+    {
+      "file": "ch04-03-trigger-noise.webp",
+      "pdf_page": 70,
+      "pdf_image_objects": [
+        "X901"
+      ],
+      "native_pixels": [
+        [
+          1145,
+          716
+        ]
+      ],
+      "output_pixels": [
+        1169,
+        740
+      ]
+    },
+    {
+      "file": "ch04-04-modulation-domain.webp",
+      "pdf_page": 74,
+      "pdf_image_objects": [
+        "X936"
+      ],
+      "native_pixels": [
+        [
+          1037,
+          258
+        ]
+      ],
+      "output_pixels": [
+        1061,
+        282
+      ]
+    },
+    {
+      "file": "ch05-01-function-generator.webp",
+      "pdf_page": 77,
+      "pdf_image_objects": [
+        "X971"
+      ],
+      "native_pixels": [
+        [
+          1088,
+          308
+        ]
+      ],
+      "output_pixels": [
+        1112,
+        332
+      ]
+    },
+    {
+      "file": "ch05-02-frequency-synthesizer.webp",
+      "pdf_page": 81,
+      "pdf_image_objects": [
+        "X1003"
+      ],
+      "native_pixels": [
+        [
+          1026,
+          444
+        ]
+      ],
+      "output_pixels": [
+        1050,
+        468
+      ]
+    },
+    {
+      "file": "ch06-01-crt.webp",
+      "pdf_page": 87,
+      "pdf_image_objects": [
+        "X1035"
+      ],
+      "native_pixels": [
+        [
+          1080,
+          701
+        ]
+      ],
+      "output_pixels": [
+        1104,
+        725
+      ]
+    },
+    {
+      "file": "ch06-02-analog-scope.webp",
+      "pdf_page": 92,
+      "pdf_image_objects": [
+        "X1068"
+      ],
+      "native_pixels": [
+        [
+          1224,
+          747
+        ]
+      ],
+      "output_pixels": [
+        1248,
+        771
+      ]
+    },
+    {
+      "file": "ch06-03-compensated-divider.webp",
+      "pdf_page": 92,
+      "pdf_image_objects": [
+        "X1069"
+      ],
+      "native_pixels": [
+        [
+          337,
+          263
+        ]
+      ],
+      "output_pixels": [
+        361,
+        287
+      ]
+    },
+    {
+      "file": "ch06-04-timebase.webp",
+      "pdf_page": 95,
+      "pdf_image_objects": [
+        "X1087"
+      ],
+      "native_pixels": [
+        [
+          1030,
+          431
+        ]
+      ],
+      "output_pixels": [
+        1054,
+        455
+      ]
+    },
+    {
+      "file": "ch06-05-trigger-slope.webp",
+      "pdf_page": 99,
+      "pdf_image_objects": [
+        "X1116"
+      ],
+      "native_pixels": [
+        [
+          520,
+          356
+        ]
+      ],
+      "output_pixels": [
+        544,
+        380
+      ]
+    },
+    {
+      "file": "ch06-06-dual-trace.webp",
+      "pdf_page": 105,
+      "pdf_image_objects": [
+        "X1145"
+      ],
+      "native_pixels": [
+        [
+          660,
+          383
+        ]
+      ],
+      "output_pixels": [
+        684,
+        407
+      ]
+    },
+    {
+      "file": "ch06-07-delayed-sweep.webp",
+      "pdf_page": 107,
+      "pdf_image_objects": [
+        "X1164"
+      ],
+      "native_pixels": [
+        [
+          494,
+          615
+        ]
+      ],
+      "output_pixels": [
+        518,
+        639
+      ]
+    },
+    {
+      "file": "ch06-08-digital-scope.webp",
+      "pdf_page": 108,
+      "pdf_image_objects": [
+        "X1177"
+      ],
+      "native_pixels": [
+        [
+          1076,
+          640
+        ]
+      ],
+      "output_pixels": [
+        1100,
+        664
+      ]
+    },
+    {
+      "file": "ch06-09-circular-buffer.webp",
+      "pdf_page": 111,
+      "pdf_image_objects": [
+        "X1215"
+      ],
+      "native_pixels": [
+        [
+          1094,
+          696
+        ]
+      ],
+      "output_pixels": [
+        1118,
+        720
+      ]
+    },
+    {
+      "file": "ch06-10-aliasing.webp",
+      "pdf_page": 112,
+      "pdf_image_objects": [
+        "X1231"
+      ],
+      "native_pixels": [
+        [
+          1022,
+          589
+        ]
+      ],
+      "output_pixels": [
+        1046,
+        613
+      ]
+    },
+    {
+      "file": "ch06-11-probe-compensation.webp",
+      "pdf_page": 118,
+      "pdf_image_objects": [
+        "X1293"
+      ],
+      "native_pixels": [
+        [
+          1251,
+          825
+        ]
+      ],
+      "output_pixels": [
+        1275,
+        849
+      ]
+    },
+    {
+      "file": "ch06-12-pulse-definition.webp",
+      "pdf_page": 122,
+      "pdf_image_objects": [
+        "X1329"
+      ],
+      "native_pixels": [
+        [
+          642,
+          572
+        ]
+      ],
+      "output_pixels": [
+        666,
+        596
+      ]
+    },
+    {
+      "file": "ch06-13-ellipse.webp",
+      "pdf_page": 124,
+      "pdf_image_objects": [
+        "X1352"
+      ],
+      "native_pixels": [
+        [
+          1119,
+          724
+        ]
+      ],
+      "output_pixels": [
+        1143,
+        748
+      ]
+    },
+    {
+      "file": "ch07-01-superheterodyne.webp",
+      "pdf_page": 130,
+      "pdf_image_objects": [
+        "X1411"
+      ],
+      "native_pixels": [
+        [
+          1132,
+          414
+        ]
+      ],
+      "output_pixels": [
+        1156,
+        438
+      ]
+    },
+    {
+      "file": "ch07-02-fft-chain.webp",
+      "pdf_page": 132,
+      "pdf_image_objects": [
+        "X1441"
+      ],
+      "native_pixels": [
+        [
+          1173,
+          412
+        ]
+      ],
+      "output_pixels": [
+        1197,
+        436
+      ]
+    },
+    {
+      "file": "ch07-03-rbw.webp",
+      "pdf_page": 133,
+      "pdf_image_objects": [
+        "X1461"
+      ],
+      "native_pixels": [
+        [
+          1017,
+          507
+        ]
+      ],
+      "output_pixels": [
+        1041,
+        531
+      ]
+    },
+    {
+      "file": "ch03-10-voltmeter-ranges.webp",
+      "pdf_page": 39,
+      "pdf_image_objects": [
+        "X575"
+      ],
+      "native_pixels": [
+        [
+          586,
+          261
+        ]
+      ],
+      "output_pixels": [
+        610,
+        285
+      ]
+    },
+    {
+      "file": "ch03-11-feedback-rms.webp",
+      "pdf_page": 44,
+      "pdf_image_objects": [
+        "X625"
+      ],
+      "native_pixels": [
+        [
+          966,
+          338
+        ]
+      ],
+      "output_pixels": [
+        990,
+        362
+      ]
+    },
+    {
+      "file": "ch03-12-current-voltage.webp",
+      "pdf_page": 57,
+      "pdf_image_objects": [
+        "X763"
+      ],
+      "native_pixels": [
+        [
+          1277,
+          938
+        ]
+      ],
+      "output_pixels": [
+        1301,
+        962
+      ]
+    },
+    {
+      "file": "ch03-13-high-resistance.webp",
+      "pdf_page": 57,
+      "pdf_image_objects": [
+        "X770"
+      ],
+      "native_pixels": [
+        [
+          1127,
+          631
+        ]
+      ],
+      "output_pixels": [
+        1151,
+        655
+      ]
+    },
+    {
+      "file": "ch06-14-miller.webp",
+      "pdf_page": 95,
+      "pdf_image_objects": [
+        "X1089"
+      ],
+      "native_pixels": [
+        [
+          715,
+          424
+        ]
+      ],
+      "output_pixels": [
+        739,
+        448
+      ]
+    },
+    {
+      "file": "ch06-15-trigger-panel.webp",
+      "pdf_page": 99,
+      "pdf_image_objects": [
+        "X1117"
+      ],
+      "native_pixels": [
+        [
+          1039,
+          671
+        ]
+      ],
+      "output_pixels": [
+        1063,
+        695
+      ]
+    },
+    {
+      "file": "ch06-16-electronic-switch.webp",
+      "pdf_page": 105,
+      "pdf_image_objects": [
+        "X1149"
+      ],
+      "native_pixels": [
+        [
+          610,
+          321
+        ]
+      ],
+      "output_pixels": [
+        634,
+        345
+      ]
+    },
+    {
+      "file": "ch06-18-sampling-reconstruction.webp",
+      "pdf_page": 112,
+      "pdf_image_objects": [
+        "X1229"
+      ],
+      "native_pixels": [
+        [
+          958,
+          673
+        ]
+      ],
+      "output_pixels": [
+        982,
+        697
+      ]
+    },
+    {
+      "file": "ch06-19-voltage-reading.webp",
+      "pdf_page": 122,
+      "pdf_image_objects": [
+        "X1324"
+      ],
+      "native_pixels": [
+        [
+          824,
+          442
+        ]
+      ],
+      "output_pixels": [
+        848,
+        466
+      ]
+    },
+    {
+      "file": "ch03-14-parallel-peak.webp",
+      "pdf_page": 43,
+      "pdf_image_objects": [
+        "X615"
+      ],
+      "native_pixels": [
+        [
+          1091,
+          718
+        ]
+      ],
+      "output_pixels": [
+        1115,
+        742
+      ]
+    },
+    {
+      "file": "ch03-15-voltage-doubler.webp",
+      "pdf_page": 43,
+      "pdf_image_objects": [
+        "X616"
+      ],
+      "native_pixels": [
+        [
+          1106,
+          699
+        ]
+      ],
+      "output_pixels": [
+        1130,
+        723
+      ]
+    },
+    {
+      "file": "ch03-16-remainder.webp",
+      "pdf_page": 53,
+      "pdf_image_objects": [
+        "X716"
+      ],
+      "native_pixels": [
+        [
+          852,
+          365
+        ]
+      ],
+      "output_pixels": [
+        876,
+        389
+      ]
+    },
+    {
+      "file": "ch03-17-triple-slope.webp",
+      "pdf_page": 56,
+      "pdf_image_objects": [
+        "X757"
+      ],
+      "native_pixels": [
+        [
+          1217,
+          748
+        ]
+      ],
+      "output_pixels": [
+        1241,
+        772
+      ]
+    },
+    {
+      "file": "ch03-19-triple-circuit.webp",
+      "pdf_page": 55,
+      "pdf_image_objects": [
+        "X752"
+      ],
+      "native_pixels": [
+        [
+          1012,
+          358
+        ]
+      ],
+      "output_pixels": [
+        1036,
+        382
+      ]
+    },
+    {
+      "file": "ch03-18-impedance.webp",
+      "pdf_page": 58,
+      "pdf_image_objects": [
+        "X773",
+        "X777"
+      ],
+      "native_pixels": [
+        [
+          970,
+          408
+        ],
+        [
+          965,
+          694
+        ]
+      ],
+      "output_pixels": [
+        994,
+        1150
+      ]
+    },
+    {
+      "file": "ch05-03-triangle-shaper.webp",
+      "pdf_page": 78,
+      "pdf_image_objects": [
+        "X974"
+      ],
+      "native_pixels": [
+        [
+          1160,
+          356
+        ]
+      ],
+      "output_pixels": [
+        1184,
+        380
+      ]
+    },
+    {
+      "file": "ch05-04-pll.webp",
+      "pdf_page": 79,
+      "pdf_image_objects": [
+        "X985"
+      ],
+      "native_pixels": [
+        [
+          1084,
+          514
+        ]
+      ],
+      "output_pixels": [
+        1108,
+        538
+      ]
+    },
+    {
+      "file": "ch06-20-holdoff.webp",
+      "pdf_page": 97,
+      "pdf_image_objects": [
+        "X1102"
+      ],
+      "native_pixels": [
+        [
+          1214,
+          539
+        ]
+      ],
+      "output_pixels": [
+        1238,
+        563
+      ]
+    },
+    {
+      "file": "ch06-21-sample-hold.webp",
+      "pdf_page": 109,
+      "pdf_image_objects": [
+        "X1187"
+      ],
+      "native_pixels": [
+        [
+          784,
+          303
+        ]
+      ],
+      "output_pixels": [
+        808,
+        327
+      ]
+    },
+    {
+      "file": "ch06-22-flash.webp",
+      "pdf_page": 109,
+      "pdf_image_objects": [
+        "X1191"
+      ],
+      "native_pixels": [
+        [
+          1076,
+          477
+        ]
+      ],
+      "output_pixels": [
+        1100,
+        501
+      ]
+    },
+    {
+      "file": "ch03-02-wave-factors.webp",
+      "pdf_page": 41,
+      "pdf_point_bbox": [
+        24,
+        152,
+        560,
+        338
+      ],
+      "dpi": 200,
+      "output_pixels": [
+        1489,
+        517
+      ]
+    }
+  ]
+}

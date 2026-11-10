@@ -9,13 +9,14 @@
 [原笔记与可调阅读器](resources-guide.md){ .md-button .md-button--primary }
 [2025—2026 秋回忆卷](past-exams.md){ .md-button }
 [逐题参考解答](exam-solutions.md){ .md-button }
+[原笔记逐节对照](source-map.md){ .md-button }
 
 | 章节与入口 | 本篇解决的问题 |
 | --- | --- |
 | [第二章（一）误差与系统修正](chapters/02-errors.md) | 准确度等级、统计、异常值、替代与校准 |
 | [第二章（二）数据处理与误差传递](chapters/02-data.md) | 有效数字、三种合成、方案比较与拟合 |
 | [第三章（一）电压与检波](chapters/03-voltage.md) | 加载、波形换算、峰值/均值/真有效值 |
-| [第三章（二）数字表与ADC](chapters/03-digital.md) | SAR、双积分、显示位数、字数与四线法 |
+| [第三章（二）数字表与ADC](chapters/03-digital.md) | SAR、余数再循环、双／三斜积分、转换器、误差与四线法 |
 | [第四章 频率与时间](chapters/04-frequency.md) | 门控、测周期、中界频率、抖动与调制域 |
 | [第五章 信号发生器](chapters/05-generators.md) | 50Ω输出、函数发生、PLL、DDS与误差 |
 | [第六章（一）模拟示波器](chapters/06-analog-scope.md) | CRT、补偿分压、时基、扫描与触发 |
