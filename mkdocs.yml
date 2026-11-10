@@ -194,7 +194,25 @@ nav:
                   - 器件、整流、斩波与逆变专题: notes/courses/power-electronics/topics.md
               - 电子测量与智能仪器:
                   - notes/courses/measurement-instruments/index.md
-                  - 测量链、采样与仪器实验: notes/courses/measurement-instruments/topics.md
+                  - 02 误差与数据处理:
+                      - 误差、统计与系统修正: notes/courses/measurement-instruments/chapters/02-errors.md
+                      - 数据处理与误差传递: notes/courses/measurement-instruments/chapters/02-data.md
+                  - 03 电压与数字表:
+                      - 电压、加载与检波: notes/courses/measurement-instruments/chapters/03-voltage.md
+                      - 数字表、ADC与四线法: notes/courses/measurement-instruments/chapters/03-digital.md
+                  - 04 频率与时间: notes/courses/measurement-instruments/chapters/04-frequency.md
+                  - 05 信号发生器: notes/courses/measurement-instruments/chapters/05-generators.md
+                  - 06 示波器:
+                      - 模拟示波器与触发: notes/courses/measurement-instruments/chapters/06-analog-scope.md
+                      - 双踪、共同触发与延迟扫描: notes/courses/measurement-instruments/chapters/06-multi-trigger.md
+                      - 数字采样、存储与捕获: notes/courses/measurement-instruments/chapters/06-digital-scope.md
+                      - 探头、脉冲与相位测量: notes/courses/measurement-instruments/chapters/06-measurements.md
+                  - 07 频谱分析: notes/courses/measurement-instruments/chapters/07-spectrum.md
+                  - 历年卷与原页阅读: notes/courses/measurement-instruments/past-exams.md
+                  - 试题分步解答: notes/courses/measurement-instruments/exam-solutions.md
+                  - PDF资料与页码: notes/courses/measurement-instruments/resources-guide.md
+                  - 公式约定与校勘: notes/courses/measurement-instruments/corrections.md
+                  - 原有专题与实验提纲: notes/courses/measurement-instruments/topics.md
           - 实验与工程实践:
               - 电路与电子技术实验 II:
                   - notes/courses/circuit-electronics-experiments/index.md

@@ -590,3 +590,11 @@ body.focus-mode .floating-tools__toggle { background: var(--sun); color: #27352f
   .md-typeset img[src*="/figures/"] { break-inside: avoid; }
   .md-typeset .arithmatex { overflow: visible; }
 }
+
+/* Keep the screen-reader math layer from enlarging narrow pages. */
+.md-typeset mjx-assistive-mml {
+  width: 1px !important;
+  max-width: 1px !important;
+  height: 1px !important;
+  overflow: hidden !important;
+}

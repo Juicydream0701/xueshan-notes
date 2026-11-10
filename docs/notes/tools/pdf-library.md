@@ -14,6 +14,8 @@
 | 准备微机原理综合题 | [2026 复习提要](../courses/microcomputer/resources/2026-review-notes.pdf) · [题库](../courses/microcomputer/resources/question-bank.pdf) | [微机主线](../courses/microcomputer/index.md) |
 | 复习电力电子与变换器波形 | [八章 PDF 阅读器](../courses/power-electronics/resources-guide.md) · [历年卷](../courses/power-electronics/past-exams.md) | [八章详细讲义](../courses/power-electronics/index.md) · [典型题解答](../courses/power-electronics/exam-solutions.md) |
 
+| 复习电子测量、仪器与示波触发 | [135页笔记及章页阅读器](../courses/measurement-instruments/resources-guide.md) · [秋学期回忆卷](../courses/measurement-instruments/past-exams.md) | [11篇专题讲义](../courses/measurement-instruments/index.md) · [逐题解答](../courses/measurement-instruments/exam-solutions.md) |
+
 ## 按知识模块浏览
 
 ### 数学、物理与基础工具
