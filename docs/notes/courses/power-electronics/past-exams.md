@@ -14,6 +14,7 @@
 | 2021–2022 | [3 页](resources/exam-2021-2022.pdf) | 三相有源逆变、SPWM、Boost、Cuk 比较及充电器设计；“半控”文字与全控桥图有冲突 |
 | 2023 秋 | [1 页扫描卷](resources/exam-2023.pdf) | 以原图读取拓扑和条件，配合分类讲义核对 |
 | 2025–2026 秋 | [4 页](resources/exam-2025-2026.pdf) | 单相全控、PFC、SPWM、器件简答、Buck、Boost和隔离适配器设计 |
+| 2026–2027 秋回忆卷 | [4 页](resources/exam-2026-2027.pdf) | 三相全控整流、SPWM、器件基础、Boost、全桥隔离 Buck 和隔离逆变器设计；部分选择项按回忆补拟 |
 | 春夏整合 | [13 页](resources/exams-spring-summer.pdf) | 多年份混合，适合补充训练 |
 | 春夏分专题 | [11 页](resources/exams-by-topic.pdf) | 含手写解答和波形，适合按专题核对 |
 
@@ -45,6 +46,12 @@
   <figure><a href="resources/exam-2025-2026-pages/page-03.png"><img src="resources/exam-2025-2026-pages/page-03.png" alt="25–26电力电子回忆卷第3页" loading="lazy"></a><figcaption>第 3 页：选择、器件、Buck 与 Boost</figcaption></figure>
   <figure><a href="resources/exam-2025-2026-pages/page-04.png"><img src="resources/exam-2025-2026-pages/page-04.png" alt="25–26电力电子回忆卷第4页" loading="lazy"></a><figcaption>第 4 页：Boost 后续与适配器设计</figcaption></figure>
 </div>
+
+## 2026–2027 秋新增资料
+
+[原件与逐题解析](exam-2026-2027.md){ .md-button .md-button--primary } · [原卷 PDF](resources/exam-2026-2027.pdf) · [A4 半开卷合集](resources/a4-half-open-book.pdf) · [32 页专题解析](resources/topic-analysis-2026.pdf)
+
+本套资料的回忆题面、TeX、Word 和原图均已保留。逐题页面明确区分了原题条件、缺失参数和教学示例；Boost 电感等题目没有开关频率时，只给出含 $f_s$ 的通式，不把假设值写成原题答案。
 
 ## 做卷的顺序
 

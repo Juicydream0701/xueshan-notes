@@ -59,8 +59,11 @@
         <option value="../resources/cc98-notes-07.pdf#page=1">07 PWM 控制 · 16 页</option>
         <option value="../resources/cc98-notes-08.pdf#page=1">08 谐振软开关 · 9 页</option>
         <option value="../resources/exam-2025-2026.pdf#page=1">25–26 秋回忆卷 · 4 页</option>
+        <option value="../resources/exam-2026-2027.pdf#page=1">26–27 秋回忆卷 · 4 页</option>
         <option value="../resources/exam-2021-2022.pdf#page=1">2021–2022 回忆卷 · 3 页</option>
         <option value="../resources/cc98-exam-handout.pdf#page=1">历年卷分类详解 · 68 页</option>
+        <option value="../resources/a4-half-open-book.pdf#page=1">A4 半开卷合集</option>
+        <option value="../resources/topic-analysis-2026.pdf#page=1">2026 专题整理与解析 · 32 页</option>
       </select>
     </div>
     <div class="pdf-reader__field pdf-reader__height-control">

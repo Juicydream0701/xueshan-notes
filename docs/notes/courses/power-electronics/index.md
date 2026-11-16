@@ -4,7 +4,7 @@
 
 电力电子课程研究“用半导体开关把电能变成需要的电压、电流和频率”。复习时不要只背拓扑图，要同时追踪开关状态、能量流向、波形平均值、器件应力和控制方式。下面按器件基础、整流、直流变换、逆变和交流变换组织。
 
-[历年卷与原页](past-exams.md) · [典型题分步解答](exam-solutions.md) · [PDF 资料中心](resources-guide.md) · [公式约定与校勘](corrections.md)
+[历年卷与原页](past-exams.md) · [2026 秋回忆卷与专题解析](exam-2026-2027.md) · [典型题分步解答](exam-solutions.md) · [PDF 资料中心](resources-guide.md) · [公式约定与校勘](corrections.md)
 
 ## 八章详细讲义 {#chapters}
 

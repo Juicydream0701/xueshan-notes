@@ -1,0 +1,246 @@
+%\documentclass[a4paper,12pt]{exam} 
+\documentclass[a4paper,12pt,answers]{exam} 
+\usepackage[UTF8]{ctex}
+\xeCJKDeclareCharClass{CJK}{"2160} % 将罗马数字 I 识别为中日韩文字以选择 CJK 字体
+\usepackage{ulem}
+\usepackage{bm}
+\usepackage{array} 
+\usepackage{graphicx} % 用于插入 Word 原始电路图（不依赖水印宏包）
+\usepackage{needspace} % 避免题干与小问被不恰当地跨页拆开
+\usepackage[top=3.7cm, bottom=3.5cm, left=2.8cm, right=2.6cm]{geometry} 
+\usepackage{amssymb}
+\usepackage{amsmath} 
+\usepackage{newunicodechar}
+% XeLaTeX 直接读取 UTF-8，无需加载 inputenc。
+\geometry{margin=2cm} 
+\linespread{1.5} % 1.5倍行距
+
+\usepackage{titlesec}
+% 大题采用“一、二、……”的中文编号，题头与题干分层展示。
+\titleformat{\section}{\normalfont\fontsize{13}{19}\selectfont\bfseries}{\thesection、}{0.48em}{}
+\titlespacing*{\section}{0pt}{1.15em}{0.48em}
+% 保留 exam 的 \question/\part 环境，但不显示 question 数字。
+% 题干左对齐，小问按 (1)、(2)、(3) 编排。
+\renewcommand{\questionlabel}{}
+\renewcommand{\questionshook}{%
+  \setlength{\leftmargin}{0pt}%
+  \setlength{\labelwidth}{0pt}%
+  \setlength{\labelsep}{0pt}%
+  \setlength{\itemindent}{0pt}%
+  \setlength{\itemsep}{0.4em}%
+  \setlength{\topsep}{0.2em}%
+}
+\renewcommand{\thepartno}{\arabic{partno}} % 小问使用 (1)、(2)、(3) 而非 (a)、(b)、(c)
+\renewcommand{\partshook}{%
+  \setlength{\labelsep}{0.75em}%
+  \setlength{\labelwidth}{\dimexpr\leftmargin-\labelsep\relax}%
+  \setlength{\itemsep}{0.18em}%
+  \setlength{\topsep}{0.3em}%
+}
+
+\usepackage{zhnumber}
+\renewcommand\thesection{\zhnum{section}}
+
+
+\everymath{\displaystyle}
+\newunicodechar{，}{, }	% 自动修改中文标点为英文
+\newunicodechar{。}{. }
+
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\A}{\bm{A}} %矩阵，向量粗体便捷输入
+\newcommand{\B}{\bm{B}}
+\newcommand{\C}{\bm{C}}
+\newcommand{\D}{\bm{D}}
+\newcommand{\oo}{\bm{O}}
+\newcommand{\pp}{\bm{P}}
+\newcommand{\Q}{\bm{Q}}
+\newcommand{\M}{\bm{M}}
+\newcommand{\N}{\bm{N}}
+\newcommand{\E}{\bm{E}}
+\newcommand{\ze}{\bm{\theta}}
+\newcommand{\al}{\bm{\alpha}}
+\newcommand{\bb}{\bm{b}}
+\newcommand{\T}{\text{T}}  % 转置用 text
+
+\pagestyle{plain}
+
+\pointname{分} % 将"points"改为"分"
+\pointpoints{分}{分}
+
+\title{浙江大学2026--2027学年秋学期}
+\date{}
+\author{}
+
+\begin{document}
+	
+	\maketitle
+	\vspace{-7em}
+	\begin{center}
+		\bfseries\large
+		《电力电子技术Ⅰ》课程期末考试回忆卷
+	\end{center}
+	
+	课程号：\underline{\ EE3501M\ }，开课学院：\underline{\ 电气工程学院\ }
+	
+	考试试卷：A卷、B卷（请在选定项上打\checkmark）
+	
+	考试形式：闭、开卷（请在选定项上打\checkmark），
+	允许带\underline{一张 A4 纸}进入考场
+	
+	考试日期：\uline{2026}年\uline{11}月\uline{15}日，
+	考试时间：\underline{120}分钟
+	
+	\begin{center}
+		\bfseries\large
+		诚信考试，沉着应考，杜绝违纪。
+	\end{center}
+	
+	\begin{center}
+	考生姓名：\uline{\hspace{2cm}} 学号：\uline{\hspace{2cm}} 
+	所属院系：\uline{\hspace{3cm}}
+	\end{center}
+	\vspace{0.4em}
+	\begin{center}
+		\renewcommand{\arraystretch}{1.5} % 增加行高
+		\begin{tabular}{|>{\centering\bfseries}m{2cm}|*{8}{>{\centering}m{1cm}|}>{\centering\arraybackslash}m{2cm}|}
+			\hline
+			题序 & 一 & 二 & 三 & 四 & 五 & 六 & 七 & 八 & 总分 \\ \hline
+			得分 & & & & & & & & & \\ \hline
+			评卷人 & & & & & & & & & \\ \hline
+		\end{tabular}
+	\end{center}
+	
+\begin{questions}
+    \section{三相全桥全控整流（25分）}
+        \question 如图所示为三相全桥全控整流电路，触发延迟角 $\alpha=\pi/6$，电感近似无穷大。
+        \begin{center}
+            \includegraphics[width=0.74\linewidth]{resource/image1.png}
+        \end{center}
+        \begin{parts}
+            \part 在 $0$ 到 $2\pi$ 的各个时段，分别有哪些器件对导通？请列表标明导通器件对及相应线电压，，各晶闸管导通角并画出 $u_d$ 和 $i_a$ 的波形。
+            \part 求 $u_d$ 和 $I_d$ 的平均值。
+            \part 求有功功率和功率因数。
+            \part 若调整 $\alpha$，使 $U_d=200\,\mathrm{V}$，求此时的 $\alpha$。
+        \end{parts}
+
+    % 选择题据回忆整理；原题第 5--7 题尚未回忆清楚，暂不编造。
+    % 无环流周波变换器的四个选项系按知识点拟写，非原题逐字复现。
+    % 以下 \part 的 PDF 编号仅为本回忆卷内的顺序，与原题题号不一定相同。
+    \section{选择题（20分）}
+        \question 回忆不清了有很多漏了：
+        \begin{parts}
+            \part 下列关于无环流周波变换器的说法，正确的是哪一项？
+
+            A.~两组变流器可同时导通，形成组间环流；\quad B.~两组变流器交替工作，避免组间环流；
+
+            C.~需要环流电抗器限制组间环流；\quad D.~两组变流器始终同时工作。
+
+            % 原题第 1 题；用户明确将“最小”更正为“最大”。
+            \Needspace{5\baselineskip}
+            \part 以下单相逆变器中，直流电压利用率最大的是哪一种？
+
+            A.~方波半桥逆变电路；\quad B.~方波全桥逆变电路；
+
+            C.~半桥 SPWM 逆变电路；\quad D.~全桥 SPWM 逆变电路。
+
+            % 原题第 2 题。
+            \Needspace{5\baselineskip}
+            \part 提高 SPWM 调制逆变器直流电压利用率的方法有：
+
+            A.~注入 3 次谐波；\quad B.~单极性倍频；
+
+            C.~增大滤波器体积；\quad D.~过调制。
+
+            % 原题第 3 题。
+            \Needspace{5\baselineskip}
+            \part 逆变器 PWM 调制的优化策略有：
+
+            A.~软开关技术；\quad B.~开关角预置；
+
+            C.~有选择性消谐波；\quad D.~调制波叠加零序分量。
+
+            % 原题第 4 题。
+            \Needspace{5\baselineskip}
+            \part 单极性 SPWM 调制相对于双极性 SPWM 调制的优点有：
+
+            A.~输出谐波含量更少；\quad B.~效率更高；
+
+            C.~控制简单；\quad D.~滤波器体积更小。
+
+            % 原题第 8 题；用户更正“移相角”为“触发角度”。
+            \Needspace{5\baselineskip}
+            \part 晶闸管控制电抗器调节无功功率时，允许的触发角范围是：
+
+            A.~$90^\circ$；\quad B.~$0^\circ\sim180^\circ$；
+
+            C.~$90^\circ\sim180^\circ$；\quad D.~$180^\circ\sim360^\circ$。
+
+            % 原题第 9 题；用户更正 C、D 选项。
+            \Needspace{5\baselineskip}
+            \part 交流调压电路可以用于哪些场合？
+
+            A.~异步电机软启动；\quad B.~灯光调压；
+
+            C.~同步电机变频控制；\quad D.~交流电机调速。
+
+            % 原题第 10 题；以用户新回忆的 45° 题干和选项为准，取代旧版 0.7/0.8/0.9/1.0 选项。
+            \Needspace{6\baselineskip}
+            \part 对于矩阵变换器，若输出负载阻抗角为 $45^\circ$，则输入侧功率因数角为多少？
+
+            A.~$0^\circ$；\quad B.~$30^\circ$；\quad C.~$45^\circ$；\quad D.~$90^\circ$。
+        \end{parts}
+
+    \section{简答题}
+        \question 回答下列问题。
+        \begin{parts}
+            \part 固态变压器的控制难点有哪些？
+            % 原文随手备注：“sjjppt怎么还有我没兼顾到的”，未作为题干呈现。
+            \part 为什么三相四线制中的零线线径不能小于相线线径？
+            \part 高频 SPWM 逆变器相较于方波逆变器有哪些优点？
+        \end{parts}
+
+    \section{单相单极性 SPWM 逆变电路计算（8分）}
+        \question 一单相单极性 SPWM 逆变电路，载波频率为 $50\,\mathrm{kHz}$，输入直流电压为 $380\,\mathrm{V}$，要求输出 $220\,\mathrm{V}$、$50\,\mathrm{Hz}$ 的交流电压。（题型类似历年题。）
+        \begin{parts}
+            \part 求幅值调制比 $m_a$ 和频率调制比 $m_f$。
+            \part 若要求电感电流纹波小于 $5\,\mathrm{A}$，求输出 LC 滤波器中电感 $L$ 的大小。
+        \end{parts}
+
+    \section{电力电子器件基础}
+        \question 回答下列问题。
+        \begin{parts}
+            \part 第一章介绍的器件中，哪些器件仅依靠电子导电？
+            \part MOSFET 有哪些特点？
+            \part 晶闸管的关断条件是什么？
+            \part 根据所给晶闸管电路，判断每个晶闸管的状态。
+         \begin{center}
+            \includegraphics[width=0.24\linewidth]{resource/image3.png}
+        \end{center}
+        \end{parts}
+
+    \Needspace{11\baselineskip}
+    \section{Boost 电路计算}
+        \question 基础 Boost 电路计算。输入电压50V，输出电压200V，输出电阻为$10\Omega$
+        \begin{parts}
+                    \part 画出Boost电路图
+                    \part 求占空比D
+	           \part 如果电流波形峰峰值为20\%，求电感大小
+	           \part MOSFET 峰值电压和峰值电流
+	 \end{parts}
+
+    \section{全桥隔离 Buck 变换器（6分）}
+        \question 如图所示为全桥隔离 Buck 变换器。
+        \begin{center}
+            \includegraphics[width=0.94\linewidth]{resource/image2.png}
+        \end{center}
+        \begin{parts}
+            \part 画出该变换器的电路图。
+            \part 画出励磁电流 $i_m$ 的波形。
+            \part 画出副边一个二极管器件的电流波形。
+        \end{parts}
+
+    \section{直流--交流变换器设计（8分）}
+        \question 设计将 $24\,\mathrm{V}$ 直流电转换为 $220\,\mathrm{V}$、$50\,\mathrm{Hz}$ 交流电的变换器，额定功率为 $100\,\mathrm{W}$。要求包含直流隔离电路，画出电路图，并给出占空比、变压器匝数比、开关频率等设计参数。
+\end{questions}
+	
+\end{document}
