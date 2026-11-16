@@ -8,6 +8,10 @@
 
 [完整笔记 PDF · 135页，约37.7 MiB](resources/measurement-notes.pdf){ .md-button .md-button--primary }
 [秋学期回忆卷 · 7页](resources/exam-2025-2026.pdf){ .md-button }
+[A4 半开卷纸 · 2页](resources/a4-open-book-2026.pdf){ .md-button }
+[实验 1、2 报告（公开版）](resources/lab-report-01-02-public.pdf){ .md-button }
+[实验 3、4 报告（公开版）](resources/lab-report-03-04-public.pdf){ .md-button }
+[实验资料专题页](lab-reports.md){ .md-button }
 
 ## 按章节定位
 
@@ -41,6 +45,9 @@
         <option value="../resources/measurement-notes.pdf#page=84">第六章 · 示波器 · 第84页起</option>
         <option value="../resources/measurement-notes.pdf#page=128">第七章 · 频谱分析 · 第128页起</option>
         <option value="../resources/exam-2025-2026.pdf#page=1">2025—2026 秋回忆卷 · 7页</option>
+        <option value="../resources/a4-open-book-2026.pdf#page=1">A4 半开卷纸 · 2页</option>
+        <option value="../resources/lab-report-01-02-public.pdf#page=1">实验 1、2 报告 · 18页</option>
+        <option value="../resources/lab-report-03-04-public.pdf#page=1">实验 3、4 报告 · 13页</option>
         <option value="../resources/measurement-1.pdf">原有第一章课件</option>
         <option value="../resources/measurement-3.pdf">原有第三章课件</option>
         <option value="../resources/measurement-4.pdf">原有第四章课件</option>

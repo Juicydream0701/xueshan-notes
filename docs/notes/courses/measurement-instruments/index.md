@@ -10,6 +10,7 @@
 [2025—2026 秋回忆卷](past-exams.md){ .md-button }
 [逐题参考解答](exam-solutions.md){ .md-button }
 [原笔记逐节对照](source-map.md){ .md-button }
+[实验资料与报告](lab-reports.md){ .md-button }
 
 | 章节与入口 | 本篇解决的问题 |
 | --- | --- |
@@ -41,6 +42,7 @@
 - [第三章讲义](resources/measurement-3.pdf)：信号与数据处理；
 - [第四章讲义](resources/measurement-4.pdf)：仪器结构与应用；
 - [实验指导书](resources/measurement-lab-guide.pdf)：实验连接与记录模板。
+- [实验资料与报告](lab-reports.md)：A4 半开卷纸、实验 1—4 的公开版报告与复现实验清单。
 
 ## 六、代表题：一次测量的不确定度预算
 
